@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Protein | Фитнес клуб Петропавловск-Камчатский</title>
+	<meta name="identifier-url" content="http://proteingym.ru/" />
+	<meta name="title" content="Protein | Фитнес клуб Петропавловск-Камчатский" />
+	<meta name="description" content="Фитнес клуб Петропавловск-Камчатский" />
+	<meta name="abstract" content="Фитнес клуб Петропавловск-Камчатский" />
+	<meta name="keywords" content="фитнес, джампинг, йога, стретчинг, пилатес, босу-фитнес, body-sculpt, степ-аэробика, kangoo-jump, боди-балет, здоровая-спина, качалка, петропавловск-камчатский, камчатка, тренажерный, зал, клуб, тренажерка, п-камчатский," />
+	<meta name="author" content="Mikhail Lebedev" />
+	<meta name="revisit-after" content="15" />
+	<meta name="language" content="RU" />
+	<meta name="copyright" content="© 2018 Mikhail Lebedev" />
+	<meta name="robots" content="All" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="https://proteingym.ru/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://proteingym.ru/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://proteingym.ru/icon/favicon-16x16.png">
+  <link rel="manifest" href="https://proteingym.ru/icon/site.webmanifest">
+  <link rel="mask-icon" href="https://proteingym.ru/icon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="https://proteingym.ru/icon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="https://proteingym.ru/icon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta property="og:image" content="https://proteingym.ru/icon/share/og-image.jpg">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="524">
+  <meta property="og:title" content="PROTEIN | Фитнес клуб">
+  <meta property="og:url" content="http://proteingym.ru/">
+  <meta property="og:description" content="Новые фитнес направления не имеющие аналогов на Камчатке.">
+
+
+  <link rel="stylesheet" href="css/queryLoader.css" type="text/css">
+  <script type='text/javascript' src='js/queryLoader.js'></script>
+
+  <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="stylesheet" href="css/card.css">
+  <script src="js/app.js"></script>
+
+
+
+
+</head>
+
+<body ng-controller="MainController">
+
+
+    <div class="authenticate">
+    <!-- <a class="bigtext" href="https://www.google.com/maps/uv?pb=!5s!6m43!1m42!7m1!1s%2F%2Flh4.googleusercontent.com%2F-hlACFRVx0Ec%2FWsiM_9M_UiI%2FAAAAAAAAEHA%2FWA7cR1ZVGOY0D-jVtjz_rYIOk4Lntk2ngCLIBGAYYCw%2Fw365-h260-k-no-pi-2.9338646-ya324.5625-ro-0-fo100%2F!22m39!2m2!1e3!2s-hlACFRVx0Ec%2FWsiM_9M_UiI%2FAAAAAAAAEHA%2FWA7cR1ZVGOY0D-jVtjz_rYIOk4Lntk2ngCLIBGAYYCw!3m35!1e3!2e2!3m2!1i4352!2i8704!4m28!1m3!1m2!1i136!2i272!1m3!1m2!1i272!2i544!1m3!1m2!1i544!2i1088!1m3!1m2!1i1088!2i2176!1m3!1m2!1i2176!2i4352!1m3!1m2!1i4352!2i8704!2m2!1i512!2i512!3e1!10s-hlACFRVx0Ec%2FWsiM_9M_UiI%2FAAAAAAAAEHA%2FWA7cR1ZVGOY0D-jVtjz_rYIOk4Lntk2ngCLIBGAYYCw!9b1&hl=ru&viewerState=im" target="_blank">
+      <span class="unSplash">
+      </span>3D тур</a></div> -->
+      <a class="bigtext cd-btnphoto" href="#0">
+        <span class="unSplash">
+        </span>Фото</a></div>
+
+
+  <div ng-init="showConnect = false" ng-class="{'show-connect': showConnect}" class="wrap landing">
+    <div class="aside">
+      <div class="aside-fixed">
+        <div class="logo"></div>
+        <div class="divider">dev\des<span class="defis">––</span><a class="linkmy" href="https://www.instagram.com/zaza41rus/" target="_blank">mikhail</a></div>
+
+  <div id="fixedDiv" class="fixed fixed-top">
+          <!-- <a href="#0" ng-class="{'show-connect': showConnect}" class="cd-btn btn btn-lg btn-black request"><span class=""><div class="rub">₽</div></a>
+          <a href="#0" ng-class="{'show-connect': showConnect}" class="cd-btn btn btn-lg btn-white request"><span class=""><div class="rub">₽</div></a> -->
+
+          <a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-black request"><div class="rotan">&bull;&bull;&bull;</div></a>
+          <a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-white request"><div class="rotan">&bull;&bull;&bull;</div></a>
+
+
+
+          <nav class="menu">
+           <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+           <label class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+          </label>
+
+           <a href="#0" class="cd-btncalc menu-item blue"> <i class="fa fa-anchor"></i> </a>
+           <a target="_blank" href="tel:+79638330233" class="menu-item green"> <i class="fa fa-coffee"></i> </a>
+           <a target="_blank" href="https://2gis.ru/p_kamchatskiy/query/%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA-%D0%9A%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%A2%D0%B0%D1%80%D0%B0%D0%BD%D1%86%D0%B0%2C%204/geo/13370697048929678?queryState=center%2F158.642834%2C53.072892%2Fzoom%2F16" class="menu-item red"> <i class="fa fa-heart"></i> </a>
+           <a href="#0" class="cd-btn menu-item purple"> <i class="fa fa-microphone"></i> </a>
+           <!-- <a href="#" class="menu-item orange"> <i class="fa fa-star"></i> </a>
+           <a href="#" class="menu-item lightblue"> <i class="fa fa-diamond"></i> </a> -->
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+        <div ng-class="{'show-connect': showConnect}" class="rad-humans">
+          <div slide-in="{start: '#ben', end: '#marc'}" class="rad-human ben"></div>
+          <div slide-in="{start: '#marc', end: '#ryan_veronica'}" class="rad-human marc"></div>
+          <div slide-in="{start: '#ryan_veronica', end: '#helena'}" class="rad-human wide ryan_veronica"></div>
+          <div slide-in="{start: '#helena', end: '#dan'}" class="rad-human helena"></div>
+          <div slide-in="{start: '#dan', end: '#enrique'}" class="rad-human dan"></div>
+          <div slide-in="{start: '#enrique', end: '#geoff'}" class="rad-human enrique"></div>
+          <div slide-in="{start: '#geoff', end: '#mikael_steph'}" class="rad-human geoff"></div>
+          <div slide-in="{start: '#mikael_steph', end: '#airbnb'}" class="rad-human mikael_steph"></div>
+          <div slide-in="{start: '#airbnb', end: '#talent'}" class="rad-human airbnb"></div>
+          <div slide-in="{start: '#talent', end: '#spina'}" class="rad-human talent"></div>
+          <div slide-in="{start: '#spina', end: '#dann'}" class="rad-human spina"></div>
+          <div slide-in="{start: '#dann', end: '#info'}" class="rad-human dann"></div>
+        </div>
+      </div>
+
+      <div ng-class="{'show-connect': showConnect}" slide-in="{start: '#intro_end', end: '#info'}" class="aside-bg"></div>
+
+      <div ng-class="{'show-connect': showConnect}" class="connect-form">
+
+        <a  href="#0" class="cd-btn btn btn-lg btn-black connect">стоимость</a>
+        <a  href="#0" class="cd-btncalc btn btn-lg btn-black connect">Расписание занятий</a>
+        <a  target="_blank" href="tel:+79638330233" class="btn btn-lg btn-black connect">tel: 33-02-33</a>
+
+
+        <a target="_blank" href="https://2gis.ru/p_kamchatskiy/query/%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%BF%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D1%81%D0%BA-%D0%9A%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D1%81%D0%BA%D0%B8%D0%B9%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%A2%D0%B0%D1%80%D0%B0%D0%BD%D1%86%D0%B0%2C%204/geo/13370697048929678?queryState=center%2F158.642834%2C53.072892%2Fzoom%2F16" class="btn btn-lg btn-black connect">Как проехать</a>
+        <a ng-click="showConnect = !showConnect" class="btn btn-lg btn-lightgray close">&times;</a>
+      </div>
+
+    </div>
+
+    <div ng-class="{'show-connect': showConnect}" class="main connect">
+      <h2 class="push-bottom"><span>расположение<br /></span><span class="black">П-Камчатский<br /></span><span class="black">пр. Таранца 4</span></h2>
+    </div>
+    <div ng-class="{'show-connect': showConnect}" class="main">
+      <div parallax-it="2" class="landing-bg"></div>
+
+<!-- 1 -->
+      <h2 class="push-big"><span>твои<br /></span><span>мышцы<br /></span><span>в наших<br /></span><span>руках<br /><br /></span><span class="black">фитнес<br /></span><span class="black">клуб<br /></span><span class="black">protein<br /></span><span><br /></span><span>новые направления<br /></span><span>не имеющие аналогов<br /></span><span id="intro_end">на Камчатке<br /></span>
+      </h2>
+<!-- 2 -->
+      <h2 id="ben" class="push-big"><span class="black">Тренажерный зал<br /></span><span>оснащеный всем<br />необходимым для<br />силовых тренировок</span>
+      </h2>
+<!-- 3 -->
+      <h2 id="marc" class="push-big"><span>4 зала для<br /></span><span>групповых занятий<br /></span><span><br /><br /></span><span class="black">Body Sculpt<br /></span><span>Силовая тренировка<br />с плавными движениями,<br />выполняемыми под спокойную музыку/<br />Укрепляет мышцы,<br />не приводя их к бурному росту<br /></span>
+      </h2>
+<!-- 4 -->
+      <h2 id="ryan_veronica" class="push-big"><span class="black">Джампинг<br /></span><span>Интенсивная тренировка<br />аэробного характера<br />с использованием батутов/<br />направлена на<br />сжигание жира, укрепление мышц<br /></span>
+      </h2>
+<!-- 5 -->
+      <h2 id="helena" class="push-big"><span class="black">Йога<br /></span><span>Восстанавливает<br />нервную систему,<br />нормализует сердечный ритм,<br />улучшает настроение,<br />избавляет от болей<br />в спине, в суставах<br /></span>
+      </h2>
+<!-- 6 -->
+      <h2 id="dan" class="push-big"><span class="black">Стретчинг<br /></span><span>Комплекс упражнений,<br />направленных на растяжку<br />тела, мышц, сухожилий, связок<br /></span>
+      </h2>
+<!-- 7 -->
+
+      <h2 id="enrique" class="push-big"><span class="black">Пилатес<br /></span><span>Комплекс упражнений<br />из разных направлений,<br />разработанный<br />для восстановления<br />после травм,<br />заболеваний<br />опорно-двигательного аппарата<br /></span>
+      </h2>
+<!-- 8 -->
+      <h2 id="geoff" class="push-big"><span class="black">Босу-фитнес<br /></span><span>Коррекция фигуры,<br />повышение гибкости,<br />развитие пластики,<br />улучшение осанки/<br />Помогает натренировать<br />вестибулярный аппарат,<br />развивая мышечную силу<br /></span>
+      </h2>
+<!-- 9 -->
+      <h2 id="mikael_steph" class="push-big"><span class="black">Степ-аэробика<br /></span><span>Низкоударная<br />кардио-тренировка/<br />Основа - простые  движения<br />на специальной возвышенности<br /> (степ-платформе)<br /></span>
+      </h2>
+<!-- 10 -->
+      <h2 id="airbnb" class="push-big"><span class="black">Kangoo jump<br /></span><span>Высокоинтенсивная<br />аэробная тренировка/<br />Направлена на<br />сжигание жира,<br />укрепление мышц<br /></span><span class="komerce">| Коммерческая группа</span>
+      </h2>
+<!-- 11 -->
+      <h2 id="talent" class="push-big"><span class="black">Боди-балет<br /></span><span>Направление в фитнесе,<br />основанное на упражнениях<br />классической хореографии,<br />балета, йоги, пилатеса<br /></span>
+      </h2>
+<!-- 12 -->
+      <h2 id="spina" class="push-big"><span class="black">Здоровая спина<br /></span><span>Фитнес-программа<br />при проблемах<br /> с позвоночником:<br /> грыжах, скалеозе, гиперкифозе,<br />плоской спине, гиперлордозе/<br /> Помогает восстановить<br />естественные изгибы позвоночника,<br />освободиться от напряжения<br /></span></h2>
+<!-- 13 -->
+      <h2 id="dann" class="push-big"><span>Для Детей<br /></span><span class="black">Джампинг<br /><span class="black">Хореография<br /></span><span class="black">Гимнастика<br /></span><span class="black"><br /></span>
+      </h2>
+
+
+
+<!-- info -->
+      <h2 id="info">
+        <div class="sponsors end">
+            <h2>
+              <span><br /></span><span>Наши<br /></span>
+              <span class="black">инструктора</span>
+            </h2>
+            <table>
+                <tr>
+                    <td class="tr">
+                      <div class="container_user">
+                        <div  class="user" href=""><span class="user1"></span>
+                          <span class="user_name">Иван</span></div>
+                      </div>
+                        <p class="user_data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque varius est. Etiam erat tellus, maximus in odio eu, auctor euismod urna. Aliquam in velit augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas a feugiat arcu. Curabitur et dui varius erat pretium consectetur. Nullam ac accumsan ligula.</p>
+                        <p class="user_data user_data_kontakt">tel.: +7 (000) 000-00-00</p>
+                    </td>
+                    <td class="tr">
+                      <div class="container_user">
+                        <div  class="user" href=""><span class="user2"></span>
+                          <span class="user_name">Валентина</span></div>
+                      </div>
+                      <p class="user_data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque varius est. Etiam erat tellus, maximus in odio eu, auctor euismod urna. Aliquam in velit augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas a feugiat arcu. Curabitur et dui varius erat pretium consectetur. Nullam ac accumsan ligula.</p>
+                      <p class="user_data user_data_kontakt">tel.: +7 (000) 000-00-00</p>
+                    </td>
+                </tr>
+                <tr>
+                  <td class="tr">
+                    <div class="container_user">
+                      <div  class="user" href=""><span class="user3"></span>
+                        <span class="user_name">Marge</span></div>
+                    </div>
+                    <p class="user_data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque varius est. Etiam erat tellus, maximus in odio eu, auctor euismod urna. Aliquam in velit augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas a feugiat arcu. Curabitur et dui varius erat pretium consectetur. Nullam ac accumsan ligula.</p>
+                    <p class="user_data user_data_kontakt">tel.: +7 (000) 000-00-00</p>
+                  </td>
+                  <td class="tr">
+                    <div class="container_user">
+                      <div  class="user" href=""><span class="user4"></span>
+                        <span class="user_name">Homer</span></div>
+                    </div>
+                    <p class="user_data">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent scelerisque varius est. Etiam erat tellus, maximus in odio eu, auctor euismod urna. Aliquam in velit augue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas a feugiat arcu. Curabitur et dui varius erat pretium consectetur. Nullam ac accumsan ligula.</p>
+                    <p class="user_data user_data_kontakt">tel.: +7 (000) 000-00-00</p>
+                  </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+  </div>
+
+<!-- social-items -->
+  <div class="social-items"><a href="https://www.instagram.com/gym_and_spa/" target="_blank" class="icon twitter">Instagram</a></div>
+
+<!-- Preloder close  -->
+  <script type='text/javascript'>
+    QueryLoader.init();
+  </script>
+
+
+
+<!-- prace -->
+  <div class="cd-panel from-right">
+		<header class="cd-panel-header">
+      <h2 class="max-width">
+        <span class="hed">цены<br /></span>
+      </h2>
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+        <div class="content">
+
+            <a class="card" href="#!">
+              <div class="front" style="background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);">
+                <p class="card-txt1">Безлимит</p>
+                <p class="card-txt2">6<br/><span class="mes">месяцев</span></p>
+              </div>
+              <div class="back bg1">
+                <div>
+                  <p class="card-txt3">20 000 <br/></p>
+                  <!-- <button class="button">12 000</button> -->
+                </div>
+              </div>
+            </a>
+
+            <a class="card" href="#!">
+              <div class="front" style="background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);">
+                <p class="card-txt1">Безлимит</p>
+                <p class="card-txt2">9<br/><span class="mes">месяцев</span></p>
+              </div>
+              <div class="back bg2">
+                <div>
+                  <p class="card-txt3">30 000 <br/></p>
+                  <!-- <button class="button">12 000</button> -->
+                </div>
+              </div>
+            </a>
+
+            <a class="card" href="#!">
+              <div class="front" style="background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);">
+                <p class="card-txt1">Безлимит</p>
+                <p class="card-txt2">12<br/><span class="mes">месяцев</span></p>
+              </div>
+              <div class="back bg3">
+                <div>
+                  <p class="card-txt3">35 000 <br/></p>
+                  <!-- <button class="button">12 000</button> -->
+                </div>
+              </div>
+            </a>
+
+            <a class="card" href="#!">
+              <div class="front" style="background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);">
+                <p class="card-txt1">Студенческий</p>
+                <p class="card-txt2">1<br/><span class="mes">месяцев</span></p>
+              </div>
+              <div class="back bg4">
+                <div>
+                  <p class="card-txt3">3 000 <br/></p>
+                  <!-- <button class="button">12 000</button> -->
+                </div>
+              </div>
+            </a>
+
+            <!-- <a class="card" href="#!">
+              <div class="front " style="background-image: url(//source.unsplash.com/300x405);">
+                <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+              </div>
+              <div class="back">
+                <div>
+                  <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                  <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                  <button class="button">Click Here</button>
+                </div>
+              </div>
+            </a> -->
+
+          <div class="oher">
+            <h2 class="push-big"><span class="gray">а также<br /></span><span class="white">Персональные тренировки, консультации по<br />правильному питанию,<br />режиму и индивидуальные<br />тренировочные программы/<br />
+            </h2>
+          </div>
+
+        </div>
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+
+
+<!-- calendar -->
+  <div class="cd-panelcalc from-right">
+		<header class="cd-panelcalc-header">
+      <h2 class="max-width">
+        <span class="hed">Расписание<br /></span>
+        <span class="black hed">Групповых</span>
+        <span class="black hed">Занятий</span>
+      </h2>
+			<a href="#0" class="cd-panelcalc-close">Close</a>
+		</header>
+
+		<div class="cd-panelcalc-container">
+			<div class="cd-panelcalc-content">
+        <div class="content">
+            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=2g3a81cji5e1m1p3vbma03nt6k%40group.calendar.google.com&amp;color=%2323164E&amp;ctz=Asia%2FKamchatka" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+  <!-- Фото -->
+    <div class="cd-panelphoto from-right">
+  		<header class="cd-panelphoto-header">
+        <h2 class="max-width">
+          <span class="hed">Фото/Видео<br /></span>
+          <span class="black hed">о Клубе</span>
+        </h2>
+  			<a href="#0" class="cd-panelphoto-close">Close</a>
+  		</header>
+
+  		<div class="cd-panelphoto-container">
+  			<div class="cd-panelphoto-content">
+          <div class="content">
+<div class="photo">
+  <div class="photo1"></div>
+</div>
+
+<div class="photo">
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/8I11qyMXmOk?controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/SPmbdQV-dU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+          </div>
+  			</div> <!-- cd-panel-content -->
+  		</div> <!-- cd-panel-container -->
+  	</div> <!-- cd-panel -->
+
+
+<!-- police -->
+  <!-- <div id="nav" class="test politics">
+    <p class="center">Продолжив использование сайта, вы соглашаетесь с
+      <a href="https://proteingym.ru/policy.html" target="_blank"> Политикой конфиденциальности и обработки персональных данных</a>
+    </p>
+  </div> -->
+</body>
+
+
+
+<link rel="stylesheet" href="css/cd-panel.css"> <!-- Resource style -->
+<script src="js/cd-panel.js"></script> <!-- Resource jQuery -->
+
+
+
+<script>
+var oldScrollY = 0;
+var div = document.getElementById("fixedDiv");
+
+window.onscroll = function() {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  var dY = scrolled - oldScrollY;
+
+  if ( dY > 0 ){
+    div.className = "fixed fixed-bottom";
+  } else {
+    div.className = "fixed fixed-top";
+  }
+
+  oldScrollY = scrolled;
+}
+</script>
+
+
+
+<!-- politics -->
+<!-- <script>
+ $(window).load(function () {
+  $('.politics').show();
+ });
+
+
+document.onclick = function() {
+  document.getElementById('nav').style.display = 'none'
+}
+</script>
+
+
+<script>
+var test = document.querySelector('.test');
+function removeTest(e) {
+    if(!e.target.matches('.test, .test *')) {
+        test.remove();
+        this.removeEventListener('click', removeTest);
+    }
+};
+window.addEventListener('click', removeTest);
+</script> -->
+<!-- politics -->

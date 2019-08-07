@@ -1,0 +1,349 @@
+/* Product grid */
+
+.grid {
+	position: relative;
+	overflow: hidden;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 1.5em 0 1.5em;
+	text-align: center;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+}
+
+/* Loader */
+.grid__loader {
+	display: none;
+	margin: 3em auto 0;
+}
+
+
+
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* Grid items */
+
+.grid__sizer,
+.grid__item {
+	position: relative;
+	float: left;
+	width: 20%;
+	padding: .75em;
+	margin-bottom: 10px;
+}
+
+.no-touch .grid__sizer,
+.no-touch .grid__item {
+	padding: .75em .75em 1.25em;
+}
+
+
+.grid__item--size-a {
+	width: 40%;
+}
+
+/* Gallery */
+
+.slider {
+	padding: 0;
+	border-radius: 4px;
+	background: #f7f7f7;
+	/* box-shadow: 0px 2px 12px rgba(0,0,0,.3); */
+	border-radius: 2px;
+	-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	/* -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+	/* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.no-touch .slider {
+	padding: 0 0 1.25em;
+}
+
+.slider__item {
+	width: 100%;
+	padding: 1em;
+}
+
+.slider__item img {
+	width: 100%;
+}
+/* Flickity page dots */
+
+.slider .flickity-page-dots {
+	bottom: 20px;
+	opacity: 0;
+	-webkit-transition: opacity .3s;
+	transition: opacity .3s;
+}
+
+.no-touch .slider:hover .flickity-page-dots {
+	opacity: 1;
+}
+
+.slider .flickity-page-dots .dot {
+	background: #595B64;
+}
+
+/* Product meta */
+
+.meta {
+	position: relative;
+	margin: 10px 0 0;
+	padding: 0px 100px 0px 0;
+	text-align: left;
+}
+
+.meta__brand {
+	font-size: .85em;
+	font-weight: bold;
+	display: block;
+	color: #B9B9B9;
+}
+
+.meta__title {
+	font-size: .95em;
+	font-weight: bold;
+	margin: 0;
+	padding: .4em 0 .1em;
+	/* width: 83%; */
+	color: #44718A;
+}
+
+.meta__price {
+	font-size: 1.75em;
+	font-weight: bold;
+	position: absolute;
+	top: .15em;
+	right: .25em;
+	color: #B9B9B9;
+}
+
+/* Action style */
+
+.action {
+	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-size: 1.05em;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: .25em;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	background: none;
+}
+
+.action:focus {
+	outline: none;
+}
+
+.action--button {
+	color: rgba(89, 91, 100, 0.3);
+}
+
+.no-touch .action--button:hover {
+	color: #EB7D6C;
+	outline: none;
+}
+
+.text-hidden {
+	position: absolute;
+	top: 200%;
+}
+
+/* Add to cart button */
+
+.action--buy {
+	position: absolute;
+	top: 14px;
+	right: 4px;
+	width: 85px;
+	height: 70px;
+	/* padding: .58em 0; */
+	-webkit-transition: opacity .3s, 
+	-webkit-transform .3s;
+	transition: opacity .3s, transform .3s;
+	-webkit-transform: translate3d(-5px, 0, 0);
+	transform: translate3d(-5px, 0, 0);
+	border-top-right-radius: 6px;
+}
+
+.no-touch .action--buy {
+	opacity: 0;
+}
+
+.no-touch .grid__item:hover .action--buy {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.action--buy2 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    height: 70px;
+    font-size: 2.25em;
+    width: 80px;
+    padding: 1.15em 1.15em;
+    -webkit-transition: opacity .3s, 
+    -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(5px, 0, 0);
+    border-top-left-radius: 4px;
+}
+.no-touch .action--buy2 {
+    opacity: 0;
+}
+.no-touch .grid__item:hover .action--buy2 {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* Fixed bottom bar */
+
+.bar {
+	bottom: 0;
+	/* left: 0; */
+	width: 100%;
+	padding: 1.25em 5em;
+	text-align: center;
+	-webkit-transform: translate3d(0, 0, 0);/* Fix for Chrome flicker on Mac ...party like we're in 2012! */
+	height: calc(4em + 4px);
+	background: #f7f7f7;
+	border-top: 1px solid #ccc;
+	/* box-shadow: 0 0px 15px rgba(0,0,0,.1); */
+	-moz-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3);
+	/* -webkit-box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3); */
+	/* box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.flexbox .filter {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	padding-top: 0px;
+}
+
+/* Filter */
+
+.filter__label {
+	font-size: .85em;
+	display: inline-block;
+	margin: 0 2px;
+	font-weight: bold;
+	color: rgba(57, 58, 63, 0.25);
+}
+
+.filter__item {
+	font-weight: bold;
+	margin: 0 2%;
+	padding: .1em;
+	vertical-align: middle;
+	color: #595B64;
+	border-bottom: 3px solid transparent;
+}
+
+.filter__item--selected {
+	color: #EB7D6C;
+	border-color: #EB7D6C;
+}
+
+
+
+
+
+.no-touch .cart:focus,
+.no-touch .cart:hover {
+	color: #EB7D6C;
+	outline: none;
+}
+
+
+@-webkit-keyframes cartAnim {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(50px, 0, 0);
+		transform: translate3d(50px, 0, 0);
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-50px, 0, 0);
+		transform: translate3d(-50px, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes cartAnim {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(50px, 0, 0);
+		transform: translate3d(50px, 0, 0);
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(-50px, 0, 0);
+		transform: translate3d(-50px, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+
+@-webkit-keyframes countAnim {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 80px, 0);
+		transform: translate3d(0, 80px, 0);
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -80px, 0);
+		transform: translate3d(0, -80px, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes countAnim {
+	50% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 80px, 0);
+		transform: translate3d(0, 80px, 0);
+	}
+	51% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -80px, 0);
+		transform: translate3d(0, -80px, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+

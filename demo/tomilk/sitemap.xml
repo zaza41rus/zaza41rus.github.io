@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://milkam.ru/</loc>
+  <lastmod>2017-05-06T09:28:37+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://milkam.ru/index.html</loc>
+  <lastmod>2017-05-06T09:28:37+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://milkam.ru/catalog/milk.html</loc>
+  <lastmod>2017-05-06T08:40:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://milkam.ru/catalog/smet.html</loc>
+  <lastmod>2017-05-06T08:40:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://milkam.ru/catalog/sivor.html</loc>
+  <lastmod>2017-05-06T08:40:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://milkam.ru/catalog/cheese.html</loc>
+  <lastmod>2017-05-06T08:40:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://milkam.ru/about.html</loc>
+  <lastmod>2017-05-06T08:40:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://milkam.ru/contact.html</loc>
+  <lastmod>2017-05-06T08:40:17+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<products>
+	<category categoryName="Mobiles" categoryID="phones">
+		<product productName="Коровье молоко" productID="DSCF0001" thumbPath="data-provider/thumbs/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg" oldPrice="" productPrice="120">
+			<sizes>
+				<size>1,5л</size>
+			</sizes>
+	
+			<details>
+				<![CDATA[
+				<img class="pull-left" src="data-provider/images/milk/CowMilk.jpg"> 
+				Домашнее сырое коровье молоко, без какой либо обработки.
+				<p>Продается, как парным, так и охлажденным.  </p>
+				
+				<p>Вне всякого сомнения, самым вкусным и наиболее полноценным является свежее домашнее молоко. В нем сохранены все витамины и микроэлементы, присутствует полезная микрофлора.</p>
+				<p>Во многих семьях распространена практика покупать домашнее молоко, а также творог и сметану у проверенных молочниц. Таким образом, Вы можешь быть уверены, что молоко получено из одного хозяйства, а не взято из общего котла, как это делают на молочных предприятиях.</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Творог" productID="DSCF0002" thumbPath="data-provider/thumbs/mobiles/motorola-moto-g-400x400-imadsmbx5sxgejag.jpeg" oldPrice="" productPrice="180">
+			<sizes>
+				<size>0,5кг</size>
+			</sizes>
+			<details>
+				<![CDATA[
+				<img class="pull-left" src="data-provider/images/milk/Tvorog.jpg"> 
+				Домашний творог из не сепарированного (жирного) коровьего молока.
+				<p>Без добавления посторонних примесей.</p>
+				<p>Приготовлен, путем скисания коровьего молока, до состояния простокваши и варки ее в духовой печи.</p>
+				<p>Далее сцеживается молочная сыворотка и получается однородная творожная масса – творог.</p>
+				<p>Творог получается жирным и вкусным.</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Сметана" productID="DSCF0003" thumbPath="data-provider/thumbs/mobiles/mi-mi-redmi-1s-2013029-400x400-imadz99z2hgshk3e.jpeg" oldPrice="" productPrice="130">
+			<sizes>
+				<size>0,25мл</size>
+			</sizes>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/milk/Smetana.jpg"> 
+				Домашняя сметана из коровьего молока.
+				<p>Приготавливается, путем ручного сбора сливок (именно ручного, а не сипарации молока, как это делают при промышленном производстве) в отстоявшемся коровьем молоке и скисании их, до характерного сметанного вкуса.</p>
+				<p>Если сметана получается слишком жидкой консистенции - добавляем немного творожной массы в качестве загустителя.</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Сыворотка" productID="DSCF0004" thumbPath="data-provider/thumbs/mobiles/apple-iphone-5s-400x400-imadpppc9k3gzdjz.jpeg" oldPrice="" productPrice="100">
+			<sizes>
+				<size>3л</size>
+			</sizes>
+	
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/milk/Sivorotka.jpg"> 
+				Домашняя сыворотка из коровьего молока.
+				<p>Получается путем варки творожной массы и отделения (сцеживания) сыворотки от творога.</p>
+				<p>По сути, это побочный продукт, который практически не содержит жиров, богат легкоусвояемыми белками, кальцием и витаминами.</p>
+				<p>Сыворотка помогает организму выводить шлаки и лишнюю жидкость, а также расщеплять вредные отложения без ущерба для здоровья.</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Дамские пальчики" productID="DSCF0005" thumbPath="data-provider/thumbs/mobiles/asus-zenfone-5-a501cg-400x400-imaefnwgghevanex.jpeg" oldPrice="" productPrice="700">
+			<sizes>
+				<size>1кг</size>
+			</sizes>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/milk/tort.jpg"> 
+				Тортик домашний аля "Дамские пальчики".
+				<p>Внешне конечно не совсем похож на "Дамские пальчики". Это связанно с упрощением лепки и выпечки форм.</p>
+				<p>Используются домашняя сметана в крему и ручной труд (модно ща говорить HAND MADE).</p>
+				<p>Остальное покупное! Так что назвая этот продукт "Домашним" мы слегка лукавим.</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Сметанник" productID="DSCF0006" thumbPath="data-provider/thumbs/mobiles/samsung-galaxy-s-duos-2-s7582-400x400-imadr3hqrsaxua6c.jpeg" oldPrice="" productPrice="800">
+			<sizes>
+				<size>1кг</size>
+			</sizes>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/milk/Smetannik.jpg"> 
+								Тортик домашний "Сметаннтк".
+				<p>Сметану, сахар и яйца хорошенько взбиваем.
+					Муку и соду просеиваем через сито, чтобы обогатить их кислородом. Замешиваем тесто.
+					Предварительно разогреваем духовку до 200 градусов.
+					</p>
+					<p>Смазываем формочку для выпекания сливочным маслом.
+					Ставим в духовку на 25-30 минут. Таким образом выпекаем оба коржа, темный и светлый.
+					Когда коржи остынут, разрезаете их вдоль на 2 части.
+					Коржи чередуем (темный-светлый), обильно смазывая кремом.</p>
+					<p>Торт поливается глазурью и ставится на пару часов в холодильник.</p>
+				]]>
+		</details>
+		</product>
+
+
+
+	</category>
+	<category categoryName="Laptops" categoryID="cumputer-laptops">
+		<product productName="Козье молоко" productID="LSCF0001" thumbPath="data-provider/thumbs/laptops/dell-alienware-notebook-400x400-imadyh6rg2dphjh9.jpeg" oldPrice="" productPrice="220">
+			<sizes>
+				<size>1,5л</size>
+			</sizes>
+	
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/milk/kozmilk.jpg"> 
+				Домашнее сырое молоко коз, без какой либо обработки.
+				<p>Продается, как парным, так и охлажденным.</p>
+				
+				<p>Вне всякого сомнения, самым вкусным и наиболее полноценным является свежее домашнее молоко. В нем сохранены все витамины и микроэлементы, присутствует полезная микрофлора.</p>
+				<p>Во многих семьях распространена практика покупать домашнее молоко, а также творог и сметану у проверенных молочниц. Таким образом, Вы можешь быть уверены, что молоко получено из одного хозяйства, а не взято из общего котла, как это делают на молочных предприятиях.</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Apple MD101HN/A Macbook Pro" productID="LSCF0002" thumbPath="data-provider/thumbs/laptops/apple-macbook-pro-400x400-imadmkhjrazhgrqh.jpeg" oldPrice="" productPrice="1100">
+			<colors>
+				<color>Silver</color>
+			</colors>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Lenovo Thinkpad" productID="LSCF0003" thumbPath="data-provider/thumbs/laptops/lenovo-thinkpad-e431-notebook-400x400-imadyyg8vugk8fmu.jpeg" oldPrice="" productPrice="1000">
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/laptops/lenovo-thinkpad-e431-notebook-400x400-imadyyg8vugk8fmu.jpeg"> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p> <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Lenovo Flex 2-14D Notebook" productID="LSCF0004" thumbPath="data-provider/thumbs/laptops/lenovo-notebook-400x400-imadyhj2ejzcw32h.jpeg" oldPrice="" productPrice="600">
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+	</category>
+	
+	
+	
+	
+	<category categoryName="Tablets" categoryID="tab">
+		<product productName="Крольчатина" productID="TSCF0001" thumbPath="data-provider/thumbs/tablets/lenovo-yoga-tablet-2-1050l-400x400-imaeyv7hjp9sdzbz.jpeg" oldPrice="" productPrice="700">
+			<sizes>
+				<size value="тушка">1кг</size>
+			</sizes>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/meat/krolmeat.jpg"> 
+				Парное мясо кролика.
+				<p>Продается тушкой. В тушке от 1,5 до 5кг (зависит от породы кролика).</p>
+				<p>Только по пред заказу!</p>
+				
+				<p>Информацию о пользе и прочих характеристиках домашнего мяса кролика вы с легкостью можете найти на просторах интернета.</p> 
+				<p>Единственное, что можем добавить, от личного опыта:</p>
+				<p>- готовить данный продукт нужно уметь.</p>
+				<p>Неумелые руки повара могут из великолепного продукта приготовить довольно посредническое блюдо, как по вкусовым характеристикам, так и по полезным свойствам.</p>
+
+
+				]]>
+		</details>
+		</product>
+		<product productName="Козлятина" productID="TSCF0002" thumbPath="data-provider/thumbs/tablets/huawei-t1-400x400-imaeyymzy5wnkmfq.jpeg" oldPrice="" productPrice="450">
+			<sizes>
+				<size value="тушка">1кг</size>
+			</sizes>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/meat/kozmeat.jpg"> 
+				Парная козлятина. Редко в продаже!
+				<p>Продается тушкой! </p>
+				<p>Предварительная запись!</p>
+				<p>Информацию о пользе и прочих характеристиках домашнего мяса коз вы с легкостью можете найти на просторах интернета.</p> 
+				<p>Единственное, что можем добавить, от личного опыта:</p>
+				<p>- готовить данный продукт нужно уметь.</p>
+				<p>Неумелые руки повара могут из великолепного продукта приготовить довольно посредническое блюдо, как по вкусовым характеристикам, так и по полезным свойствам.</p>
+
+				]]>
+		</details>
+		</product>
+		<product productName="Apple 16 GB iPad Air" productID="TSCF0003" thumbPath="data-provider/thumbs/tablets/apple-64-gb-ipad-air-with-wi-fi-400x400-imadr69czshjbvmk.jpeg" oldPrice="" productPrice="600">
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/tablets/apple-64-gb-ipad-air-with-wi-fi-400x400-imadr69czshjbvmk.jpeg"> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p> <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Apple 16GB iPad Mini" productID="TSCF0004" thumbPath="data-provider/thumbs/tablets/apple-ipad-mini-wi-fi-cellular-32gb-400x400-imadfxacwtybdguz.jpeg" oldPrice="" productPrice="500">
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+	</category>
+	
+	
+	
+	
+	<category categoryName="Televisions" categoryID="tv">
+		<product productName="Яйцо кур" productID="TVCF0001" thumbPath="data-provider/thumbs/tv/samsung-32h6400-400x400-imady476znegpbqk.jpeg" oldPrice="" productPrice="150">
+			<sizes>
+				<size>10шт</size>
+			</sizes>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/meat/egg.jpg""> 
+				Цена данного продукта у нас такая же, как и везде.
+				<p>Связанно это с тем, что курочек мы держим исключительно для личных нужд. Но когда наши клиенты нуждаются в данном продукте - мы идем на встречу.</p>
+				<p>Яйцо кур в нашем хозяйстве имеется нескольких видов:</p> 
+				<p>1) Крупное яйцо кур от бройлерных кур несушек. Имеет рыжеватый цвет скорлупы.</p>
+				<p>2) Крупное яйцо кур от обычных кур несушек. Привычное яйцо с белой скорлупой.</p>
+				<p>3) Мелкое яйцо кур от специфических парод кур. Цвет скорлупы белый с еле заметным серым отливом. По вкусовым свойствам не отличим от обычных куриных яиц. Но если верить описанию исследований то по полезным свойствам эти яйца стоят почти в одной линии с перепелиными. Мы скептически относимся к данной рекламной информации.</p>
+
+				]]>
+		</details>
+		</product>
+		
+		
+		
+		
+		<product productName="Philips 40PFL4958" productID="TVCF0002" thumbPath="data-provider/thumbs/tv/philips-40pfl4958-400x400-imadzt3gsnhgvstg.jpeg" oldPrice="" productPrice="650">
+			<colors>
+				<color>Silver</color>
+				<color>black</color>
+			</colors>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+		<product productName="LG 42LB550A" productID="TVCF0003" thumbPath="data-provider/thumbs/tv/lg-42lb550a-400x400-imadwkkwkfyxuqga.jpeg" oldPrice="" productPrice="600">
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+		<product productName="Philips 32PFL3938" productID="TVCF0004" thumbPath="data-provider/thumbs/tv/philips-20pfl3938-400x400-imaduzv4ezhb8eg6.jpeg" oldPrice="" productPrice="500">
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+	</category>
+	<category categoryName="Speakers" categoryID="spk">
+		<product productName="DigiFlip PS001 Wired Mini USB Speaker" productID="SPKF0001" thumbPath="data-provider/thumbs/speakers/digiflip-ps001-400x400-imadnb27nvwgakge.jpeg" oldPrice="50" productPrice="30">
+			<colors>
+				<color>Blue</color>
+				<color>Red</color>
+			</colors>
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+		<product productName="JBL Pulse Bluetooth Speaker" productID="SPKF0002" thumbPath="data-provider/thumbs/speakers/jbl-pulse-400x400-imadqd4sgv7efdhb.jpeg" oldPrice="" productPrice="150">
+			<details>
+				<![CDATA[
+				<p><img class="pull-left" src="data-provider/images/mobiles/karbonn-opium-n9-400x400-imadxvuv7k2yynhs.jpeg"> 
+				Описание
+				<p>
+				Описание
+				</p>
+				]]>
+		</details>
+		</product>
+	</category>
+</products>

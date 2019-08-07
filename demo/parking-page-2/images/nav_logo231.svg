@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="72px" height="24px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5885 1962"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil3 {fill:#FEFEFE}
+    .fil2 {fill:#D9DADA}
+    .fil1 {fill:#B2B3B3}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_401626056">
+   <rect class="fil0" x="1962" width="1962" height="1962"/>
+   <rect class="fil0" x="3923" width="1962" height="1962"/>
+   <path class="fil1" d="M3100 1395c0,0 186,-121 223,-140 37,-18 79,-28 103,-9 37,23 349,228 377,247 28,18 37,69 4,121 -37,51 -200,256 -270,251 -70,0 -391,19 -945,-531 -554,-554 -535,-875 -535,-945 0,-70 200,-237 251,-270 51,-37 102,-23 121,5 19,28 224,340 247,377 14,23 9,65 -9,102 -19,37 -140,224 -140,224 0,0 32,130 233,335 205,200 340,233 340,233z"/>
+   <path class="fil1" d="M5612 1889l-1417 0c-97,0 -177,-80 -177,-177l0 -926c0,-58 27,-111 75,-146l811 -567 810 567c49,31 76,88 76,146l0 926c0,97 -80,177 -178,177z"/>
+   <path class="fil2" d="M5612 1889l-1417 0c-97,0 -177,-80 -177,-177l0 -886 886 576 886 -576 0 886c0,97 -80,177 -178,177z"/>
+   <rect class="fil0" width="1962" height="1962"/>
+   <g>
+    <polygon class="fil3" points="1729,1861 1855,1736 1323,1204 1197,1329 "/>
+    <path class="fil3" d="M1500 798c0,-391 -318,-708 -709,-708 -391,0 -708,317 -708,708 0,391 317,708 708,708 391,0 709,-317 709,-708zm-133 0c0,-318 -258,-575 -576,-575 -318,0 -575,257 -575,575 0,318 257,576 575,576 318,0 576,-258 576,-576z"/>
+   </g>
+   <rect class="fil3" transform="matrix(0.0233505 -0.0233505 0.0233505 0.0233505 1342.34 1477.28)" width="5361" height="16485"/>
+  </g>
+ </g>
+</svg>

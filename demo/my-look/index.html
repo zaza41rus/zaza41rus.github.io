@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Веб разработка и дизайн от Михаила</title>
+	<meta name="identifier-url" content="http://my-look.ru/" />
+	<meta name="title" content="Веб разработка и дизайн от Михаила" />
+	<meta name="description" content="Внештатный разработчик и дизайнер из России. Это моё портфолио." />
+	<meta name="abstract" content="Внештатный разработчик и дизайнер из России. Это моё портфолио." />
+	<meta name="keywords" content="михаил, лебедев, дизайнер, дизайн, портфолио, разработчик, разработка, designer, html5, css3, jquery, wordpress, россия, внештатный, камчатка," />
+	<meta name="author" content="Mikhail Lebedev" />
+	<meta name="revisit-after" content="15" />
+	<meta name="language" content="RU" />
+	<meta name="copyright" content="© 2016 Mikhail Lebedev" />
+	<meta name="robots" content="All" />
+
+	<meta property="og:image" content="http://my-look.ru/embrace-1200-630.jpg">
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:title" content="Михаил Лебедев"/>
+	<meta property="og:description" content="Внештатный разработчик и дизайнер из России. Это моё портфолио.">
+	<meta property="og:url" content="http://my-look.ru/"/>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="style.css" type="text/css">
+	<style>
+
+	</style>		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+		(function(){var rebound={};var SpringSystem=rebound.SpringSystem=function SpringSystem(){this._springRegistry={};this._activeSprings=[];this._listeners=[];this._idleSpringIndices=[];this._boundFrameCallback=bind(this._frameCallback,this);};extend(SpringSystem,{});extend(SpringSystem.prototype,{_springRegistry:null,_isIdle:true,_lastTimeMillis:-1,_activeSprings:null,_listeners:null,_idleSpringIndices:null,_frameCallback:function(){this.loop();},_frameCallbackId:null,getIsIdle:function(){return this._isIdle;},createSpring:function(){var spring=new Spring(this);this.registerSpring(spring);return spring;},getSpringById:function(id){return this._springRegistry[id];},getAllSprings:function(){return Object.values(this._springRegistry);},registerSpring:function(spring){this._springRegistry[spring.getId()]=spring;},deregisterSpring:function(spring){removeFirst(this._activeSprings,spring);delete this._springRegistry[spring.getId()];},advance:function(time,deltaTime){while(this._idleSpringIndices.length>0)this._idleSpringIndices.pop();for(var i=0,len=this._activeSprings.length;i<len;i++){var spring=this._activeSprings[i];if(spring.systemShouldAdvance()){spring.advance(time/1000.0,deltaTime/1000.0);}else{this._idleSpringIndices.push(this._activeSprings.indexOf(spring));}}while(this._idleSpringIndices.length>0){var idx=this._idleSpringIndices.pop();idx>=0&&this._activeSprings.splice(idx,1);}},loop:function(){var listener;var currentTimeMillis=Date.now();if(this._lastTimeMillis===-1){this._lastTimeMillis=currentTimeMillis-1;}var ellapsedMillis=currentTimeMillis-this._lastTimeMillis;this._lastTimeMillis=currentTimeMillis;var i=0,len=this._listeners.length;for(i=0;i<len;i++){var listener=this._listeners[i];listener.onBeforeIntegrate&&listener.onBeforeIntegrate(this);}this.advance(currentTimeMillis,ellapsedMillis);if(this._activeSprings.length===0){this._isIdle=true;this._lastTimeMillis=-1;}for(i=0;i<len;i++){var listener=this._listeners[i];listener.onAfterIntegrate&&listener.onAfterIntegrate(this);}compatCancelAnimationFrame(this._frameCallbackId);if(!this._isIdle){this._frameCallbackId=compatRequestAnimationFrame(this._boundFrameCallback);}},activateSpring:function(springId){var spring=this._springRegistry[springId];if(this._activeSprings.indexOf(spring)==-1){this._activeSprings.push(spring);}if(this.getIsIdle()){this._isIdle=false;compatCancelAnimationFrame(this._frameCallbackId);this._frameCallbackId=compatRequestAnimationFrame(this._boundFrameCallback);}},addListener:function(listener){this._listeners.push(listener);},removeListener:function(listener){removeFirst(this._listeners,listener);},removeAllListeners:function(){this._listeners=[];}});var Spring=rebound.Spring=function Spring(springSystem){this._id=Spring._ID++;this._springSystem=springSystem;this._listeners=[];this._currentState=new PhysicsState();this._previousState=new PhysicsState();this._tempState=new PhysicsState();};extend(Spring,{_ID:0,MAX_DELTA_TIME_SEC:0.064,SOLVER_TIMESTEP_SEC:0.001});extend(Spring.prototype,{_id:0,_springConfig:null,_overshootClampingEnabled:false,_currentState:null,_previousState:null,_tempState:null,_startValue:0,_endValue:0,_wasAtRest:true,_restSpeedThreshold:0.001,_displacementFromRestThreshold:0.001,_listeners:null,_timeAccumulator:0,_springSystem:null,destroy:function(){this._listeners=[];this._springSystem.deregisterSpring(this);},getId:function(){return this._id;},setSpringConfig:function(springConfig){this._springConfig=springConfig;return this;},getSpringConfig:function(){return this._springConfig;},setCurrentValue:function(currentValue){this._startValue=currentValue;this._currentState.position=currentValue;for(var i=0,len=this._listeners.length;i<len;i++){var listener=this._listeners[i];listener.onSpringUpdate&&listener.onSpringUpdate(this);}return this;},getStartValue:function(){return this._startValue;},getCurrentValue:function(){return this._currentState.position;},getCurrentDisplacementDistance:function(){return this.getDisplacementDistanceForState(this._currentState);},getDisplacementDistanceForState:function(state){return Math.abs(this._endValue-state.position);},setEndValue:function(endValue){if(this._endValue==endValue&&this.isAtRest()){return this;}this._startValue=this.getCurrentValue();this._endValue=endValue;this._springSystem.activateSpring(this.getId());for(var i=0,len=this._listeners.length;i<len;i++){var listener=this._listeners[i];listener.onSpringEndStateChange&&listener.onSpringEndStateChange(this);}return this;},getEndValue:function(){return this._endValue;},setVelocity:function(velocity){this._currentState.velocity=velocity;return this;},getVelocity:function(){return this._currentState.velocity;},setRestSpeedThreshold:function(restSpeedThreshold){this._restSpeedThreshold=restSpeedThreshold;return this;},getRestSpeedThreshold:function(){return this._restSpeedThreshold;},setRestDisplacementThreshold:function(displacementFromRestThreshold){this._displacementFromRestThreshold=displacementFromRestThreshold;},getRestDisplacementThreshold:function(){return this._displacementFromRestThreshold;},setOvershootClampingEnabled:function(enabled){this._overshootClampingEnabled=enabled;return this;},isOvershootClampingEnabled:function(){return this._overshootClampingEnabled;},isOvershooting:function(){return(this._startValue<this._endValue&&this.getCurrentValue()>this._endValue)||(this._startValue>this._endValue&&this.getCurrentValue()<this._endValue);},advance:function(time,realDeltaTime){var isAtRest=this.isAtRest();if(isAtRest&&this._wasAtRest){return;}var adjustedDeltaTime=realDeltaTime;if(realDeltaTime>Spring.MAX_DELTA_TIME_SEC){adjustedDeltaTime=Spring.MAX_DELTA_TIME_SEC;}this._timeAccumulator+=adjustedDeltaTime;var tension=this._springConfig.tension,friction=this._springConfig.friction,position=this._currentState.position,velocity=this._currentState.velocity,tempPosition=this._tempState.position,tempVelocity=this._tempState.velocity,aVelocity,aAcceleration,bVelocity,bAcceleration,cVelocity,cAcceleration,dVelocity,dAcceleration,dxdt,dvdt;while(this._timeAccumulator>=Spring.SOLVER_TIMESTEP_SEC){this._timeAccumulator-=Spring.SOLVER_TIMESTEP_SEC;if(this._timeAccumulator<Spring.SOLVER_TIMESTEP_SEC){this._previousState.position=position;this._previousState.velocity=velocity;}aVelocity=velocity;aAcceleration=(tension*(this._endValue-tempPosition))-friction*velocity;tempPosition=position+aVelocity*Spring.SOLVER_TIMESTEP_SEC*0.5;tempVelocity=velocity+aAcceleration*Spring.SOLVER_TIMESTEP_SEC*0.5;bVelocity=tempVelocity;bAcceleration=(tension*(this._endValue-tempPosition))-friction*tempVelocity;tempPosition=position+bVelocity*Spring.SOLVER_TIMESTEP_SEC*0.5;tempVelocity=velocity+bAcceleration*Spring.SOLVER_TIMESTEP_SEC*0.5;cVelocity=tempVelocity;cAcceleration=(tension*(this._endValue-tempPosition))-friction*tempVelocity;tempPosition=position+cVelocity*Spring.SOLVER_TIMESTEP_SEC*0.5;tempVelocity=velocity+cAcceleration*Spring.SOLVER_TIMESTEP_SEC*0.5;dVelocity=tempVelocity;dAcceleration=(tension*(this._endValue-tempPosition))-friction*tempVelocity;dxdt=1.0/6.0*(aVelocity+2.0*(bVelocity+cVelocity)+dVelocity);dvdt=1.0/6.0*(aAcceleration+2.0*(bAcceleration+cAcceleration)+dAcceleration);position+=dxdt*Spring.SOLVER_TIMESTEP_SEC;velocity+=dvdt*Spring.SOLVER_TIMESTEP_SEC;}this._tempState.position=tempPosition;this._tempState.velocity=tempVelocity;this._currentState.position=position;this._currentState.velocity=velocity;if(this._timeAccumulator>0){this.interpolate(this._timeAccumulator/Spring.SOLVER_TIMESTEP_SEC);}if(this.isAtRest()||this._overshootClampingEnabled&&this.isOvershooting()){this._startValue=this._endValue;this._currentState.position=this._endValue;this.setVelocity(0);isAtRest=true;}var notifyActivate=false;if(this._wasAtRest){this._wasAtRest=false;notifyActivate=true;}var notifyAtRest=false;if(isAtRest){this._wasAtRest=true;notifyAtRest=true;}for(var i=0,len=this._listeners.length;i<len;i++){var listener=this._listeners[i];if(notifyActivate){listener.onSpringActivate&&listener.onSpringActivate(this);}listener.onSpringUpdate&&listener.onSpringUpdate(this);if(notifyAtRest){listener.onSpringAtRest&&listener.onSpringAtRest(this);}}},systemShouldAdvance:function(){return!this.isAtRest()||!this.wasAtRest();},wasAtRest:function(){return this._wasAtRest;},isAtRest:function(){return Math.abs(this._currentState.velocity)<this._restSpeedThreshold&&this.getDisplacementDistanceForState(this._currentState)<=this._displacementFromRestThreshold;},setAtRest:function(){this._endValue=this._currentState.position;this._tempState.position=this._currentState.position;this._currentState.velocity=0;return this;},interpolate:function(alpha){this._currentState.position=this._currentState.position*alpha+this._previousState.position*(1-alpha);this._currentState.velocity=this._currentState.velocity*alpha+this._previousState.velocity*(1-alpha);},addListener:function(newListener){this._listeners.push(newListener);return this;},removeListener:function(listenerToRemove){removeFirst(this._listeners,listenerToRemove);return this;},removeAllListeners:function(){this._listeners=[];return this;},currentValueIsApproximately:function(value){return Math.abs(this.getCurrentValue()-value)<=this.getRestDisplacementThreshold();}});var PhysicsState=function PhysicsState(){};extend(PhysicsState.prototype,{position:0,velocity:0});var SpringConfig=rebound.SpringConfig=function SpringConfig(tension,friction){this.tension=tension;this.friction=friction;};extend(SpringConfig,{fromQcTensionAndFriction:function(qcTension,qcFriction){return new SpringConfig(QcValueConverter.tensionFromQcValue(qcTension),QcValueConverter.frictionFromQcValue(qcFriction));}});extend(SpringConfig.prototype,{friction:0,tension:0});var QcValueConverter={tensionFromQcValue:function(qcValue){return(qcValue-30.0)*3.62+194.0;},qcValueFromTension:function(tension){return(tension-194.0)/3.62+30.0;},frictionFromQcValue:function(qcValue){return(qcValue-8.0)*3.0+25.0;},qcValueFromFriction:function(friction){return(friction-25.0)/3.0+8.0;}};var MathUtil=rebound.MathUtil={mapValueInRange:function(value,fromLow,fromHigh,toLow,toHigh){fromRangeSize=fromHigh-fromLow;toRangeSize=toHigh-toLow;valueScale=(value-fromLow)/fromRangeSize;return toLow+(valueScale*toRangeSize);}}
+		var concat=Array.prototype.concat;var slice=Array.prototype.slice;function removeFirst(array,item){var idx=array.indexOf(item);idx!=-1&&array.splice(idx,1);}function compatCancelAnimationFrame(id){return typeof window!='undefined'&&window.cancelAnimationFrame&&cancelAnimationFrame(id);}function compatRequestAnimationFrame(func){var meth;if(typeof process!='undefined'){meth=process.nextTick;}else{meth=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.msRequestAnimationFrame||window.oRequestAnimationFrame;}return meth(func);}function bind(func,target){args=slice.call(arguments,2);return function(){func.apply(target,concat.call(args,slice.call(arguments)));};}function extend(target,source){for(var key in source){if(source.hasOwnProperty(key)){target[key]=source[key];}}}if(typeof exports!='undefined'){extend(exports,rebound);}else if(typeof window!='undefined'){window.rebound=rebound;}})();
+
+		var tabWidths=[];var tabWidthRunningSum=[];var navOffsets=[];var tabs=[];var slides=[];var captions=[];var downIndex=0;var endValue=0;var viewportWidth=0;var viewportHeight=0;var nav;var imageWidths=
+		[2500,2000,2500,2500,2500,2000,2500,1156,2500,2500,2000,2500,2500,2500,2000,1000,2126,2500,2500,2500,2000,1500,2500,2500,2500,2500,2500,2500,2500,2500,2500];var imageHeights=
+		[2500,330,1807,1807,2500,2000,1807,1500,2500,1866,1417,1807,1807,1062,2000,1470,1000,1807,1807,1807,2000,1500,1807,1807,1394,1807,1807,1394,1807,1807,1807];var springSystem=new rebound.SpringSystem();var mainSpring=springSystem.createSpring();var downSpring=springSystem.createSpring();var lastX=0;var panVelocity=0;var isDragging=false;$(document).ready(function($){viewportWidth=$("#wrapper").innerWidth();viewportHeight=$("#slides li").innerHeight();var totalWidth=calculateTabWidths();nav=document.getElementById('nav');layoutCaptions();$(window).on('resize',function(){layoutCaptions();});$("#nav").width(totalWidth);$("#nav li").each(function(i,val){navOffsets[i]=navOffsetForIndex(i);tabs[i]=val;});setupMainSpring();setupPanSupport();setupTabPressedStates();setupArrowKeys();$("#slides li").each(function(i,val){val.style['webkitTransform']='translate3d('+viewportWidth*i+'px, 0, 0)';val.style['MozTransform']='translate3d('+viewportWidth*i+'px, 0, 0)';slides[i]=val;});selectTabIndex(0,false);var down=[];$("#nav li").each(function(i,val){$(val).click(function(){selectTabIndex(i,true);});$(val).mousedown(function(){down[i]=true;pressDownOnTabIndex(i);});$(val).mouseup(function(){down[i]=false;releaseDownOnTabIndex(i);});$(val).mouseleave(function(){if(down[i]===true)releaseDownOnTabIndex(i);});$(val).mouseenter(function(){if(down[i]===true)pressDownOnTabIndex(i);});});$("#wrapper").mouseup(function(){down=[];});});setupMainSpring=function(){mainSpring.setSpringConfig(rebound.SpringConfig.fromQcTensionAndFriction(4.5,5.7));mainSpring.addListener({onSpringUpdate:function(spring){var progress=spring.getCurrentValue();var xTranslation=transitionForProgressInSteps(progress,navOffsets);if(Math.abs(spring.getVelocity())<0.05&&window.devicePixelRatio<1.1)xTranslation=Math.floor(xTranslation);nav.style['webkitTransform']='translate3d('+xTranslation+'px, 0, 0)';nav.style['MozTransform']='translate3d('+xTranslation+'px, 0, 0)';$("#slides li").each(function(i,val){var slideProgress=1-Math.abs(progress-i);if(slideProgress>0){var x=(i*viewportWidth)-(progress*viewportWidth);var scale=transitionForProgressInRange(slideProgress,0.6,1.0);val.style['webkitTransform']='translate3d('+x+'px, 0, 0) scale('+scale+')';val.style['MozTransform']='translate3d('+x+'px, 0, 0) scale('+scale+')';if(i<captions.length){var captionOpacity=transitionForProgressInRange(slideProgress,-8.0,1.0);captions[i].style['opacity']=captionOpacity;}}val.style['opacity']=(slideProgress>0)?1.0:0.0;var tabOpacity=transitionForProgressInRange(clampedProgress(slideProgress),0.2,1,0);tabs[i].style['opacity']=tabOpacity;});}});}
+		setupPanSupport=function(){var item=document.getElementById('slides');item.addEventListener('touchstart',function(e){var touch=e.touches[0];startDragging(touch.pageX);},false);item.addEventListener('touchmove',function(e){e.preventDefault();var touch=e.touches[0];continueDragging(touch.pageX);},false);item.addEventListener('touchend',function(e){endDragging();},false);item.addEventListener('touchcancel',function(e){endDragging();},false);item.addEventListener('mousedown',function(e){startDragging(e.clientX);},false);item.addEventListener('mousemove',function(e){if(isDragging)continueDragging(e.clientX);},false);item.addEventListener('mouseup',function(e){endDragging();},false);item.addEventListener('mouseleave',function(e){if(isDragging)endDragging();},false);}
+		startDragging=function(x){lastX=x;isDragging=true;viewportWidth=$("#wrapper").innerWidth();mainSpring.setAtRest();}
+		continueDragging=function(x){panVelocity=x-lastX;lastX=x;var progress=progressForValueInRange(panVelocity,0,-viewportWidth);var currentValue=mainSpring.getCurrentValue();if((currentValue+progress)<0||(currentValue+progress)>tabs.length-1)progress*=0.5;mainSpring.setCurrentValue(currentValue+progress);mainSpring.setAtRest();}
+		endDragging=function(){var currentPosition=mainSpring.getCurrentValue();var restPosition=endValue;var passedVelocityTolerance=(Math.abs(panVelocity)>3);var passedDistanceTolerance=Math.abs(currentPosition-restPosition)>0.3;var shouldAdvance=passedDistanceTolerance||passedVelocityTolerance;var advanceForward=(panVelocity<=0);if(shouldAdvance){var targetIndex=advanceForward?restPosition+1:restPosition-1;selectTabIndex(targetIndex,true);}else{selectTabIndex(restPosition,true);}var normalizedVelocity=progressForValueInRange(panVelocity,0,-viewportWidth);mainSpring.setVelocity(normalizedVelocity*30);panVelocity=0;isDragging=false;}
+		layoutCaptions=function(){var rightEdges=
+			[-850,270,-350,100,380,250,-1050,100,350,500,480,-1000,220,200,150,200,355,-1050,100,-1050,-800,200,200,200,-800,100,100,-800,100,100,100];var bottomEdges=
+			[-680,450,650,-450,600,650,450,400,700,-350,600,150,-450,325,600,400,250,650,550,750,800,-280,650,650,500,650,650,500,650,650,650];var applyBottomPadding=[false,true,false,false,false,false,true,true];var slideItems=$("#slides li");viewportWidth=slideItems.innerWidth();viewportHeight=slideItems.innerHeight();$(".caption").each(function(i,val){captions[i]=val;var scale=calculateContentScaleForIndex(i);var x=(viewportWidth/2.0)+rightEdges[i]*scale;var y=((viewportHeight/2.0)-(bottomEdges[i]*scale))*-1;var leftPadding=parseInt($(val).css("padding-left"),10);if(applyBottomPadding[i]){y-=leftPadding;}x=Math.round(x);y=Math.round(y);val.style['webkitTransform']='translate3d('+x+'px, '+y+'px, 0)';val.style['MozTransform']='translate3d('+x+'px, '+y+'px, 0)';captions[i].style.visibility="visible";});}
+		setupTabPressedStates=function(){downSpring.setSpringConfig(rebound.SpringConfig.fromQcTensionAndFriction(100,5.5));downSpring.addListener({onSpringUpdate:function(spring){var progress=spring.getCurrentValue();var scale=transitionForProgressInRange(progress,1.0,0.92);tabs[downIndex].style['webkitTransform']='scale('+scale+')';tabs[downIndex].style['MozTransform']='scale('+scale+')';}});}
+		pressDownOnTabIndex=function(index){downIndex=index;$("#nav li").each(function(i,val){if(i===index){downSpring.setEndValue(1);}});}
+		releaseDownOnTabIndex=function(index){$("#nav li").each(function(i,val){if(i===index){downSpring.setEndValue(0);}});}
+		selectTabIndex=function(i,animated){if(i<0)i=0;else if(i>tabs.length-1)i=tabs.length-1;if(animated){viewportWidth=$("#wrapper").innerWidth();endValue=i;mainSpring.setEndValue(i);}else{mainSpring.setCurrentValue(i);}}
+		navOffsetForIndex=function(i){if(i>0){var offset=(tabWidthRunningSum[i-1]+(tabWidths[i]/2.0))*-1;}else{var offset=((tabWidths[i]/2.0))*-1;}return offset;}
+		calculateTabWidths=function(){var totalWidth=0;$("#nav li").each(function(i,val){tabWidths[i]=$(val).innerWidth();tabWidthRunningSum[i]=tabWidths[i];if(i>0){tabWidthRunningSum[i]=tabWidthRunningSum[i]+tabWidthRunningSum[i-1];}totalWidth+=tabWidths[i];});return totalWidth;}
+		calculateContentScaleForIndex=function(i){var contentWidth=imageWidths[i];var contentHeight=imageHeights[i];var scale=((viewportWidth/viewportHeight)>(contentWidth/contentHeight))?(viewportHeight/contentHeight):(viewportWidth/contentWidth);return scale;}
+		setupArrowKeys=function(){var initialPress=true;var isRubberbanding=false;$(document).keydown(function(e){var currentIndex=endValue;var positionTolerance=0.001;var maxRubberbandDistance=0.03;if(e.keyCode==37){var inRubberbandableRegion=mainSpring.getCurrentValue()<positionTolerance;if(inRubberbandableRegion&&initialPress){isRubberbanding=true;mainSpring.setEndValue(mainSpring.getCurrentValue()-maxRubberbandDistance);}else if(!inRubberbandableRegion){isRubberbanding=false;selectTabIndex(currentIndex-1,true);}}else if(e.keyCode==39){var inRubberbandableRegion=mainSpring.getCurrentValue()>((tabs.length-1)-positionTolerance);if(inRubberbandableRegion&&initialPress){isRubberbanding=true;mainSpring.setEndValue(mainSpring.getCurrentValue()+maxRubberbandDistance);}else if(!inRubberbandableRegion){isRubberbanding=false;selectTabIndex(currentIndex+1,true);}}initialPress=false;});$(document).keyup(function(e){var currentIndex=endValue;if(e.keyCode==37&&isRubberbanding){selectTabIndex(currentIndex-1,true);}else if(e.keyCode==39&&isRubberbanding){selectTabIndex(currentIndex+1,true);}isRubberBanding=false;initialPress=true;});}
+		progressForValueInRange=function(value,startValue,endValue){return(value-startValue)/(endValue-startValue);}
+		transitionForProgressInRange=function(progress,startValue,endValue){return startValue+(progress*(endValue-startValue));}
+		clampedProgress=function(progress){if(progress<0)progress=0;else if(progress>1)progress=1;return progress;}
+		transitionForProgressInSteps=function(progress,steps){var transition=-1;if(steps.length<2){return transition};if(progress<0){transition=transitionForProgressInRange(progress,steps[0],steps[1]);}else if(progress>(steps.length-1)){normalizedProgress=progressForValueInRange(progress,Math.floor(progress),Math.floor(progress)+1);normalizedProgress=normalizedProgress+1;transition=transitionForProgressInRange(normalizedProgress,steps[(steps.length-2)],steps[(steps.length-1)]);}else if(progress==(steps.length-1)||progress==0){transition=steps[progress];}else{normalizedProgress=progressForValueInRange(progress,Math.floor(progress),Math.floor(progress)+1);transition=transitionForProgressInRange(normalizedProgress,steps[Math.floor(progress)],steps[Math.floor(progress)+1]);}return transition;}
+	</script>
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-70850661-2', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+	<div id=wrapper>
+
+		<ul id=slides>
+			<li class=i-am>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Креативный дизайн</p>
+				</div>
+			</li>
+			<li class=kamchatka-logo>
+				<div class=caption class="laptop">
+					<p class=year>2016</p>
+					<p>Логотип Камчатка</p>
+				</div>
+			</li>
+			<li class=farmily-ru>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>Farmily.ru<br />
+					Сайт визитка / магазин<br />
+					Семейная ферма<br />
+					Продажа фермерских продуктов<br />
+					Дизайн / Разработка / Раскрутка</p>
+				</div>
+			</li>
+			<li class=parking-page>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p class=black04>
+					Парковочная страница<br />
+					со сменой фона<br />
+					по клику</p>
+				</div>
+			</li>
+			<li class=santa>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Воздушный<br />
+					Санта Клаус</p>
+				</div>
+			</li>
+			<li class=empire-logo>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>
+					Ребренд логотипа<br />
+					Плоский дизайн</p>
+				</div>
+			</li>
+			<li class=empire-store>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>
+					Магазин<br />
+					Разработка<br />
+					Ajax корзина<br />
+					Фильтр товаров</p>
+				</div>
+			</li>
+			<li class=creative-ad-in-newpaper>
+				<div class=caption>
+					<p class=year>2014</p>
+					<p class=black04>
+					Креативная подача<br />
+					газетного<br />
+					объявления</p>
+				</div>
+			</li>
+			<li class=farmily-old-logo>
+				<div class=caption>
+					<p class=year>2013</p>
+					<p>Логотип<br />
+					Семейная ферма<br />
+					Ретро стиль</p>
+				</div>
+			</li>
+			<li class=avto-plastic>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>Логотип<br />
+					Авто товары<br />
+					Ретро стиль</p>
+				</div>
+			</li>
+			<li class=billboard-farmily>
+				<div class=caption>
+					<p class=year>2013</p>
+					<p>Билборд<br />
+					Дизайн 2D</p>
+				</div>
+			</li>
+			<li class=enjoy-kamchatka>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>Парковочная страница<br />
+					Креативный дизайн<br />
+					Разработка</p>
+				</div>
+			</li>
+			<li class=farmily-old>
+				<div class=caption>
+					<p class=year>2013</p>
+					<p>Магазин<br />
+					Креативный дизайн<br />
+					Разработка</p>
+				</div>
+			</li>
+			<li class=milk-product>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>Молочные продукты<br />
+					Креативный дизайн</p>
+				</div>
+			</li>
+			<li class=open-soul>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Креативный дизайн<br />
+					Открой свое сердце</p>
+				</div>
+			</li>
+			<li class=exit>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Выход есть<br />
+					Креатив</p>
+				</div>
+			</li>
+			<li class=work>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Болт на работу<br />
+					Креатив</p>
+				</div>
+			</li>
+			<li class=landing-imperia>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Посадочная страница<br />
+					Креативный дизайн</p>
+				</div>
+			</li>
+			<li class=landing-personal>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>Посадочная страница<br />
+					Эффект набора текста<br />
+					Креативный дизайн</p>
+				</div>
+			</li>			
+			<li class=design-landing>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Однастраницный сайт<br />
+					Выбор языка<br />
+					Презинтационый слайдер<br />
+					Форма заказа ajax</p>
+				</div>
+			</li>
+			<li class=embrace>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Объятия с пустотой<br />
+					Креатив<br />
+					SVG графика<br />
+					Постер</p>
+				</div>
+			</li>
+			<li class=origami>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>Оригами лебедь<br />
+					SVG графика<br />
+					Креатив<br />
+					Тени</p>
+				</div>
+			</li>
+			<li class=che-to-one>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p>Сайт<br />
+					Разработка и дизайн<br />
+					Заказ сюрпризов<br />
+					Версия №1<br />
+					Встроеное видео</p>
+				</div>
+			</li>				
+			<li class=che-to-flat>
+				<div class=caption>
+					<p class=year>2015</p>
+					<p class=black04>
+					Сайт<br />
+					Разработка и дизайн<br />
+					Плоский дизайн<br />
+					Заказ сюрпризов<br />
+					Версия №2</p>
+				</div>
+			</li>		
+			<li class=painted-men>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>
+					Позитивные<br />
+					человечки</p>
+				</div>
+			</li>	
+			<li class=snoway>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>
+					Сайт<br />
+					Разработка и дизайн<br />
+					О Камчатке</p>
+				</div>
+			</li>
+			<li class=travelacross>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>
+					Сайт<br />
+					Разработка и дизайн<br />
+					Путешествия</p>
+				</div>
+			</li>	
+			<li class=travelacross2>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>
+					Сайт<br />
+					Разработка и дизайн<br />
+					Путешествия</p>
+				</div>
+			</li>	
+			<li class=travelacross3>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>
+					Сайт<br />
+					Разработка и дизайн<br />
+					Путешествия</p>
+				</div>
+			</li>	
+			<li class=kamchatka-path>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>
+					Сайт<br />
+					Разработка и дизайн<br />
+					Путешествия</p>
+				</div>
+			</li>	
+			<li class=oil-usa>
+				<div class=caption>
+					<p class=year>2016</p>
+					<p>
+					Сайт<br />
+					Разработка и дизайн<br />
+					Oil USA</p>
+				</div>
+			</li>							
+		</ul>
+
+		<ul id=nav>
+			<li class=i-am>Постер</li><li class=kamchatka>Камчатка</li><li class=farmily-ru>Семейная ферма<div class=action-url><a rel=nofollow class=view href="http://farmily.ru/" target=_blank>смотреть сайт</a></div></li><li class=landing>Лендинг<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/parking-page/" target=_blank>смотреть демо</a></div></li><li class=santa>Санта</li><li class=empire-logo>Империя</li><li class=empire-store>Магазин<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/empire-store/" target=_blank>смотреть демо</a></div></li><li class=creative-ad-in-newpaper>Объявление</li><li class=farmily-old-logo>Лого в ретро стиле</li><li class=avto-plastic>Авто логотип</li><li class=billboard-farmily>Билборд</li><li class=enjoy-kamchatka>Лендинг<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/enjoy-kamchatka/" target=_blank>смотреть демо</a></div></li><li class=farmily-old>Магазин / Лендинг<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/farmily-old/" target=_blank>смотреть демо</a></div></li><li class=milk-product>Молочные продукты</li><li class=open-soul>Открой свое сердце</li><li class=exit>Выход есть</li><li class=work>Болт на работу</li><li class=landing-imperia>Сайт визитка<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/parking-page-2/" target=_blank>смотреть демо</a></div></li><li class=landing-personal>Сайт визитка<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/landing-personal/" target=_blank>смотреть демо</a></div></li><li class=design-landing>Сайт портфолио<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/design-landing/" target=_blank>смотреть демо</a></div></li><li class=embrace>Объятия</li><li class=origami>Оригами</li><li class=che-to-one>Заказ сюрпризов<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/che-to-one/" target=_blank>смотреть демо</a></div></li><li class=che-to-flat>Плоский дизайн<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/che-to-flat/" target=_blank>смотреть демо</a></div></li><li class=painted-men>Человечки</li><li class=snoway>Snoway<div class=action-url><a rel=nofollow class=view href="http://kamchatka.love/" target=_blank>смотреть сайт</a></div></li><li class=travelacross>Travel Across Parallax<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/travelacross/" target=_blank>смотреть демо</a></div></li><li class=travelacross>Travel Across #1<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/travelacross/autumn.html" target=_blank>смотреть демо</a></div></li><li class=travelacross>Travel Across #2<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/travelacross/bear.html" target=_blank>смотреть демо</a></div></li><li class=travelacross>Kamchatka Path<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/kamchatka-path/" target=_blank>смотреть демо</a></div></li><li class=travelacross>Oil USA<div class=action-url><a rel=nofollow class=view href="http://my-look.ru/demo/oil-usa/" target=_blank>смотреть демо</a></div></li>
+		</ul>
+		
+		<div class=fade id=leftFade></div>
+		<div class=fade id=rightFade></div>
+		
+		<div id="topLeft">
+			<ul id="social">
+			
+			<div class=tooltip >
+			<span class=tooltip-content>
+			<span class=tooltip-text>
+			
+			<span class=tooltip-inner>
+						<a rel=nofollow class="btn facebook-share" href="http://www.facebook.com/sharer.php?u=http://my-look.ru/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+						<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#facebook-share"/></svg></a>
+						<a rel=nofollow class="btn twitter-share" href="http://twitter.com/home?status=Hello! I'm Mikhail.. a freelance developer and designer from Russia, and this is my portfolio: http://my-look.ru/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+						<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#twitter-share"/></svg></a>
+						<a rel=nofollow class="btn vk-share" href="https://vk.com/share.php?url=http://my-look.ru/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+						<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#vk-share"/></svg></a>
+						<a rel=nofollow class="btn ok-share" href="https://connect.ok.ru/dk?cmd=WidgetSharePreview&st.cmd=WidgetSharePreview&st.shareUrl=http://my-look.ru/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+						<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#ok-share"/></svg></a>
+						<a rel=nofollow class="btn google-plus-share" href="https://plus.google.com/share?url=http://my-look.ru/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+						<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#google-plus-share"/></svg></a>
+						<a rel=nofollow class="btn mail-to-share" href="mailto:name1@mail.com,name2@mail.com?subject=Freelance%20my-look.ru&amp;body=Hello.%20I'm%20Mikhail..%0A%D0%B0%20freelance%20developer%20%26%20designer%20from%20Russia..%0ASee%20my%20portfolio%20http%3A%2F%2Fmy-look.ru%2F%0A" rel="nofollow">
+						<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#mail-to-share"/></svg></a>
+						<a rel=nofollow class="btn whatsapp-share" href="whatsapp://send?text=Hello! I'm Mikhail.. a freelance developer and designer from Russia, and this is my portfolio: http://my-look.ru/" target=_blank rel=nofollow>
+						<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#whatsapp-share"/></svg></a>
+			</span>
+			</span></span>
+						<div class=share></div>			
+			</div>
+					
+				<li>
+					<a class=cd-btn href="#0" rel=nofollow>
+					Кто</br>
+					 Я
+					</a>
+				</li>
+				
+				<li>
+					<a class="lang view" href="http://my-look.ru/en.html" rel=nofollow>
+					En
+					</a>
+				</li>				
+			</ul>
+		</div>
+			
+	</div>
+</body>
+
+		<div class="cd-panel from-right">
+			<header class=cd-panel-header>
+
+				<span class="herrbrueckers myface">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115044 115044" shape-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"><path d="m115044 57522c0 29963-25729 57522-57522 57522-31794 0-57522-25729-57522-57522 0-31794 25728-57522 57522-57522 31793 0 57522 25728 57522 57522" fill="#fff"/><g fill="#000000"><path d="m94032 57941c-61 670-182 2618-304 3105-122 426-61 487-427 548-426 61-1156 304-1400 1826-304 1522-1095 4445-1826 6758-731 2313-1826 5539-6757 7001-5236 1582-12785 730-16194-1522-3226-2131-3896-3531-5053-5966-1157-2436-1826-6697-4383-6697-2557 0-3287 3348-4444 5966-1461 3348-3287 5296-5479 6757-2130 1461-5783 2253-9435 2253-3653 0-8280-1096-10593-2922-852-670-1461-1462-1948-2314-670-1156-1096-2435-1400-3652v-61c-61-183-61-305-122-487 0-61 0-61 0-122-61-183-61-365-122-487-61-122-61-244-122-426 0-61 0-61 0-122 0-122-61-183-61-305 0-61 0-121-61-182 0-61-60-183-60-243 0-62-61-184-61-244 0-61-61-122-61-183 0-61-61-182-61-243 0-61 0-122-61-183 0-122-61-182-61-304 0-61 0-61-61-122 1-122-60-182-60-304 0-61 0-61-61-122 0-122-61-183-61-305 0-61 0-61 0-121 0-122-61-183-61-304v-62c0-122-61-182-61-304 0 0 0 0 0-61 0-122-61-182-61-304-183-548-304-975-365-1218 0-61-61-122-61-182-305-427-609-609-974-609-183 0-305-61-366-183 0 0 0-61-60-61 0 0 0 0 0-61v-61-61-61c0-60 0-60 0-121v-61c0-61 0-122-61-182-121-609-365-2679-304-3227 0-61 0-61 0-122l61-61c0 0 61-61 122-61 60-60 121-60 182-121 365-183 974-365 1583-487 121 0 243-61 365-61 122 0 244-61 365-61h61c122 0 243-61 365-61 61 0 122 0 183 0 0 0 61 0 122 0h61c1948-304 8401-1522 15949-913 8036 670 11202 1644 12967 2131 1766 486 4323 730 4323 730 4444 0 6696-2070 12418-2557 0 0 7854-791 13272-304 5418 426 9375 1035 10227 1339 852 426 548 548 487 1157m-52476-974c-2557-182-5053-243-8644 0-3653 243-6149 1948-6880 4261-730 2314-243 10045 3166 13028 3409 2983 11810 3044 16437 1279 4627-1766 7244-8401 7244-12663-61-4322-8157-5662-11323-5905m40788 61c-1887-243-3714-243-4566-304-2070 0-5357 243-8097 669-2739 426-6027 2070-7000 4201-974 2130 364 7000 2678 10471 2314 3470 6697 4627 12723 4627 1705 0 3105-183 4323-548 3044-914 4687-2740 5540-4810 1217-2922 2435-7305 913-10958-974-2131-3897-2983-6514-3348"/><path d="m60214 99655c-853 1339-2435 3105-3226 3105-792 0-2801-2252-3227-2922-1157-1583 1826-1826 3227-1826 1400 0 4139 183 3226 1643"/><path d="m57688 93371c-4809 0-8766-547-8766-1522 0-973 3896 122 8766 122 4810 0 8767-2009 8767-1095 0 1035-3896 2495-8767 2495"/><path d="m32485 43331c61 1947 122 3835 244 5722 61 913 61 1765 122 2678 0 792 0 853 61 1766-366-791-427-791-731-1583-365-913-791-2070-1096-2983-609-1826-974-3287-1400-5114-426-1887-669-3774-791-5661v-670-731c0-425 0-913 61-1400 61-974 121-1887 243-2800 243-1887 609-3714 1157-5540 548-1765 1339-3530 2313-5113 731-1157 1644-2314 2618-3288 0 0 61 0 61-61 365-243 791-547 1217-852 487-243 914-609 1461-852 244-122 487-304 792-365 304-122 548-244 852-366 304-121 548-182 852-304 122-61 305-122 426-122l426-122c609-182 1218-243 1827-304 304 0 609-61 913-61 304 0 609 0 913 0 305 0 548 0 852 61 305 0 548 0 792 61 548 61 1035 122 1522 182 487 61 913 122 1278 244 365 61 731 122 974 183 548 121 852 182 852 182 0 0-304-121-791-365-243-122-548-244-974-365-183-61-366-122-609-183-182-61-426-121-670-182-243-61-486-122-730-183-243-61-548-122-792-183-243-61-547-61-852-121-304-61-609-61-913-61-304 0-609-61-913-61-305 0-609 0-974 61-305 0-670 61-974 121-305 61-670 122-974 183l-487 122c-122 61-244 61-365 122 243-122 487-244 730-366 1705-852 3470-1461 5358-1826 1826-365 3774-548 5661-548 1887 0 3835 61 5783 183 1887 122 3835 304 5723 608 1887 305 3774 792 5540 1401 913 304 1765 669 2679 1034 182 61 364 183 547 244 122 61 304 183 487 304 183 122 426 244 609 427 243 182 426 365 670 548 243 182 426 426 669 669 182 244 426 548 609 853 182 304 365 608 487 913l183 487c60 182 121 365 182 487 61 182 61 365 122 487 61 182 61 365 121 487 0 182 62 304 62 487 0 183 0 304 0 487 0 304 0 609 0 913 0 304-62 548-62 730 0 244-60 427-60 609-61 305-61 487-61 487 0 0 61-183 182-487 61-182 123-365 183-548 61-243 122-487 183-791 61-304 122-609 122-913 0-183 0-305 0-487 0-183 0-366-61-548 0-183-61-365-61-548 0-183-61-365-122-548-61-183-121-365-183-548l-182-548c-183-365-365-670-548-1035-183-304-426-548-609-791 1218 913 2374 1948 3227 3166 1096 1522 1704 3409 1826 5296v304l305-61c425-60 791-121 1156-60 366 60 731 182 1096 365 366 182 670 426 913 669 305 244 548 548 792 853 243 304 426 669 609 973 182 366 364 731 547 1097 61 182 182 365 244 547 60 183 122 366 182 548 122 366 244 792 365 1157l122 609 122 608c61 427 182 792 182 1218 62 426 122 853 122 1218 61 426 61 852 61 1278 61 852 61 1705 0 2496 0 852-121 1705-182 2557l-122 791c-61 244-61 548-122 792-61 548-122 1095-243 1582-61 548-183 1036-305 1583-122 548-244 1035-365 1583-122 548-244 1035-426 1583-122 548-305 1035-487 1522-183 487-366 1035-548 1522-183 426-365 852-548 1218-183 0-365-61-548-61-304 0-609-61-913-61l122-2679 61-2861 60-2862c0-974 61-1948 0-2861 0-974-60-1948-182-2922-61-974-243-1948-427-2861-425-1887-1095-3775-2130-5479-1096-1705-2618-3044-4262-4079-852-487-1765-913-2678-1278-243-61-487-183-731-244-243-61-486-121-730-182-487-61-974-122-1461-183-1948-122-3896-61-5844 122-1949 122-3836 304-5723 487-1887 182-3835 365-5722 669-1888 244-3835 548-5723 974-486 122-974 244-1461 366l-669 182-670 244c-913 304-1826 609-2739 913-914 365-1827 730-2679 1218-426 243-852 548-1217 791-183 122-366 243-609 426-183 122-366 305-609 426-791 609-1522 1218-2192 2009-669 792-1156 1705-1461 2679 0 791-61 1278-61 1765 0 487-61 974-61 1461 0 913 0 1888 0 2862"/></g></svg>
+				</span>
+
+				<a href="#0" class=cd-panel-close>
+				</a>
+				
+			</header>
+			
+			<div class=cd-panel-container>
+				<div class=cd-panel-content>
+					
+					<div class=share-txt-up>
+						<h1>Привет. Я <strong>Михаил</strong>..</br>
+						<strong>Внештатный разработчик и дизайнер</strong> из России.
+						Люблю минимализм, позновать все новое и обожаю Камчатку.</br>
+						Я <strong>работаю</strong> с векторной и растовой <strong>графикой</strong>..</br>
+						<strong>HTML5 &bull; CSS3 &bull; JS</strong>..</br></br>
+					</div>	  
+					<div class=share-txt>
+						Если <strong>Вам нужно что то</strong> - пожалуйста <strong>свяжитесь</strong> со мной:</h1>
+					</div>
+
+			<div class=tooltip2 >
+			<span class=tooltip-content2>
+				<span class=tooltip-text2>
+				
+					<span class=tooltip-inner2>
+						zaza41rus@gmail.com
+					</span>
+				</span>
+			</span>
+						<a rel=nofollow class="btn my-email" href="
+							mailto:zaza41rus@gmail.com?subject=Freelance%20my-look.ru&amp;body=------%20%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%2C%20%D0%9C%D0%B8%D1%85%D0%B0%D0%B8%D0%BB%20------%20%0A%0A%D0%92%D0%B0%D1%88%D0%B5%20%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5..%0A%0A%D0%A1%20%D1%83%D0%B2%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%D0%BC%2C%20%D0%92%D0%B0%D1%88%D0%B5%20%D0%B8%D0%BC%D1%8F.
+						" target=_blank>
+							<svg width=100 height=100 fill-rule="evenodd" viewbox="0 0 7198 7198"><use xlink:href="#my-email"/></svg>
+						</a>			
+			</div>		
+
+			<div class=tooltip2 >
+			<span class=tooltip-content2>
+				<span class=tooltip-text2>
+				
+					<span class=tooltip-inner2>
+						facebook
+					</span>
+				</span>
+			</span>
+						<a rel=nofollow class="btn my-facebook" href="https://www.facebook.com/zaza41rus" target=_blank>
+							<svg width=100 height=100 fill-rule="evenodd" viewbox="0 0 25700 25700"><use xlink:href="#my-facebook"/></svg>
+						</a>		
+			</div>
+
+			
+			
+					<div class=share-txt>
+						<h2><strong>Скачивайте</strong> и используйте мои <strong>работы</strong></br>в своих проектах совершенно <strong>бесплатно</strong>:</h2>
+					</div>	
+
+			<div class=tooltip2 >
+			<span class=tooltip-content2>
+				<span class=tooltip-text2>
+				
+					<span class=tooltip-inner2>
+						dropbox
+					</span>
+				</span>
+			</span>
+						<a rel=nofollow class="btn download" href="https://www.dropbox.com/sh/2dqg0amd37ukncv/AAAnj_JLOloozG4C4Y85nGhGa?dl=0" target=_blank>
+							<svg width=110 height=110 fill-rule="evenodd" viewbox="0 0 7084 6663"><use xlink:href="#download"/></svg>
+						</a>			
+			</div>					
+		
+
+			</div>
+		</div>
+	<script>jQuery(document).ready(function($){$('.cd-btn').on('click',function(event){event.preventDefault();$('.cd-panel').addClass('is-visible');});$('.cd-panel').on('click',function(event){if($(event.target).is('.cd-panel')||$(event.target).is('.cd-panel-close')){$('.cd-panel').removeClass('is-visible');event.preventDefault();}});});</script>
+	<script>Share={vkontakte:function(e,o,n,t){url="http://vkontakte.ru/share.php?",url+="url="+encodeURIComponent(e),url+="&title="+encodeURIComponent(o),url+="&description="+encodeURIComponent(t),url+="&image="+encodeURIComponent(n),url+="&noparse=true",Share.popup(url)},odnoklassniki:function(e,o){url="https://connect.ok.ru/dk?cmd=WidgetSharePreview&st.cmd=WidgetSharePreview&st.shareUrl=",url+="&st.comments="+encodeURIComponent(o),url+="&st._surl="+encodeURIComponent(e),Share.popup(url)},facebook:function(e,o,n,t){url="http://www.facebook.com/sharer.php?s=100",url+="&p[title]="+encodeURIComponent(o),url+="&p[summary]="+encodeURIComponent(t),url+="&p[url]="+encodeURIComponent(e),url+="&p[images][0]="+encodeURIComponent(n),Share.popup(url)},twitter:function(e,o){url="http://twitter.com/share?",url+="text="+encodeURIComponent(o),url+="&url="+encodeURIComponent(e),url+="&counturl="+encodeURIComponent(e),Share.popup(url)},mailru:function(e,o,n,t){url="https://plus.google.com/share?url=",url+="url="+encodeURIComponent(e),url+="&title="+encodeURIComponent(o),url+="&description="+encodeURIComponent(t),url+="&imageurl="+encodeURIComponent(n),Share.popup(url)},me:function(e){return console.log(e.href),Share.popup(e.href),!1},popup:function(e){window.open(e,"","toolbar=0,status=0,width=626,height=436")}};</script>
+
+		<div class=none>
+			<svg width=0 height=0><path id=facebook-share d="m12787 18806v-6497h2181l326-2532h-2507v-1617c0-733 204-1233 1255-1233h1341v-2265c-232-31-1028-100-1954-100-1933 0-3257 1180-3257 3347v1868h-2186v2532h2186v6497h2615"/></svg>
+			<svg width=0 height=0><path id=twitter-share d="m18806 7267c-524 232-1087 389-1678 460 603-362 1066-935 1285-1617-565 335-1190 578-1856 709-533-568-1293-923-2133-923-1614 0-2923 1309-2923 2923 0 229 26 452 76 665-2429-121-4582-1285-6023-3053-252 432-396 934-396 1469 0 1014 516 1909 1300 2433-479-15-929-147-1323-366-1 12-1 25-1 37 0 1416 1008 2597 2344 2865-245 67-503 103-769 103-189 0-372-18-550-53 372 1162 1451 2006 2730 2030-1001 784-2261 1251-3630 1251-236 0-468-14-697-41 1293 829 2830 1313 4480 1313 5375 0 8314-4453 8314-8315 0-126-2-252-8-378 545-412 1066-926 1458-1512"/></svg>
+			<svg width=0 height=0><path id=vk-share d="m11531 15453h852c0 0 257-28 388-170 121-130 117-374 117-374 0 0-16-1142 514-1310 523-166 1194 1104 1905 1592 538 370 947 289 947 289l1902-27c0 0 995-61 523-844-38-63-275-578-1414-1636-1193-1107-1033-928 404-2843 875-1166 1224-1878 1115-2183-104-291-748-214-748-214l-2141 13c0 0-159-21-277 49-115 69-189 230-189 230 0 0-339 902-791 1670-954 1619-1335 1705-1491 1604-363-234-272-941-272-1444 0-1569 238-2223-464-2393-232-56-404-93-999-99-765-8-1411 2-1778 182-243 119-431 385-317 400 142 19 462 87 632 318 220 299 212 969 212 969 0 0 126 1848-294 2077-289 157-685-164-1535-1633-436-753-765-1585-765-1585 0 0-63-155-176-238-138-101-329-133-329-133l-2036 13c0 0-305 9-417 142-100 118-8 362-8 362 0 0 1593 3728 3397 5607 1655 1722 3533 1609 3533 1609"/></svg>
+			<svg width=0 height=0><path id=ok-share d="m11684 11772c1991 0 3605-1614 3605-3605 0-1991-1614-3605-3605-3605-1991 0-3605 1614-3605 3605 0 1991 1614 3605 3605 3605m0-5378c980 0 1774 794 1774 1773 0 980-794 1774-1774 1774-979 0-1773-794-1773-1774 0-979 794-1773 1773-1773m4156 5818c-204-409-768-749-1517-159-1012 798-2639 798-2639 798 0 0-1626 0-2639-798-749-590-1313-250-1516 159-355 453 46 1057 950 1638 773 496 1835 682 2521 751l-573 572c-806 806-1584 1585-2124 2125-323 322-323 846 0 1169l97 97c161 161 372 242 583 242h3c211 0 422-81 583-242l2125-2124c806 806 1584 1584 2124 2124 323 323 846 323 1169 0l97-97c323-323 323-847 0-1169l-2124-2125-574-574c686-45 1737-257 2503-749 905-581 1305-925 951-1638"/></svg>
+			<svg width=0 height=0><path id=google-plus-share d="m9094 11037v1554h2545c-104 666-777 1955-2545 1955-1547 0-2810-1282-2810-2862 0-1580 1263-2862 2810-2862 881 0 1470 376 1807 700l1230-1185c-790-738-1813-1185-3037-1185-2505 0-4532 2027-4532 4532 0 2506 2027 4532 4532 4532 2616 0 4351-1838 4351-4428 0-298-32-525-45-751h-4280m9452 0h-1295v-1295h-1295v1295h-1295v1295h1295v1295h1295v-1295h1295m0-1295"/></svg>
+			<svg width=0 height=0><path id=mail-to-share fill-rule=evenodd d="m5047 6391h51 13145 53c266 0 484 219 484 485v9616c0 267-218 485-484 485h-13275c-267 0-485-218-485-485v-9616c0-266 218-485 485-485m12654 1157h-50v8274h-11934v-8274h-49l4526 3729c497 409 994 818 1490 1227l1484-1223 4533-3733m-1789 0h-8440l3453 2840 759 625 753-620 3475-2845"/></svg>
+			<svg width=0 height=0><path id=whatsapp-share d="m16707 6632c-1333-1334-3105-2069-4993-2070-3891 0-7057 3166-7059 7058 0 1244 325 2458 943 3529l-1002 3657 3742-981c1031 562 2192 858 3373 859h3c0 0 0 0 0 0 3890 0 7056-3167 7058-7058 1-1886-733-3660-2065-4994m-4993 10860h-3c-1052-1-2085-284-2986-818l-214-127-2220 582 593-2165-140-222c-587-934-897-2013-897-3122 1-3234 2633-5866 5869-5866 1567 1 3040 612 4148 1721 1107 1109 1457 2583 1456 4150-1 3235-2633 5867-5866 5867m3218-4394c-177-88-1044-515-1205-574-162-59-280-88-397 88-118 177-456 574-559 692-102 118-205 132-382 44-176-88-744-274-1418-875-524-468-878-1045-981-1222-103-177-11-272 77-360 80-79 177-206 265-309 88-103 117-177 176-294 59-118 30-221-15-309-44-88-396-957-543-1310-143-344-289-297-397-302-103-6-221-7-338-7-118 0-309 45-470 221-162 177-618 603-618 1445 0 868 632 1707 720 1825 89 118 1244 1899 3013 2663 421 181 750 290 1006 345 422 135 807 116 1110 70 339-50 1044-426 1191-838 147-412 147-766 103-839-44-74-162-118-338-206"/></svg>
+			<svg width=0 height=0><path id=share-download-share d="m60308 10104h10421c8924 0 14566 5758 14566 14739 0 8982-5613 14739-14566 14739h-10421v-29478m-44792-10104l-15516 9989 10737 8665-10737 8463 15516 10191 10824-9011 10824 9011 15458-10076-10709-8578 10709-8579-15458-10075-10824 9010-10824-9010m10853 30226l-10853 9010-4663-3022v3397l15516 9298 15487-9298v-3397l-4635 3022-10852-9010m15544-11572l-15573 9643-15603-9643 15603-9644 15573 9644m165552 9874l7830 11111h-6592l-4606-6736-4663 6736h-6247l7744-10967-7283-10508h6592l4145 6103 4203-6103h6247l-7370 10364m-23893 11629c-6246 0-10535-4605-10535-11198 0-6620 4289-11255 10535-11255 6247 0 10508 4606 10508 11255 0 6593-4290 11198-10508 11198m0-17387c-2993 0-4605 2591-4605 6189 0 3541 1640 6161 4605 6161 2965 0 4606-2591 4606-6161 0-3598-1640-6189-4606-6189m-27807 16841h-6017v-31234h6017v11544c950-1152 3080-2246 5383-2246 6246 0 9758 5095 9758 11256 0 6160-3512 11198-9758 11198-2303 0-4433-1094-5383-2246v1728m0-4597c662 1497 2245 2504 4030 2504 3224 0 5152-2591 5152-6016 0-3455-1928-6045-5152-6045-1728 0-3368 1065-4030 2504v7053m-23749 15142h-5959v-29420h5959v1784c950-1151 3080-2245 5383-2245 6246 0 9787 5182 9787 11256 0 6045-3541 11198-9787 11198-2303 0-4433-1094-5383-2246v9673m0-15142c459 1497 2302 2504 4030 2504 3224 0 5152-2591 5152-6016 0-3455-1928-6045-5152-6045-1785 0-3311 1065-4030 2504v7053m-19028 7686c-6247 0-10536-4606-10536-11198 0-6621 4289-11256 10536-11256 6246 0 10507 4606 10507 11256 0 6592-4261 11198-10507 11198m0-17387c-2994 0-4606 2591-4606 6189 0 3541 1640 6160 4606 6160 2965 0 4605-2591 4605-6160 0-3598-1640-6189-4605-6189m-11889 1295c-806-489-1845-720-2994-720-2015 0-3656 1066-4088 3023v13299l-5930 1v-21475h5959v2101c921-1526 2677-2591 4807-2591 1008 0 1929 202 2246 374v5988m-30600 10191c5613 0 8693-3599 8693-9327 0-5758-3080-9356-8693-9356h-4088v18683h4088"/></svg>
+			<svg width=0 height=0><path id=download d="m2263 4165h-221c-187 0-34 0-86 0-326 1-639 3-959-164-689-360-953-974-910-1554 17-230 83-456 191-657 109-203 259-381 444-517 407-299 975-394 1620-91 248-596 740-957 1291-1101 309-81 637-93 950-39 315 53 617 173 871 356 431 309 728 794 733 1439 355 70 608 349 731 692 54 148 82 310 83 471 1 163-25 326-82 475-147 385-485 684-1055 690h-2-879v-340h879v1c403-4 639-209 739-472 43-111 62-232 62-353-1-122-23-245-63-358-97-268-300-479-579-484-7 0-13 0-20-1-94-6-164-87-158-180 40-594-210-1034-587-1304-212-152-465-252-730-298-267-45-546-35-808 33-498 130-937 474-1117 1051-4 16-10 32-19 47-46 81-150 110-231 63-583-334-1085-276-1428-23-144 105-261 244-346 402-85 160-138 338-152 522-33 457 178 942 728 1230 246 128 518 127 802 125 109 0-42-1 87-1h221v340m338 932l907 906v-3814h340v3814l906-906 240 240-1196 1197-120 120-121-120-1196-1197 240-240"/></svg>
+			<svg width=0 height=0><path id=view d="m3542 3061c149 0 270 121 270 270 0 150-121 271-270 271-150 0-271-121-271-271 0-149 121-270 271-270m-2611 680c783 652 1656 993 2557 993 877 1 1786-322 2672-996l206 269c-947 721-1927 1066-2878 1066-982 0-1928-369-2774-1072l217-260m-890-320c286-451 643-819 1047-1105 691-489 1516-733 2349-739 831-6 1672 224 2397 683 459 292 873 676 1209 1151l-276 195c-309-436-690-789-1115-1059-670-424-1446-637-2214-631-765 5-1522 229-2154 677-367 259-693 596-956 1010l-287-182m3502-1025c257 0 491 105 661 274 169 170 273 403 273 661 0 258-104 492-273 661-170 170-404 275-661 275-258 0-492-105-661-275-169-169-274-403-274-661 0-258 105-491 274-661 169-169 403-274 661-274m420 513c-107-107-256-173-420-173-165 0-314 66-421 173-107 108-174 257-174 422 0 165 67 314 174 422 107 107 256 174 421 174 164 0 313-67 420-174 108-108 174-257 174-422 0-165-66-314-174-422"/></svg>
+			<svg width=0 height=0><path id=my-facebook d="m25700 25700h-7967-4006-13727v-1214h13727v-8739h-3349v-3879h3349v-2860c0-3319 2027-5127 4989-5127 1419 0 2638 106 2993 153v3469l-2054 1c-1611 0-1922 765-1922 1888v2476h3840l-499 3879h-3341v8739h7967v1214"/></svg>
+			<svg width=0 height=0><path id=my-email d="m250 1087h6698c138 0 250 113 250 250v5611c0 138-112 250-250 250h-6698c-137 0-250-112-250-250v-5611c0-137 113-250 250-250m6049 5135v160h-320v-160-3661l-2240 1789c-61 48-145 46-202-1l-2238-1788v3661 160h-320v-160-3993c0-35 12-70 35-100 55-69 156-80 225-25l2400 1917 2393-1911c28-25 66-41 107-41 89 0 160 72 160 160v3993m579-4815h-6558v5471h6558v-5471"/></svg>
+			<svg width=0 height=0><path id=share d="m1983995 1545672c277681 0 502785 225104 502785 502785 0 277680-225104 502784-502785 502784-277680 0-502784-225104-502784-502784 0-53923 8523-105850 24238-154542l-531450-299395c-92176 106356-228268 173622-380063 173622-277681 0-502785-225104-502785-502784 0-277681 225104-502785 502785-502785 156555 0 296401 71555 388602 183749l519062-274787c-13248-45053-20389-92720-20389-142061 0-277680 225104-502784 502784-502784 277681 0 502785 225104 502785 502784 0 277681-225104 502785-502785 502785-156555 0-296391-71558-388602-183746l-519062 274784c13247 45053 20389 92720 20389 142061 0 53923-8523 105847-24238 154542l531450 299394c92187-106352 228267-173622 380063-173622"/></svg>
+		</div>
+	
+</html>	
+<!-- Localized -->
+
+
+
+
+
+
+
+
+

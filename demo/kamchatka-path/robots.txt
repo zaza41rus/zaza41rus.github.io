@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: 
+
+Sitemap: http://kamchatka-path.com/sitemap.xml

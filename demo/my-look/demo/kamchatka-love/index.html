@@ -1,0 +1,3404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Путешествия по Камчатке</title>
+	<meta name="identifier-url" content="http://kamchatka.love/" />
+	<meta name="title" content="Путешествия по Камчатке" />
+	<meta name="description" content="Отдых на Камчатке." />
+	<meta name="abstract" content="Отдых на Камчатке." />
+	<meta name="keywords" content="Камчатка, отдых, охота, рыбалка, дайвинг, сплав, реки, медведи, сноуборд, лыжи, параплан, туры, россия, туристы, гейзеры, озера, рыба, жилье, бронирование" />
+	<meta name="author" content="Mikhail Lebedev" />
+	<meta name="revisit-after" content="15" />
+	<meta name="language" content="RU" />
+	<link rel="alternate" hreflang="en" href="http://kamchatka.love/en.html" />
+	<meta name="copyright" content="© 2016 Mikhail Lebedev" />
+	<meta name="robots" content="All" />
+
+	<meta property="og:image" content="http://kamchatka.love/kamchatka-share.jpg">
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta property="og:title" content="Путешествия по Камчатке"/>
+	<meta property="og:description" content="Отдых на Камчатке.">
+	<meta property="og:url" content="http://kamchatka.love/"/>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<!-- Icon -->
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="favicons/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="favicons/manifest.json">
+	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+    
+    <!--  
+        Stylesheets and Preprocessors
+        ==============================
+
+        You can always bring in CSS files manually with `<link>` tags, or asynchronously
+        using a solution like AMD (RequireJS).  Or, if you like, you can take advantage 
+        of Sails' conventional asset pipeline (boilerplate Gruntfile).
+
+        By default, stylesheets from your `assets/styles` folder are included
+        here automatically (between STYLES and STYLES END). Both CSS (.css) and LESS (.less)
+        are supported. In production, your styles will be minified and concatenated into
+        a single file.
+        
+        To customize any part of the built-in behavior, just edit `tasks/pipeline.js`.
+        For example, here are a few things you could do:
+            
+            + Change the order of your CSS files
+            + Import stylesheets from other directories
+            + Use a different or additional preprocessor, like SASS, SCSS or Stylus
+    -->
+
+<style></style>
+    <!-- <link rel="stylesheet" href="font/font.css"> -->
+<!--	 <link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />-->
+    <link rel="stylesheet" href="min/production.min.css">
+    <!--STYLES END-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  </head>
+
+  <body>
+  
+	  <audio autoplay>
+		  <source src="audio/headpiece.ogg" type="audio/ogg; codecs=vorbis">
+		  <source src="audio/headpiece.mp3" type="audio/mpeg">
+	  </audio>
+  
+    <!-- pages/home.ejs -->
+<div id="perspective" class="perspective effect-peek">
+    <!--<canvas id="menuBackground" data-processing-sources="viz/polygontest.pde"></canvas>-->
+
+
+	
+    <div class="container parallax" id="container">
+        <div class="rgrid special backgrounded-rgrid">
+            <div class="row backgrounded clearfix special">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+        </div>
+        
+        <div class="rgrid menugridthingy">
+            <div id="header" class="row header clearfix">
+                <a id="hamburger" style="visibility:hidden;"></a>
+                <a id="requestinvite" style="visibility:hidden;">ЗАЯВИТЬ</a>
+            </div>
+        </div>
+ 
+
+
+
+
+	
+        <div class="wrapper">
+            <div class="innerWrapper">
+                <div class="rgrid">
+                    <div class="row clearfix">
+                        <div class="column"></div>
+                        <div class="column badge-area">
+                            <div class="parallaxy-animate" style="display:block;width:100%;height:100px;" parallaxy-options='{"multiplier":"0.5", "direction":"up", "positionType": "relative"}'>
+                                <h1 class="giantmantext giant-2016" id="heroYear" style="visibility:hidden;">20<span>16</span></h1>    
+                            </div>
+                
+                            <div class="parallaxy-animate" style="display:block;width:100%;height:100px;" parallaxy-options='{"multiplier":"0.06", "direction":"up", "positionType": "relative"}'>
+                                <div class="vert-unified-text" id="nonConf" style="visibility:hidden;">
+									<a class="enverion" href="en.html">En<span></span></a>lang
+								</div>
+                            </div>
+							
+							
+							
+							
+							
+							
+                            <div class="reticle mountain show-on-small"></div>
+
+                            <h2 class="show-on-small" id="parkCitySmall">РОССИЯ</h2>
+                            <h3 class="show-on-small">Начинается <span class="blue-color"> здесь</span></h3>
+                            
+                            <div class="vertical-icons show-on-small" parallaxy-options='{"multiplier":"0.3", "direction":"down", "positionType": "relative"}'>
+                                <a class="icon twitter" href="https://twitter.com/Snoway_ru" target="_blank">Twitter</a>
+                                <a class="icon facebook" href="https://www.facebook.com/KamchatkaLove/" target="_blank">Facebook</a>
+                                <a class="icon instagram" href="https://www.instagram.com/kamchatkalove/" target="_blank">Instagram</a>
+								<a class="icon vk" href="https://vk.com/snoway_ru" target="_blank">VK</a>
+                            </div>
+                        </div>
+                        <div class="column parallaxy-animate" parallaxy-options='{"multiplier":"0.25", "direction":"up", "positionType": "relative"}'>
+
+                            <div class="epicurrence-badge parallaxy-animate show-on-small" parallaxy-options='{"multiplier":"0.7", "direction":"up", "positionType": "relative"}'>
+                                <img data-src="/images/badges/big-badge.svg"> 
+                            </div>
+                            <h1 class="giantmantext utahtext" parallaxy-options='{"multiplier":"0.25", "direction":"up", "positionType": "relative"}' id="bigUtah">КАМЧАТКА</h1>
+                            
+                            <div class="horz-credit show-on-small parallaxy-animate" parallaxy-options='{"multiplier":"0.7", "direction":"down", "positionType": "relative"}'>
+                                <span class="horz-credit-line"></span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WEB DES &nbsp;  & &nbsp; DEV &nbsp; <span class="blue-rally"><a class="HoverLine-not-blink" href="http://my-look.ru/" target="_blank">MIKHAIL</a></span>
+                            </div>
+                        </div>
+                        <div class="column column-half badge-area hide-on-small">
+
+                            <div class="epicurrence-badge parallaxy-animate hide-on-small" parallaxy-options='{"multiplier":"0.7", "direction":"up", "positionType": "relative"}'>
+                                <img id="bigBadge" style="visibility:hidden;" data-src="/images/badges/big-badge.svg">
+                            </div>
+                            
+                            <div id="mtnReticle" style="visibility:hidden;">
+                                <div class="reticle mountain parallaxy-animate hide-on-small" parallaxy-options='{"multiplier":"0.7", "direction":"up", "positionType": "relative"}'></div>
+                            </div>
+                            
+                            <h2 class="hide-on-small parallaxy-animate" parallaxy-options='{"multiplier":"0.3", "direction":"up", "positionType": "relative"}' id="parkCityBig" style="visibility:hidden;">РОССИЯ</h2>
+                            
+                            <h3 class="hide-on-small parallaxy-animate" parallaxy-options='{"multiplier":"0.1", "direction":"up", "positionType": "relative"}' id="eventDates" style="visibility:hidden;">Начинается<span class="blue-color"> &nbsp;&nbsp;&nbsp;&nbsp;Здесь</span></h3>
+                            
+                            <div class="vertical-icons hide-on-small" parallaxy-options='{"multiplier":"0.7", "direction":"down", "positionType": "relative"}'>
+                                <a id="twitterD" style="visibility:hidden;" class="icon twitter" href="https://twitter.com/Snoway_ru" target="_blank">Twitter</a>
+                                <a id="facebookD" style="visibility:hidden;" class="icon facebook" href="https://www.facebook.com/KamchatkaLove/" target="_blank"><svg width="26" height="26" viewBox="0 0 9570 9667"><use xlink:href="#icfb"/></svg></a>
+                                <a id="instagramD" style="visibility:hidden;" class="icon instagram" href="https://www.instagram.com/kamchatkalove/" target="_blank">Instagram</a>
+								<a id="vkD" style="visibility:hidden;" class="icon vk" href="https://new.vk.com/kamchatkalove" target="_blank">VK</a>
+                            </div>
+                            
+                        </div>
+                        <div class="column hide-on-small" style="display:none;"></div>
+                    </div>
+                </div>
+
+                <div class="rgrid" style="padding-top: 200px;">
+                    <div class="row clearfix">
+                        <div class="column"></div>
+                        <div class="column badge-area">
+                            <div class="reticle-left" id="rLeft" style="visibility:hidden;"></div>
+                        </div>
+                        <div class="column">
+                            <div class="reticle-centered hide-on-small" id="rCenter" style="visibility:hidden;"></div>
+                            <div class="verticle hide-on-small parallaxy-animate" parallaxy-options='{"multiplier":"0.15", "direction":"up"}' id="arrowCenter" style="visibility:hidden;"></div>
+                        </div>
+                        <div class="column column-half badge-area hide-on-small">
+                            <div class="horz-credit hide-on-small" id="horzCredit" style="visibility:hidden;">
+                                <span class="horz-credit-line"></span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WEB DES & DEV &nbsp; <span class="blue-rally"><a class="HoverLine-not-blink" href="http://my-look.ru/" target="_blank">MIKHAIL</a></span>
+                            </div>
+                        </div>
+                        <div class="column hide-on-small" style="display:none;"></div>
+                    </div>
+                </div>
+                
+                <div class="row clearfix show-on-small">
+                    <div class="column column-full">
+                        <div class="verticle"></div>
+                    </div>
+                </div>
+                <div class="row clearfix">
+                    <div class="mountain-parallax-container">
+                        <div class="mountain-parallax-mountains parallaxy-animate" id="mountain-parallax-mountains" parallaxy-options='{"multiplier":"0.005", "direction":"up"}'>
+                            <img data-src="/images/mountains-background.svg">
+                        </div>
+                        <div class="mountain-parallax-snowboarder parallaxy-animate" id="mountain-parallax-snowboarder" parallaxy-options='{"multiplier":"0.3", "direction":"up"}'>
+                            <img id="snowboarderLoaded" data-src="/images/snowboarder-in-snow-background.svg">
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .innerWrapper -->
+            
+            <div class="section-spacer"></div>
+
+
+            <div class="innerWrapper sponsor">
+                <div class="rgrid">
+                    <div class="row clearfix">
+                        <div class="column">&nbsp;</div>
+                        <div class="column count-text show-on-small parallaxy-animate" parallaxy-options='{"multiplier":"0.3", "direction":"up"}' style="margin-top: 400px">
+                            
+                            <div class="reticle mountain">
+                            </div>
+                            <h2>03</h2>
+                            <h3>Сервиса</h3>
+                            <div class="divider"></div>
+                            <p class="epic-text">ВАМ<br><span class="blue-text">В ПОМОЩЬ</span></p>
+                        </div>
+                        <div class="column parallaxy-animate" id="sponsorColumn1" parallaxy-options='{"multiplier":"0.5", "direction":"up"}'>
+						
+						<a href="https://www.aviasales.ru/" target="_blank"><img class="sponsor-image sponsor-rally clearfix" src="images/blanksponsor.svg" data-src="/images/logos/aviasales.svg" alt="Aviasales"></a>
+                            
+						<!--	
+							<a href="http://www.snowdogskamchatka.com/" target="_blank"><img class="sponsor-image sponsor-rally clearfix" src="images/blanksponsor.svg" data-src="/images/logos/snowdogskamchatka.svg" alt="SnowDogs Kamchatka"></a>
+						                             
+							<div class="row-two">
+                                <a href="http://supkamchatka.ru/" target="_blank"><img class="sponsor-image sponsor-airbnb clearfix" src="images/blanksponsor.svg" data-src="/images/logos/supkamchatka.svg" alt="SUPkamchatka"></a>
+                            </div>
+							
+                            <div class="row-two">
+                                <a href="#" target="_blank"><img class="sponsor-image sponsor-underbelly clearfix" src="images/blanksponsor.svg" data-src="/images/logos/logo-raster-underbelly.svg" alt="Underbelly"></a>
+                            </div> 
+						-->
+							
+                        </div>
+
+                        <div class="column parallaxy-animate" id="sponsorColumn2" parallaxy-options='{"multiplier":"0.5", "direction":"up"}'>
+							<a href="http://www.booking.com/searchresults.html?label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaMIBiAEBmAExuAEMyAEM2AEB6AEB-AECqAID;sid=62062e6f122f37a43bc3faa9c3f49dee;dcid=1;class_interval=1;dest_id=13522;dest_type=region;group_adults=2;group_children=0;hlrd=0;label_click=undef;no_rooms=1;offset=0;qrhpp=f4fdd37b838a812dc21cfd65ba83855a-region-0;review_score_group=empty;room1=A%2CA;sb_price_type=total;score_min=0;si=ai%2Cco%2Cci%2Cre%2Cdi;src=index;ss=kamchatka;ssb=empty;ssuit=1;srpos=1;origin=search&tfl_cwh=1" target="_blank"><img class="sponsor-image sponsor-vivent clearfix" src="images/blanksponsor.svg" data-src="/images/logos/booking.svg" alt="Bookingа"></a>
+	
+<!-- 
+							<a href="https://new.vk.com/club38286866" target="_blank"><img class="sponsor-image sponsor-vivent clearfix" src="images/blanksponsor.svg" data-src="/images/logos/paraplan.svg" alt="Парапланеризм Камчатка"></a>
+                            <div class="row-two">
+                                <a href="http://www.photokamchatka.ru/" target="_blank"><img class="sponsor-image sponsor-ueno clearfix" src="images/blanksponsor.svg" data-src="/images/logos/photokamchatka.svg" alt="photokamchatka"></a>
+                            </div>
+ -->
+
+						</div>
+						
+						
+                        <div class="column parallaxy-animate" id="sponsorColumn3" parallaxy-options='{"multiplier":"0.5", "direction":"up"}'>
+							<a href="#0" class="cd-btn8"><img class="sponsor-image sponsor-invision clearfix" src="images/blanksponsor.svg" data-src="/images/logos/house.svg" alt="Ночлег"></a>
+
+						
+<!-- 							<a href="http://www.agoda.com/" target="_blank"><img class="sponsor-image sponsor-invision clearfix" src="images/blanksponsor.svg" data-src="/images/logos/agoda.svg" alt="Agoda"></a>
+ 						
+								<a href="http://my-look.ru/" target="_blank"><img class="sponsor-image sponsor-invision clearfix" src="images/blanksponsor.svg" data-src="/images/logos/my-look.svg" alt="my-look"></a>
+                            <div class="row-two">
+                                <a href="http://www.snow-valley.ru/" target="_blank"><img class="sponsor-image sponsor-basic clearfix" src="images/blanksponsor.svg" data-src="/images/logos/snow-valley.svg" alt="Snow Valley Kamchatka"></a>
+                            </div>
+ -->							
+							
+                        </div>
+						
+                        <div class="column count-text hide-on-small parallaxy-animate" parallaxy-options='{"multiplier":"0.3", "direction":"up"}' style="margin-top: 200px">
+                            <div class="reticle mountain">
+                            </div>
+                            <h2>03</h2>
+                            <h3>Сервиса</h3>
+                            <div class="divider"></div>
+                            <p class="epic-text">ВАМ<br><span class="blue-text">В ПОМОЩЬ</span></p>
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                    
+                </div>
+            </div><!-- .innerWrapper -->
+        
+            <div class="sponsor-faq-spacer"></div>
+ 
+
+
+
+
+
+            <div class="innerWrapper snowboarder clearfix">
+                <div class="rgrid clearfix">
+
+                    <div class="row clearfix snowboardimage-row" style="margin-top: -600px">
+                        <div class="snowboarderimage-container parallaxy-animate" parallaxy-options='{"multiplier":"0.4", "direction":"up", "positionType": "absolute"}' style="margin-top: 800px; ">
+                        <!-- <div class="snowboarderimage-container parallaxy-animate" parallaxy-options='{"multiplier":"0.4", "direction":"up", "positionType": "absolute"}'> -->
+                            <img data-src="/images/kamcha.jpg" class="parallaxy-animate" parallaxy-options='{"multiplier":"0.2", "direction":"up", "positionType": "absolute"}' />
+                        </div>
+                        <div class="row clearfix spacer-gif__medium"></div>
+                        <div class="column special-wide-column faq-column" parallaxy-options='{"multiplier":"0.2", "direction":"up", "positionType": "absolute"}'>
+                            <div class="faq-column-mini-column">
+                                <div class="faq-reticle-mountain">
+                                    <!-- <img data-src="/images/mountain.svg"> -->
+                                </div>
+                                <span class="faq-text"><h2>02</h2></span>    
+                            </div>
+                            <div class="faq-column-mini-column">
+                                <span class="faq-text"><h3>Что это</h3></span>
+                                <span class="faq-divider"></span>
+                                <p class="faq-epic-text">
+								ОТЗЫВ
+								<br>
+								<span class="blue-text">
+								
+								
+								
+								
+								
+
+
+									<a id="play-pause" class="play-pause HoverLine" onclick="if(audio.paused){audio.play()}else{audio.pause()}"></a>
+
+									<script>
+									$('#play-pause').click(function(){$(this).toggleClass('play-pause')})
+									</script>								
+
+								
+								
+								
+								
+								</span></p>
+								
+								
+<audio id="audio" preload>
+    <source src="audio/split-music.ogg" type="audio/ogg; codecs=vorbis">
+    <source src="audio/split-music.mp3" type="audio/mpeg">
+</audio>
+								
+								
+								
+                            </div>
+                        </div>
+                        <div class="column delayed-wide-column first-special-wide-column" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                            <span class="faq-small-number">1</span><span class="faq-header3">КТО МЫ</span>
+                            <p class="faq-paragraph">
+								 Проект популизирующий диких отдых на Камчатке. </br>
+								 Насладись Камчаткой по приемлимым ценам.
+							</p>
+                        </div>
+                        <div class="column delayed-wide-column" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                            <span class="faq-small-number">2</span><span class="faq-header3">КАК</span>
+                            <p class="faq-paragraph">
+								Связываем туристов и просто желающих увидать / испытать что-то новое, на полуострове, с людьми которые могут это предложить.
+
+<!-- <audio id="audio" autoplay preload>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+    <source src="audio/split-music.mp3" type="audio/mpeg">
+</audio> -->
+<!-- <div>
+	<button onclick="if(audio.paused){audio.play()}else{audio.pause()}">кнопка</button>
+</div> -->						
+
+
+
+	<!-- Audio Player CSS & Scripts -->
+<!-- 	<script src="js/mediaelement-and-player.min.js"></script>
+		<audio id="audio-player" controls="controls">
+			<source src="audio/split-music.ogg" type="audio/ogg; codecs=vorbis">
+			<source src="audio/split-music.mp3" type="audio/mpeg">
+		</audio>
+	<script>
+		$(document).ready(function() {
+			$('#audio-player').mediaelementplayer({
+				alwaysShowControls: true,
+				features: ['playpause'],
+			});
+		});
+	</script> -->		
+
+	
+							
+							</p>
+
+                        </div>
+                        <div class="column">&nbsp;</div>
+                    </div>
+					
+
+					
+                </div>
+
+
+
+            </div><!-- .innerWrapper -->
+			
+
+
+
+						
+            <!--<div class="supertext parallaxy-animate" id="supertext" style="top:1800px" parallaxy-options='{"multiplier":"0.4", "direction":"up"}' ><p class="left">P</p></div>
+            <div class="supertext parallaxy-animate" id="supertext" style="top:3200px" parallaxy-options='{"multiplier":"0.2", "direction":"up"}' ><p class="right">C</p></div>-->
+
+            <!-- Write your comments here -->
+            <div class="innerWrapper speakers">
+                <div class="rgrid clearfix">
+    
+                    
+                    <div class="row clearfix ">
+                        
+
+                        
+                        <div class="speaker-lock-up parallaxy-animate" parallaxy-options='{"multiplier":"0.37", "direction":"up", "positionType": "absolute"}'>
+						
+						
+                            <span class="speaker-reticle-left parallaxy-animate" parallaxy-options='{"multiplier":"0.56", "direction":"up", "positionType": "absolute"}'></span>
+                            <span class="speaker-reticle-mountain parallaxy-animate" id="speakerReticle" parallaxy-options='{"multiplier":"0.5", "direction":"up", "positionType": "absolute"}'>
+                                <img src="images/mountain.svg">
+                            </span>
+                            <span class="speaker-reticle-right parallaxy-animate" parallaxy-options='{"multiplier":"0.37", "direction":"up", "positionType": "absolute"}'></span>
+                            <h2>КАК</h2>
+                            <h3>отдохнуть</h3>
+                            <span class="speaker-lockup-divider"></span>
+                            <p class="speaker-epic-text">
+                                <span class="blue-text">Для Вас</span>
+                                <br>
+                                на Камчатке
+                            </p>
+
+						</div>
+                        
+
+                        
+
+       						
+
+						
+
+                        
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <img data-src="/images/speakers/vulkan.jpg"  title="kamchatka love vulkan" alt="kamchatka love vulkan"  />
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>ВУЛКАНЫ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="first">Восхождение на действующие Вулканы</h3>
+                                <p>Обычно люди бегут подальше от действующих вулканов..не наш случай.</br>
+								Забраться на такой эсполин и сделать селфи для инстаграма на грани жизни..по нашему!
+								</p>
+								
+								
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+								<div class="icon-speakers right">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="http://facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp;<!-- <a id="blinkTXT" href="#0" class="cd-btn2">ВОСХОЖДЕНИЕ</a> --> <a href="#0" class="cd-btn2 HoverLine">ВОСХОЖДЕНИЕ</a>
+                                </div>
+                            </div>
+
+                        </div>                        
+                        
+                        
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <!-- <img data-src="/images/speakers/step.jpg"  /> -->
+							<!-- VIDEO  /> -->								
+								<video id="my-video" class="video-js" controls preload="none"
+								  poster="/images/speakers/step.jpg" data-setup="{}" title="kamchatka love step" alt="kamchatka love step" >
+									
+									<source src="video/morzh.mp4" type='video/mp4'>
+									<source src="video/morzh.webm" type='video/webm'>
+									
+									<p class="vjs-no-js">
+									  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+									  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+								</video>								
+								
+								
+								
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>ФЛОРА & ФАУНА</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="second">Вы увидите</h3>
+                                <p>Уникальных животных Камчатки в дикой среде обитания..если хватит смелости и здоровья - сможете почесать некоторых за ухом.
+								</p>
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+                                <div class="icon-speakers left">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->								
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <img data-src="/images/speakers/raft.jpg"  title="kamchatka love raft" alt="kamchatka love raft"  />
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>РЕКИ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="third">Великолепие и разнообразие рек</h3>
+                                <p>Когда нибудь сплавлялись в усмерть пьяный по нерестовым рекам лососовых рыб на берегах которых лакомятся бурые медведи?</p>
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+								<div class="icon-speakers right">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="http://facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; &nbsp;&nbsp;<!--  <a id="blinkTXT" href="#0" class="cd-btn4">СПЛАВ</a> --> <a href="#0" class="cd-btn4 HoverLine">СПЛАВ</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
+                        
+                        
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+					
+							<!-- VIDEO  /> -->							
+								<video id="my-video" class="video-js" controls preload="none"
+								  poster="/images/speakers/snow-drive.jpg" data-setup="{}" title="kamchatka love snow-drive" alt="kamchatka love snow-drive" >
+									
+									<source src="video/enjoy-kamchatka.mp4" type='video/mp4'>
+									<source src="video/enjoy-kamchatka.webm" type='video/webm'>
+									
+									<p class="vjs-no-js">
+									  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+									  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+								</video>
+	
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>СКЛОНЫ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="fourth">Сноуборд / горные лыжи</h3>
+                                <p>Нетронутые склоны гор и вулканов с девственным снегом ждут Вас.. Осталось только забраться туда - после того, как приобретете бессмертную мед. страховку.</p>
+                            </div>
+                        
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+                                <div class="icon-speakers left">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->	
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                             <!--    <img data-src="/images/speakers/paraplan.jpg"  /> -->
+							<!-- VIDEO  /> -->								
+								<video id="my-video" class="video-js" controls preload="none"
+								  poster="/images/speakers/paraplan.jpg" data-setup="{}" title="kamchatka love paraplan" alt="kamchatka love paraplan" >
+									
+									<source src="video/nebo.mp4" type='video/mp4'>
+									<source src="video/nebo.webm" type='video/webm'>
+									
+									<p class="vjs-no-js">
+									  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+									  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+								</video>								
+								
+								
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>НЕБО</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="fifth">Под крылом</h3>
+                                <p>Камчатка с высоты птичьего полета - завораживающее зрелище. Настолько, что бывалые советуют одевать - памперс.</p>
+                            </div>
+                        
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+								<div class="icon-speakers right">
+								
+								<a class="icon vk speakers" href="https://new.vk.com/club38286866" target="_blank">Vkontakte</a>
+                                 <!--   <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="http://facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>-->
+                                </div>
+								
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    в&nbsp;&nbsp;<!--  <a id="blinkTXT" href="#0" class="cd-btn5">ПОЛЕТ</a> --> <a href="#0" class="cd-btn5 HoverLine">ПОЛЕТ</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+							<!-- VIDEO  /> -->
+							  <video id="my-video" class="video-js" controls preload="none"
+							  poster="/images/speakers/surf.jpg" data-setup="{}" title="kamchatka love surf" alt="kamchatka love surf">
+								<source src="video/kamchatka-winter-surf.mp4" type='video/mp4'>
+								<source src="video/kamchatka-winter-surf.webm" type='video/webm'>
+								<p class="vjs-no-js">
+								  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+								  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+							  </video>
+
+						   
+							   
+                            </div>
+
+                           
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>ВОЛНЫ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="sixth">Тихого океана</h3>
+                                <p>Настоящий вызов природе. Попробуй обуздать..<br>
+								Калабашки - так ласково, местные серферы, называют куски льда, дрейфующих на волнах. Которые, так и наровят пронзить тело..
+								</p>
+                            </div>
+                            
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+                                <div class="icon-speakers left">
+								
+									<a class="icon facebook speakers" href="https://www.facebook.com/snowave.kamchatka/" target="_blank">Facebook</a>
+                                    <a class="icon vk speakers" href="https://new.vk.com/snowave_kamchatka" target="_blank">Vkontakte</a>
+                                    
+                                <!--     <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>-->	
+                                </div>
+								
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <img data-src="/images/speakers/snow-dog.jpg"  title="kamchatka love snow-dog" alt="kamchatka love snow-dog" />
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>КАТАНИЕ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="seventh">Собачьи упряжки \ снегоходы</h3>
+                                <p>На земном шаре не так много мест где люди используют для передвижение собачьи упряжки. Одно из них - Камчатка!</br>
+								PS: У нас не все так плохо..
+								</p>
+                            </div>
+                        
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+								<div class="icon-speakers right">
+								<a class="icon site speakers" href="http://www.snowdogskamchatka.com/" target="_blank">Site</a>
+								<a class="icon facebook speakers" href="https://www.facebook.com/sled.dog.expert" target="_blank">Facebook</a>
+                               <!--     <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>-->
+                                </div>
+								
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        
+                        
+                        
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <!-- <img data-src="/images/speakers/fishing.jpg"  /> -->
+							<!-- VIDEO  /> -->	
+							  <video id="my-video" class="video-js" controls preload="none"
+							  poster="/images/speakers/fishing.jpg" data-setup="{}" title="kamchatka love fishing" alt="kamchatka love fishing">
+								<source src="video/fishing.mp4" type='video/mp4'>
+								<source src="video/fishing.webm" type='video/webm'>
+								<p class="vjs-no-js">
+									Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+								  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+							  </video>								
+								
+								
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>РЫБАЛКА</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="eighth">Нерестовые реки</h3>
+                                <p>Мечтали поймать Камчатского лосося? Браконьерство на реках одно из излюбленных развлечений местных жителей..</p>
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+                                <div class="icon-speakers left">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->	
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp;  <a href="#0" class="cd-btn7 HoverLine">РЫБАЛКУ</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <img data-src="/images/speakers/hunter.jpg"  title="kamchatka.love hunter" alt="kamchatka.love hunter" />
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>ОХОТА</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="ninth">Для настоящих мужиков</h3>
+                                <p>Кто бы, что не говорил про дикость этого вида деятельности - но это в крови у нас..</br>
+								Правда, у некоторых в крови бальные танцы, но мы говорим о тех - кому яйца мешают.
+								</p>
+                            </div>
+                        
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+								<div class="icon-speakers right">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="http://facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image parallaxy-animate" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <!-- <img data-src="/images/speakers/fishing.jpg"  /> -->
+							<!-- VIDEO  /> -->								
+							  <video id="my-video" class="video-js" controls preload="none"
+							  poster="/images/speakers/yahta.jpg" data-setup="{}" title="kamchatka love yahta" alt="kamchatka love yahta">
+								<source src="video/yahta.mp4" type='video/mp4'>
+								<source src="video/yahta.webm" type='video/webm'>
+								<p class="vjs-no-js">
+								  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+								  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+							  </video>								
+								
+								
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>ОКЕАН</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="tenth">КРАСОТА НА ВОДЕ</h3>
+                                <p>Проплыть по экзотическому маршруту самого "Тихого" океана в мире.</p>
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+                                <div class="icon-speakers left">
+                                    
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/kosatka.cruises" target="_blank">Facebook</a>
+									<!-- <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a> -->
+                                </div>
+									
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+
+                        </div>
+
+						
+						
+						
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate kayak-top" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <!-- <img data-src="/images/speakers/kayak.jpg"  /> -->
+							<!-- VIDEO  /> -->								
+							  <video id="my-video" class="video-js" controls preload="none"
+							  poster="/images/speakers/kayak.jpg" data-setup="{}" title="kamchatka love kayak" alt="kamchatka love kayak">
+								<source src="video/kayak.mp4" type='video/mp4'>
+								<source src="video/kayak.webm" type='video/webm'>
+								<p class="vjs-no-js">
+								  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+								  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+							  </video>									
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>КАЯКИНГ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="eleven">Прокачай широчайшие</h3>
+                                <p>Сидя загребая океанческие волны в надежде, что тебя не сожрет косатка..
+								</p>
+                            </div>
+                        
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+								<div class="icon-speakers right">
+								<a class="icon vk speakers" href="https://new.vk.com/kkclub" target="_blank">Vkontakte</a>
+                               <!--     <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>-->
+                                </div>
+								
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+
+                        </div>						
+						
+						
+						
+						
+						
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image parallaxy-animate glubina-top" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <img data-src="/images/speakers/diving.jpg" title="kamchatka love diving" alt="kamchatka love diving" />
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>ГЛУБИНЫ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="tvelf">Погружение в воды тихого океана</h3>
+                                <p>Место обитания морских тюленей \ касаток \ камчатского краба \ атомных подводных субмарин с балистическими ракетами..</p>
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+                                <div class="icon-speakers left">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->	
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    на&nbsp;&nbsp; Камчатку
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate moto-top" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <img data-src="/images/speakers/step-tour.jpg"  title="kamchatka love step-tour" alt="kamchatka love step-tour" />
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>ПЕШИЕ</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="thirteen">Туры по Камчатке</h3>
+                                <p>Даже натертые ноги, после прохождения красивейшего маршрута, который возможно перодолеть только на своих "двоих"..не омрачат Вашего восхищения от увиденного!
+								</p>
+                            </div>
+                        
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+								<div class="icon-speakers right">
+								<!--	<a class="icon facebook speakers" href="https://www.facebook.com/moto.kamchatka" target="_blank">Facebook</a>
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>-->
+                                </div>
+								
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    в&nbsp;&nbsp;<!--  <a id="blinkTXT" href="#0" class="cd-btn3">ТУР</a> --> <a href="#0" class="cd-btn3 HoverLine">ПЕШИЙ ТУР</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image parallaxy-animate sup-top" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                               <!--  <img data-src="/images/speakers/supkamchatka.jpg"  /> -->
+								<!-- VIDEO  /> -->								
+							  <video id="my-video" class="video-js" controls preload="none"
+							  poster="/images/speakers/supkamchatka.jpg" data-setup="{}" title="kamchatka love supkamchatka" alt="kamchatka love supkamchatka">
+								<source src="video/supkamchatka.mp4" type='video/mp4'>
+								<source src="video/supkamchatka.webm" type='video/webm'>
+								<p class="vjs-no-js">
+								  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+								  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+							  </video>		
+								
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>SUP</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="tvelf">Stand Up Paddling / гребля на доске стоя</h3>
+                                <p>SUP серфинг по водоемам позволяет проводить время на воде, полностью погрузившись в природу Камчатки.</br>
+								Реальна возможность увидеть мусор, оставленный человеком, в таких диких уголках природы..
+								</p>
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+                                <div class="icon-speakers left">
+                                    <a class="icon site speakers" href="http://supkamchatka.ru/" target="_blank">Site</a>
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/supkamchatka" target="_blank">Facebook</a>
+									<a class="icon vk speakers" href="https://vk.com/kiteride" target="_blank">Vkontakte</a>
+                                </div>
+								
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    в&nbsp;&nbsp;<!--  <a id="blinkTXT" href="#0" class="cd-btn6">SUP ТУР</a> --> <a href="#0" class="cd-btn6 HoverLine">SUP ТУР</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="speaker-container">
+                            
+                            <div class="speaker-image parallaxy-animate moto-top" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <!-- <img data-src="/images/speakers/4-4.jpg"  /> -->
+							  <video id="my-video" class="video-js" controls preload="none"
+							  poster="/images/speakers/4-4.jpg" data-setup="{}" title="kamchatka love 4-4" alt="kamchatka love 4-4">
+								<source src="video/4-4.mp4" type='video/mp4'>
+								<source src="video/4-4.webm" type='video/webm'>
+								<p class="vjs-no-js">
+								  Для просмотра этого видео вкл JavaScript, и обновите веб-браузер, который
+								  <a href="http://videojs.com/html5-video-support/" target="_blank">поддерживает HTML5-видео</a>
+								</p>
+							  </video>		
+								
+                            </div>								
+                            
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>4/4</h2>
+                                <div class="speaker-divider"></div>
+                                <h3 class="thirteen">ТУРЫ</h3>
+                                <p>Потаскать лебедку, выпить водки, покопать, понырять и прочее ожидает Вас на направлениях полуострова... 
+								</p>
+                            </div>
+                        
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								
+								<div class="icon-speakers right">
+								
+                           <!--     <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/moto.kamchatka" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>  -->
+                                </div>
+								
+                                <div class="vertical-speaker-text left">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span>
+                                    в&nbsp;&nbsp;<!--  <a id="blinkTXT" href="#0" class="cd-btn">ЗАБРОНИРОВАТЬ</a> --> <a href="#0" class="cd-btn HoverLine">ДЖИП ТУР</a>
+                                </div>
+                            </div>
+
+                        </div> 
+                       
+                        <div class="speaker-container right-text">
+                            
+                            <div class="speaker-image green parallaxy-animate esho-top" parallaxy-options='{"multiplier":"0.6", "direction":"up", "positionType": "relative"}'>
+                                <div class="rally-text">ЕЩЁ</div> 
+                            </div>
+                            
+                            <div class="speaker-text parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+                                <h2>...И</h2>
+                                <div class="speaker-divider-rally"></div>
+                                <h3 class="fourteen">Многое другое</h3>
+                                <p>Камчатка это край нереальных возможностей для туризма и с каждым годом тут появляестя что-то новое.</br>
+								Вот уже в этом году обещают провести высокоскоростной интернет, сделать дороги..
+								</p>
+                            </div>
+
+                            <div class="speaker-social-container parallaxy-animate" parallaxy-options='{"multiplier":"0.35", "direction":"up", "positionType": "absolute"}'>
+								<!--
+                                <div class="icon-speakers left">
+                                    <a class="icon twitter speakers" href="https://twitter.com/" target="_blank">Twitter</a>
+                                    <a class="icon facebook speakers" href="https://www.facebook.com/" target="_blank">Facebook</a>
+                                    <a class="icon instagram speakers" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                                </div>
+								-->	
+                                <div class="vertical-speaker-text right">
+                                    <span class="vertical-speaker-text blue"> хочу </span>
+                                    
+                                    <span class="vertical-speaker-text-line"></span> 
+                                    
+                                    на&nbsp;&nbsp; Камчатку  
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                       
+                        
+                        <div class="supertext parallaxy-animate" id="supertextLeft" parallaxy-options='{"multiplier":"0.45", "direction":"up", "positionType": "relative"}' ><p class="left">1</p></div>
+                        <div class="supertext parallaxy-animate" id="supertextRight" parallaxy-options='{"multiplier":"0.45", "direction":"up", "positionType": "relative"}' ><p class="right">6</p></div>
+
+                    </div>
+                </div>
+                
+                
+                
+            </div> <!-- .innerWrapper -->
+            
+
+
+            
+            <!-- <div class="section-spacer"></div> -->
+                        
+            <!-- <div class="innerWrapper location clearfix" style="padding-top: 400px"> -->
+            <div class="innerWrapper location clearfix" style="padding-top: 0px">
+                <div class="rgrid clearfix">
+                    <div class="row clearfix location">
+                        <div class="column">&nbsp;</div>
+                        <div class="column special-wide-column faq-column">
+                            <div class="faq-column-mini-column">
+                                <div class="location-reticle-mountain"></div>
+                                <span class="faq-text"><h2>Где это</h2></span>    
+                            </div>
+                            <div class="faq-column-mini-column">
+                                <span class="faq-text"><h3>НЕТРОНУТАЯ КРАСОТА</h3></span>
+                                <span class="faq-divider"></span>
+                                <p class="faq-epic-text">МЕСТО ГДЕ<br><span class="blue-text">НУЖНО ПОБЫВАТЬ</span></p>
+                            </div>
+                        </div>
+                        <div class="column video">
+                            <div class="vert-unified-text-location right-side">
+                                KAMHATKA
+                                <span></span>
+                                <span class="blue-text">LOVE</span>
+                            </div>
+                            <div class="location-movie-container parallaxy-animate" id="locationMovie" parallaxy-options='{"multiplier":"0.4", "direction":"up", "positionType": "absolute"}'>
+                                <img class="video-not-supported" src="images/video-not-supported.jpg">
+                                <video id="video">
+                                    <img src="images/first-frame-for-start-of-video.jpg">
+                                </video>
+                            </div>
+                            <div class="vert-unified-text-location">55.3008584° N, <span></span> 158.3777694,6° W</div>
+                        </div>
+                        <div class="column"></div>
+                        <div class="column">&nbsp;</div>
+							<!-- 
+							 <a id="requestinvite2">
+							 <span class="k-vam">
+							 Х о ч у</br>с ю д а
+							 </span>
+							 </a>  
+							-->
+                    </div>
+                </div>
+				
+				
+				
+            </div><!-- .innerWrapper -->
+            
+            <div class="innerWrapper footer">
+                <div class="footer-bar">
+					<div class=tooltip >
+					<span class=tooltip-content>
+					<span class=tooltip-text>
+					<span class=tooltip-inner>
+								<a rel=nofollow class="share-btn facebook-share" href="http://www.facebook.com/sharer.php?u=http://kamchatka.love/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+								<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#facebook-share"/></svg></a>
+								<a rel=nofollow class="share-btn twitter-share" href="http://twitter.com/home?status=Насладись Камчаткой вместе с http://kamchatka.love/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+								<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#twitter-share"/></svg></a>
+								<a rel=nofollow class="share-btn vk-share" href="https://vk.com/share.php?url=http://kamchatka.love/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+								<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#vk-share"/></svg></a>
+								<a rel=nofollow class="share-btn ok-share" href="https://connect.ok.ru/dk?cmd=WidgetSharePreview&st.cmd=WidgetSharePreview&st.shareUrl=http://kamchatka.love/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+								<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#ok-share"/></svg></a>
+								<a rel=nofollow class="share-btn google-plus-share" href="https://plus.google.com/share?url=http://kamchatka.love/" rel="nofollow" target=_blank onclick="return Share.me(this)">
+								<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#google-plus-share"/></svg></a>
+								<a rel=nofollow class="share-btn mail-to-share" href="mailto:name1@mail.com,name2@mail.com?subject=Snoway%20Kamchatka&amp;body=%D0%9D%D0%B0%D1%81%D0%BB%D0%B0%D0%B4%D0%B8%D1%81%D1%8C%20%D0%9A%D0%B0%D0%BC%D1%87%D0%B0%D1%82%D0%BA%D0%BE%D0%B9%20%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%B5%20%D1%81%20http%3A%2F%2Fsnoway.ru%2F" rel="nofollow">
+								<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#mail-to-share"/></svg></a>
+								<a rel=nofollow class="share-btn whatsapp-share" href="whatsapp://send?text=Насладись Камчаткой вместе с http://kamchatka.love/" target=_blank rel=nofollow>
+								<svg width=55 height=55 viewbox="0 0 23368 23368"><use xlink:href="#whatsapp-share"/></svg></a>
+					</span>
+					</span>
+					</span>
+								<div class=share>
+									<span class=icon-share>								
+										ПОДЕЛИТЬСЯ
+									</span>
+								</div>			
+					</div>				
+				
+				</div>
+                <div class="row footer-text clearfix">
+                    <p><span class="pseudorows">KAMCHATKA<span class="bars"></span></span><span class="pseudorows">LOVE</span></p>
+					
+					<span class="fb-box">
+						<div class="fb-like" data-href="https://www.facebook.com/kamchatkalove" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div>
+					</span>
+                </div>
+                <div class="rgrid menugridthingy forbadge">
+                    <div class="badge footer-badge">
+                        <img src="images/badges/small-badge.svg">
+                    </div>
+                </div>
+            </div>
+            <!-- .innerWrapper -->
+        </div><!-- .wrapper -->
+    </div><!-- .container -->
+
+    <div class="navigation outer-nav horizontal top">
+    
+        <div class="badgemenu">
+            <div class="rgrid menugridthingy forbadge">
+                <div class="badge">
+                    <img src="images/badges/small-badge.svg">
+                </div>
+                <div id="close" class="closeButton"></div>
+            </div>
+        </div>
+        
+        <div class="innerNavigationWrapper">
+            <div class="rgrid">
+                <div class="row clearfix">    
+                    <div class="column"></div>
+<!--
+                    <div class="column menu-toggle">
+                        <a href="index.html#" class="hide-on-small">Прошедшие</a>
+                        <span class="navigation-reticle"></span>
+                        <ul>
+                            <li>
+                                <a href="index.html#">
+                                    <h3>ЭПИЗОД &nbsp;&nbsp; <span>01</span></h3>
+                                    <h4>ЖИВОЕ МЯСО, р.АВАЧА</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#">
+                                    <h3>ЭПИЗОД &nbsp;&nbsp; <span>02</span></h3>
+                                    <h4>ОБМОРОЖЕНИЕ, ЛЕДНИК</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <a href="https://www.facebook.com/zaza41rus" target="_blank">Галерея</a>
+                        <span class="navigation-reticle"></span>
+                    </div>
+                    <div class="column">
+                        <a href="mailto:snoway.ru@gmail.com">Партнерам</a>
+                        <span class="navigation-reticle"></span>
+                    </div>
+                    <div class="column">
+                        <a href="mailto:snoway.ru@gmail.com">Контакт</a>
+                        <span class="navigation-reticle"></span>
+                    </div>
+-->					
+                   <div class="column">
+                        <a href="https://www.facebook.com/KamchatkaLove/" target="_blank">Facebook</a>
+                        <span class="navigation-reticle"></span>
+                    </div>
+                    <div class="column">
+                        <a href="https://new.vk.com/kamchatkalove" target="_blank">Vkontakte</a>
+                        <span class="navigation-reticle"></span>
+                    </div>
+                    <div class="column">
+                        <a href="https://twitter.com/Snoway_ru" target="_blank">Twitter</a>
+                        <span class="navigation-reticle"></span>
+                    </div>
+                    <div class="column">
+                        <a href="https://www.instagram.com/kamchatkalove/" target="_blank">Instagram</a>
+                        <span class="navigation-reticle"></span>
+                    </div>					
+
+                    <div class="column"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="guillotine-wrapper">
+    <div class="guillotine">
+        <div class="scrollinghead">
+            <div class="badgemenu">
+                <div class="badge">
+                    <img src="images/badges/small-badge.svg">
+                </div>
+                <a id="closeMenu"></a>
+            </div>
+			
+		<script src="js/validation.js"></script>	<!-- <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>    -->
+		<script src="js/engine.js"></script>
+	
+            <form class="inviteform" action="#" method="post" id="sendform" enctype="multipart/form-data">
+                <div class="rgrid">
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+					 <h3 class=h3now2>Заявить о себе</h3>
+                        <h3 class=about>У Вас есть предложение для туристов </br> расскажите им</h3>
+						<h3 class="dark">(Бесплатно)</h3>	
+					</div>
+
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>1</h2>
+                        <h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+                        <div class="inputblock">
+                            <label for="name">Имя</label>
+                            <input name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+                        </div>
+                        <div class="inputblock">
+                            <label for="email">Email</label>
+                            <input name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+                        </div>
+	                    <div class="inputblock specialTelInput">
+                            <label for="tel">Тел</label>
+                            <input name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+                        </div>					
+                    </div>
+
+                    <div class="row guillotine-row form-fields-row clearfix">
+                        <h2>2</h2>
+                        <h3>О вашей услуге</h3>
+                        <div class="textareablock">
+                            <textarea class="required" class="messageinput" name="message" rows="6" cols="40" placeholder="Кратко, что вы предлагаете туристам"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>3</h2>
+                      <h3>Вы в сети</h3>
+                        <h3 class="dark">(Опционально)</h3>						
+							<h3>Www</h3>
+                        <div class="inputblock specialWWWInput">
+                            <label for="twitter">site.com</label>
+                            <input name="Site" class="" type="text" autocomplete="off">
+                        </div>					
+							<h3>FB&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;VK&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;TW&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;IN</h3>
+                        <div class="inputblock specialSlashInput">
+                            <label for="name">facebook.com</label>
+                            <input name="FB" class="twitterinput" type="text" autocomplete="off">
+                        </div>
+
+                        <div class="inputblock specialSlashInput float-right">
+                            <label for="email">vk.com</label>
+                            <input name="VK" class="twitterinput" type="text" autocomplete="off">
+                        </div>
+
+						<div class="next-smal">  </div> <div class="next-smal">  </div> 
+						
+                        <div class="inputblock specialTwitterInput">
+                            <label for="name">twitter.com</label>
+                            <input name="TW" class="twitterinput" type="text" autocomplete="off">
+                        </div>
+
+                        <div class="inputblock specialSlashInput  float-right">
+                            <label for="twitter">instagram.com</label>
+                            <input name="IN" class="twitterinput" type="text" autocomplete="off">
+                        </div>
+						
+                    </div>					
+
+
+                    <div class="row guillotine-row form-fields-row clearfix">
+                        <h2>4</h2>
+                        <h3>Прикрепите файл</br>Логотип / фото / прайс / ZIP архив</h3>
+                        <h3 class="dark">(Опционально)</h3>
+                        <div class="textareablock">
+							<input type="file" name="file" id="file-6" class="inputfile inputfile-5" data-multiple-caption="{count} files selected" multiple />
+							<label for="file-6"><figure><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"/></svg></figure> <span></span></label>
+                        </div>
+                    </div>					
+					
+					
+                    <div class="row guillotine-row monstrous clearfix">
+                        <div class="white-tall-verticle"></div>
+                        <div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+                        <div class="checkMark"></div>
+                    </div>
+                    
+                </div>
+            </form>			
+			
+			
+			
+			
+			
+	
+			
+			
+
+        </div>
+    </div><!-- .guillotine -->
+    </div><!-- .guillotine-wrapper -->
+</div><!-- #perspective -->
+
+
+
+
+
+
+    <!--SCRIPTS-->
+    <script src="min/production.min.js"></script>
+    <!--SCRIPTS END-->
+
+
+  <link href="video/video.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <script src="http://vjs.zencdn.net/5.9.2/video.js"></script>	
+
+  
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.6&appId=629268383828061";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>  
+
+
+
+  
+  </body>
+ 	<script>Share={vkontakte:function(e,o,n,t){url="http://vkontakte.ru/share.php?",url+="url="+encodeURIComponent(e),url+="&title="+encodeURIComponent(o),url+="&description="+encodeURIComponent(t),url+="&image="+encodeURIComponent(n),url+="&noparse=true",Share.popup(url)},odnoklassniki:function(e,o){url="https://connect.ok.ru/dk?cmd=WidgetSharePreview&st.cmd=WidgetSharePreview&st.shareUrl=",url+="&st.comments="+encodeURIComponent(o),url+="&st._surl="+encodeURIComponent(e),Share.popup(url)},facebook:function(e,o,n,t){url="http://www.facebook.com/sharer.php?s=100",url+="&p[title]="+encodeURIComponent(o),url+="&p[summary]="+encodeURIComponent(t),url+="&p[url]="+encodeURIComponent(e),url+="&p[images][0]="+encodeURIComponent(n),Share.popup(url)},twitter:function(e,o){url="http://twitter.com/share?",url+="text="+encodeURIComponent(o),url+="&url="+encodeURIComponent(e),url+="&counturl="+encodeURIComponent(e),Share.popup(url)},mailru:function(e,o,n,t){url="https://plus.google.com/share?url=",url+="url="+encodeURIComponent(e),url+="&title="+encodeURIComponent(o),url+="&description="+encodeURIComponent(t),url+="&imageurl="+encodeURIComponent(n),Share.popup(url)},me:function(e){return console.log(e.href),Share.popup(e.href),!1},popup:function(e){window.open(e,"","toolbar=0,status=0,width=626,height=436")}};</script>
+ 
+		<div class=none>
+			<svg width=0 height=0><path id=facebook-share d="m12787 18806v-6497h2181l326-2532h-2507v-1617c0-733 204-1233 1255-1233h1341v-2265c-232-31-1028-100-1954-100-1933 0-3257 1180-3257 3347v1868h-2186v2532h2186v6497h2615"/></svg>
+			<svg width=0 height=0><path id=twitter-share d="m18806 7267c-524 232-1087 389-1678 460 603-362 1066-935 1285-1617-565 335-1190 578-1856 709-533-568-1293-923-2133-923-1614 0-2923 1309-2923 2923 0 229 26 452 76 665-2429-121-4582-1285-6023-3053-252 432-396 934-396 1469 0 1014 516 1909 1300 2433-479-15-929-147-1323-366-1 12-1 25-1 37 0 1416 1008 2597 2344 2865-245 67-503 103-769 103-189 0-372-18-550-53 372 1162 1451 2006 2730 2030-1001 784-2261 1251-3630 1251-236 0-468-14-697-41 1293 829 2830 1313 4480 1313 5375 0 8314-4453 8314-8315 0-126-2-252-8-378 545-412 1066-926 1458-1512"/></svg>
+			<svg width=0 height=0><path id=vk-share d="m11531 15453h852c0 0 257-28 388-170 121-130 117-374 117-374 0 0-16-1142 514-1310 523-166 1194 1104 1905 1592 538 370 947 289 947 289l1902-27c0 0 995-61 523-844-38-63-275-578-1414-1636-1193-1107-1033-928 404-2843 875-1166 1224-1878 1115-2183-104-291-748-214-748-214l-2141 13c0 0-159-21-277 49-115 69-189 230-189 230 0 0-339 902-791 1670-954 1619-1335 1705-1491 1604-363-234-272-941-272-1444 0-1569 238-2223-464-2393-232-56-404-93-999-99-765-8-1411 2-1778 182-243 119-431 385-317 400 142 19 462 87 632 318 220 299 212 969 212 969 0 0 126 1848-294 2077-289 157-685-164-1535-1633-436-753-765-1585-765-1585 0 0-63-155-176-238-138-101-329-133-329-133l-2036 13c0 0-305 9-417 142-100 118-8 362-8 362 0 0 1593 3728 3397 5607 1655 1722 3533 1609 3533 1609"/></svg>
+			<svg width=0 height=0><path id=ok-share d="m11684 11772c1991 0 3605-1614 3605-3605 0-1991-1614-3605-3605-3605-1991 0-3605 1614-3605 3605 0 1991 1614 3605 3605 3605m0-5378c980 0 1774 794 1774 1773 0 980-794 1774-1774 1774-979 0-1773-794-1773-1774 0-979 794-1773 1773-1773m4156 5818c-204-409-768-749-1517-159-1012 798-2639 798-2639 798 0 0-1626 0-2639-798-749-590-1313-250-1516 159-355 453 46 1057 950 1638 773 496 1835 682 2521 751l-573 572c-806 806-1584 1585-2124 2125-323 322-323 846 0 1169l97 97c161 161 372 242 583 242h3c211 0 422-81 583-242l2125-2124c806 806 1584 1584 2124 2124 323 323 846 323 1169 0l97-97c323-323 323-847 0-1169l-2124-2125-574-574c686-45 1737-257 2503-749 905-581 1305-925 951-1638"/></svg>
+			<svg width=0 height=0><path id=google-plus-share d="m9094 11037v1554h2545c-104 666-777 1955-2545 1955-1547 0-2810-1282-2810-2862 0-1580 1263-2862 2810-2862 881 0 1470 376 1807 700l1230-1185c-790-738-1813-1185-3037-1185-2505 0-4532 2027-4532 4532 0 2506 2027 4532 4532 4532 2616 0 4351-1838 4351-4428 0-298-32-525-45-751h-4280m9452 0h-1295v-1295h-1295v1295h-1295v1295h1295v1295h1295v-1295h1295m0-1295"/></svg>
+			<svg width=0 height=0><path id=mail-to-share fill-rule=evenodd d="m5047 6391h51 13145 53c266 0 484 219 484 485v9616c0 267-218 485-484 485h-13275c-267 0-485-218-485-485v-9616c0-266 218-485 485-485m12654 1157h-50v8274h-11934v-8274h-49l4526 3729c497 409 994 818 1490 1227l1484-1223 4533-3733m-1789 0h-8440l3453 2840 759 625 753-620 3475-2845"/></svg>
+			<svg width=0 height=0><path id=whatsapp-share d="m16707 6632c-1333-1334-3105-2069-4993-2070-3891 0-7057 3166-7059 7058 0 1244 325 2458 943 3529l-1002 3657 3742-981c1031 562 2192 858 3373 859h3c0 0 0 0 0 0 3890 0 7056-3167 7058-7058 1-1886-733-3660-2065-4994m-4993 10860h-3c-1052-1-2085-284-2986-818l-214-127-2220 582 593-2165-140-222c-587-934-897-2013-897-3122 1-3234 2633-5866 5869-5866 1567 1 3040 612 4148 1721 1107 1109 1457 2583 1456 4150-1 3235-2633 5867-5866 5867m3218-4394c-177-88-1044-515-1205-574-162-59-280-88-397 88-118 177-456 574-559 692-102 118-205 132-382 44-176-88-744-274-1418-875-524-468-878-1045-981-1222-103-177-11-272 77-360 80-79 177-206 265-309 88-103 117-177 176-294 59-118 30-221-15-309-44-88-396-957-543-1310-143-344-289-297-397-302-103-6-221-7-338-7-118 0-309 45-470 221-162 177-618 603-618 1445 0 868 632 1707 720 1825 89 118 1244 1899 3013 2663 421 181 750 290 1006 345 422 135 807 116 1110 70 339-50 1044-426 1191-838 147-412 147-766 103-839-44-74-162-118-338-206"/></svg>
+			<svg width=0 height=0><path id=share-download-share d="m60308 10104h10421c8924 0 14566 5758 14566 14739 0 8982-5613 14739-14566 14739h-10421v-29478m-44792-10104l-15516 9989 10737 8665-10737 8463 15516 10191 10824-9011 10824 9011 15458-10076-10709-8578 10709-8579-15458-10075-10824 9010-10824-9010m10853 30226l-10853 9010-4663-3022v3397l15516 9298 15487-9298v-3397l-4635 3022-10852-9010m15544-11572l-15573 9643-15603-9643 15603-9644 15573 9644m165552 9874l7830 11111h-6592l-4606-6736-4663 6736h-6247l7744-10967-7283-10508h6592l4145 6103 4203-6103h6247l-7370 10364m-23893 11629c-6246 0-10535-4605-10535-11198 0-6620 4289-11255 10535-11255 6247 0 10508 4606 10508 11255 0 6593-4290 11198-10508 11198m0-17387c-2993 0-4605 2591-4605 6189 0 3541 1640 6161 4605 6161 2965 0 4606-2591 4606-6161 0-3598-1640-6189-4606-6189m-27807 16841h-6017v-31234h6017v11544c950-1152 3080-2246 5383-2246 6246 0 9758 5095 9758 11256 0 6160-3512 11198-9758 11198-2303 0-4433-1094-5383-2246v1728m0-4597c662 1497 2245 2504 4030 2504 3224 0 5152-2591 5152-6016 0-3455-1928-6045-5152-6045-1728 0-3368 1065-4030 2504v7053m-23749 15142h-5959v-29420h5959v1784c950-1151 3080-2245 5383-2245 6246 0 9787 5182 9787 11256 0 6045-3541 11198-9787 11198-2303 0-4433-1094-5383-2246v9673m0-15142c459 1497 2302 2504 4030 2504 3224 0 5152-2591 5152-6016 0-3455-1928-6045-5152-6045-1785 0-3311 1065-4030 2504v7053m-19028 7686c-6247 0-10536-4606-10536-11198 0-6621 4289-11256 10536-11256 6246 0 10507 4606 10507 11256 0 6592-4261 11198-10507 11198m0-17387c-2994 0-4606 2591-4606 6189 0 3541 1640 6160 4606 6160 2965 0 4605-2591 4605-6160 0-3598-1640-6189-4605-6189m-11889 1295c-806-489-1845-720-2994-720-2015 0-3656 1066-4088 3023v13299l-5930 1v-21475h5959v2101c921-1526 2677-2591 4807-2591 1008 0 1929 202 2246 374v5988m-30600 10191c5613 0 8693-3599 8693-9327 0-5758-3080-9356-8693-9356h-4088v18683h4088"/></svg>
+			<svg width=0 height=0><path id=download d="m2263 4165h-221c-187 0-34 0-86 0-326 1-639 3-959-164-689-360-953-974-910-1554 17-230 83-456 191-657 109-203 259-381 444-517 407-299 975-394 1620-91 248-596 740-957 1291-1101 309-81 637-93 950-39 315 53 617 173 871 356 431 309 728 794 733 1439 355 70 608 349 731 692 54 148 82 310 83 471 1 163-25 326-82 475-147 385-485 684-1055 690h-2-879v-340h879v1c403-4 639-209 739-472 43-111 62-232 62-353-1-122-23-245-63-358-97-268-300-479-579-484-7 0-13 0-20-1-94-6-164-87-158-180 40-594-210-1034-587-1304-212-152-465-252-730-298-267-45-546-35-808 33-498 130-937 474-1117 1051-4 16-10 32-19 47-46 81-150 110-231 63-583-334-1085-276-1428-23-144 105-261 244-346 402-85 160-138 338-152 522-33 457 178 942 728 1230 246 128 518 127 802 125 109 0-42-1 87-1h221v340m338 932l907 906v-3814h340v3814l906-906 240 240-1196 1197-120 120-121-120-1196-1197 240-240"/></svg>
+			<svg width=0 height=0><path id=view d="m3542 3061c149 0 270 121 270 270 0 150-121 271-270 271-150 0-271-121-271-271 0-149 121-270 271-270m-2611 680c783 652 1656 993 2557 993 877 1 1786-322 2672-996l206 269c-947 721-1927 1066-2878 1066-982 0-1928-369-2774-1072l217-260m-890-320c286-451 643-819 1047-1105 691-489 1516-733 2349-739 831-6 1672 224 2397 683 459 292 873 676 1209 1151l-276 195c-309-436-690-789-1115-1059-670-424-1446-637-2214-631-765 5-1522 229-2154 677-367 259-693 596-956 1010l-287-182m3502-1025c257 0 491 105 661 274 169 170 273 403 273 661 0 258-104 492-273 661-170 170-404 275-661 275-258 0-492-105-661-275-169-169-274-403-274-661 0-258 105-491 274-661 169-169 403-274 661-274m420 513c-107-107-256-173-420-173-165 0-314 66-421 173-107 108-174 257-174 422 0 165 67 314 174 422 107 107 256 174 421 174 164 0 313-67 420-174 108-108 174-257 174-422 0-165-66-314-174-422"/></svg>
+			<svg width=0 height=0><path id=my-facebook d="m25700 25700h-7967-4006-13727v-1214h13727v-8739h-3349v-3879h3349v-2860c0-3319 2027-5127 4989-5127 1419 0 2638 106 2993 153v3469l-2054 1c-1611 0-1922 765-1922 1888v2476h3840l-499 3879h-3341v8739h7967v1214"/></svg>
+			<svg width=0 height=0><path id=my-email d="m250 1087h6698c138 0 250 113 250 250v5611c0 138-112 250-250 250h-6698c-137 0-250-112-250-250v-5611c0-137 113-250 250-250m6049 5135v160h-320v-160-3661l-2240 1789c-61 48-145 46-202-1l-2238-1788v3661 160h-320v-160-3993c0-35 12-70 35-100 55-69 156-80 225-25l2400 1917 2393-1911c28-25 66-41 107-41 89 0 160 72 160 160v3993m579-4815h-6558v5471h6558v-5471"/></svg>
+			<svg width=0 height=0><path id=share d="m1983995 1545672c277681 0 502785 225104 502785 502785 0 277680-225104 502784-502785 502784-277680 0-502784-225104-502784-502784 0-53923 8523-105850 24238-154542l-531450-299395c-92176 106356-228268 173622-380063 173622-277681 0-502785-225104-502785-502784 0-277681 225104-502785 502785-502785 156555 0 296401 71555 388602 183749l519062-274787c-13248-45053-20389-92720-20389-142061 0-277680 225104-502784 502784-502784 277681 0 502785 225104 502785 502784 0 277681-225104 502785-502785 502785-156555 0-296391-71558-388602-183746l-519062 274784c13247 45053 20389 92720 20389 142061 0 53923-8523 105847-24238 154542l531450 299394c92187-106352 228267-173622 380063-173622"/></svg>
+			<svg width=0 height=0><path id=play stroke-linejoin="round" stroke-linecap="round" stroke-width="1000" d="m500 500v32597l20427-16299z"/></svg>
+		</div>  
+
+		
+		
+<!-- google-analytics --> 		
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-70850661-5', 'auto');
+  ga('send', 'pageview');
+
+</script>	
+<!-- google-analytics -->		
+<!-- Yandex.Metrika counter --> 
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37538625 = new Ya.Metrika({ id:37538625, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/37538625" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<!-- /Yandex.Metrika counter -->		
+
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+
+		
+		
+
+
+	
+
+
+	<script src="js/cd-panel-modernizr.js"></script>
+
+		
+
+	
+<!--
+send2
+
+	4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  4*4  
+-->
+
+
+
+
+	<div class="cd-panel from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+
+
+
+
+
+	
+            <form class="inviteform" action="#" method="post" id="sendform2" enctype="multipart/form-data">
+                <div class="rgrid">
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+					 <h3>ЗАБРОНИРОВАТЬ  ТУР 4/4</h3></br></br>
+                        <h3 class=about>
+							У нас нет готовых маршрутов, как у тур фирм</br>
+							мы страшны своей импровизацией..</br></br>
+						Так же у нас нет фиксированного прайса цен.</br>
+						С таким темпом экономического подьема РФ - задолбались их переписывать...</br></br>		
+						Просто, оставте заявку и мы вышлем вам предложение на email самого чумового варианта (или вариантов) на выбраные даты.		
+									
+									</h3>
+							
+					</div>
+                   
+                   
+
+<!--
+ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+-->
+                    
+                    
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>1</h2>
+                        <h3>ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ</h3>
+                        <div class="inputblock">
+                            <input name="data1" class="data-form" type="date" required="required">
+                        </div>
+                        <div class="inputblock">
+                            <h3 class="top-pos">ПО</h3>
+                        </div>
+	                    <div class="inputblock specialTelInput">
+                            <input name="data2" class="data-form" type="date" required="required">
+                        </div>					
+                    </div>                   
+<!--
+КОЛ-ВО ЧЕЛОВЕК
+-->                                      
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+						<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+                        <div class="inputblock">
+                        </div>
+                        <div class="inputblock">
+							<div class="select-wrapper">
+								<!--     
+									<div class="select-arrow-3"></div>
+									<div class="select-arrow-3"></div>
+								-->
+								<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+										<option id="font-size-select">5 туристов</option>
+										<option id="font-size-select">6 туристов</option>
+										<option id="font-size-select">7 туристов</option>
+										<option id="font-size-select">8 туристов</option>
+										<option id="font-size-select">9 туристов</option>
+										<option id="font-size-select">10 туристов</option>	
+								</select>
+							</div>	
+                        </div>
+						
+	                    <div class="inputblock">
+                        </div>					
+                    </div>						
+<!--
+БЮДЖЕТ ПОЕЗДКИ
+-->					
+					<div class="next-smal">  </div> 					
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+						<h3>БЮДЖЕТ ПОЕЗДКИ</h3>
+						<div id="slider">
+							<input name="range" class="bar" type="range" id="rangeinput" value="8000" onchange="rangevalue.value=value" min="4000" max="30000" step="1000"/>
+							<span class="highlight"></span>
+							<output id="rangevalue">РУБЛЕЙ	</output>
+						</div>
+						<div class="next-smal">  </div> 				
+                    </div>	                   
+                   
+<!--
+условия
+-->                  
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>2</h2>
+                        <h3>Выберите условия путешествия</h3>
+                        <h3 class="dark">(Опционально)</h3>
+                        
+						
+						
+						
+						
+                        <div class="inputblock width-100">
+                            <input name="checkbox1" type="checkbox" class="checkbox" id="checkbox-1" />
+                            <label class="txt-centr" for="checkbox-1">Есть вегетарианцы</label>
+                        </div>
+						
+                        <div class="inputblock width-100">
+                            <input name="checkbox2" type="checkbox" class="checkbox" id="checkbox-2">
+                            <label class="txt-centr" for="checkbox-2">Есть ограничениями по здоровью</label>
+                        </div>
+						
+	                    <div class="inputblock width-100">
+                            <input name="checkbox3" type="checkbox" class="checkbox" id="checkbox-3">
+                            <label class="txt-centr" for="checkbox-3">Есть дети</label>
+                        </div>
+						
+						
+                    </div>
+
+<!--
+еще
+-->					
+                    <div class="row guillotine-row form-fields-row clearfix">
+                        <h3>Что мы еще должны учитывать?</h3>
+                        <div class="textareablock">
+                            <textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+                        </div>
+                    </div>
+				
+<!--
+ИМЯ/EMAIL/ТЕЛ
+-->
+                    
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>3</h2>
+                        <h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+                        <div class="inputblock">
+                            <input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+                        </div>
+                        <div class="inputblock">
+                            <input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+                        </div>
+	                    <div class="inputblock specialTelInput">
+                            <input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+                        </div>					
+                    </div>
+                    
+                    					
+                    										
+<!--
+ОТПРАВИТЬ
+-->
+                         																				
+					
+                    <div class="row guillotine-row monstrous clearfix  opa">
+                        <div class="white-tall-verticle"></div>
+                        <div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+                        <div class="checkMark"></div>
+                    </div>
+                    
+                </div>
+            </form>	
+          
+			
+
+
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--
+send3
+
+	ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ ВОСХОЖДЕНИЯ 
+-->	
+	
+	
+	
+	<div class="cd-panel2 from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+		
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				
+				
+				
+				
+				
+				
+				<form class="inviteform" action="#" method="post" id="sendform3" enctype="multipart/form-data">
+					<div class="rgrid">
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>Забронировать Восхождение</h3></br></br>
+							<h3>Требования:</h3>
+							<h3 class=about>
+								1) Трекинговая одежда для несложного восхождения, мази / спреи от насикомых, солнечных ожегов, а также личные предметы гигиены и спальные принадлежности <a class="HoverLine-not-blink" href="http://www.kamchatka-travel.com/ru/equip" target="_blank">подробно</a>.</br>
+								2) Медицинская страховка.</br>
+								3) Летная погода - молитесь своим богам или синоптикам сами. Мы тут бессильны!</br>	
+								
+							</h3>
+							
+						</div>
+						
+						<!--
+							ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+						-->
+						
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>1</h2>
+							<h3>ПЕРИОЙД КОГДА ХОТИТЕ СОВЕРШИТЬ ПЕШИЙ ТУР</h3>
+							<h3 class="dark">Доступно: с 25 июля по 15 сентября</h3>
+							<div class="inputblock">
+								<input name="data1" class="data-form" type="date" required="required">
+							</div>
+							<div class="inputblock">
+								<h3 class="top-pos">ПО</h3>
+							</div>
+							<div class="inputblock specialTelInput">
+								<input name="data2" class="data-form" type="date" required="required">
+							</div>					
+						</div>
+						
+						<!--
+							КОЛ-ВО ЧЕЛОВЕК
+						-->                                      
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+							<div class="inputblock">
+							</div>
+							<div class="inputblock">
+								<div class="select-wrapper">
+									<!--     
+										<div class="select-arrow-3"></div>
+										<div class="select-arrow-3"></div>
+									-->
+									<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+										<option id="font-size-select">5 туристов</option>
+										<option id="font-size-select">6 туристов</option>
+										<option id="font-size-select">7 туристов</option>
+										<option id="font-size-select">8 туристов</option>
+										<option id="font-size-select">9 туристов</option>
+										<option id="font-size-select">10 туристов</option>	
+									</select>
+								</div>	
+							</div>
+							
+							<div class="inputblock">
+							</div>					
+						</div> 						
+						
+						<!--
+							ТУР
+						--> 						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>2</h2>
+							<h3>ВЫБОР ВОСХОЖДЕНИЯ</h3>
+							<h3 class="dark">По желанию группы маршрут может быть изменен / скоректирован на любом этапе тура.</h3>
+							<div class="wrapper">
+								
+								<input type="radio" value="Восхождение на Авачу" name="tab" id="tab-1" checked>
+								<label for="tab-1"><span class="inline">Авачи</span><span class="inline">нский</span></label>
+								<input type="radio" value="Восхождение на Горелый" name="tab" id="tab-2" >
+								<label for="tab-2"><span class="inline">Горе</span><span class="inline">лый</span></label>
+								<input type="radio" value="Восхождение на Мутновский" name="tab" id="tab-3" >
+								<label for="tab-3"><span class="inline">Мутно</span><span class="inline">вский</span></label>									
+								
+								
+								<div class="content">				
+									
+									<article class="tab-1">
+										<p class="topic">Восхождение на Авачинский вулкан
+										</p>
+										</br>
+										
+										<p class="topic">День</br>от <span class="price">8000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										
+										
+										Вся основная информация о вулкане имеется в свободном доступе: 
+										
+										</br>
+										
+										<p>
+											
+											<a href="https://goo.gl/cSN13f" target="_blank" class="wiki"> </a>
+											
+										</p>
+										</br>
+										
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">06:00</span> Встреча туристов в месте сбора группы. Трансфер до подножия вулкана.</br>
+										<span Class="time">08:30</span> Подготовка к восхождению. Чаепитие.</br>
+										<span Class="time">09:00</span> Восхождение на вулкан Авачинский.</br>
+										<span Class="time">18:00</span> Возвращение... Ужин.</br>
+										<span Class="time">21:00</span> Обратный трансфер.
+										
+									</article>													
+									
+									<article class="tab-2">
+										<p class="topic">Восхождение на Горелый вулкан
+										</p>
+										</br>
+										<p class="topic">день-ночь-день</br>от <span class="price">15000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о вулкане имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href="https://goo.gl/bqnVWr" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">ДЕНЬ</span> Встреча туристов в месте сбора группы. Трансфер до горячих источников / купание / обед / трансфер  подножия вулкана.</br>
+										<span Class="time">НОЧЬ</span> Ужин / Ночевка у подножия вулкана.</br>
+										<span Class="time">ДЕНЬ</span> Завтрак / Восхождение на вулкан с обедом на вершине / Обратный трансфер.</br>
+									</article>
+									
+									
+									<article class="tab-3">
+										<p class="topic">Восхождение на Мутновский вулкан
+										</p>
+										</br>
+										<p class="topic">день-ночь-день</br>от <span class="price">15000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о вулкане имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href="https://goo.gl/BWQUPt" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">ДЕНЬ</span> Встреча туристов в месте сбора группы. Трансфер до горячих источников / купание / обед / трансфер  подножия вулкана.</br>
+										<span Class="time">НОЧЬ</span> Ужин / Ночевка у подножия вулкана.</br>
+										<span Class="time">ДЕНЬ</span> Завтрак / Восхождение на вулкан с обедом на вершине / Обратный трансфер.</br>
+										
+									</article>
+									
+									
+									<br class="clear:both" />
+								</div><!-- //wrapper -->						
+							</div>						
+						</div>
+							
+							
+							
+							
+							
+							<!--
+								условия
+							-->                  
+							<div class="row guillotine-row form-fields-row clearfix version1-form">
+								<h2>3</h2>
+								<h3>Выберите условия путешествия</h3>
+								<h3 class="dark">(Опционально)</h3>
+								
+								
+								
+								
+								
+								<div class="inputblock width-100">
+									<input name="checkbox1" type="checkbox" class="checkbox" id="checkbox-1" />
+									<label class="txt-centr" for="checkbox-1">Есть вегетарианцы</label>
+								</div>
+								
+								<div class="inputblock width-100">
+									<input name="checkbox2" type="checkbox" class="checkbox" id="checkbox-2">
+									<label class="txt-centr" for="checkbox-2">Есть ограничениями по здоровью</label>
+								</div>
+								
+								<div class="inputblock width-100">
+									<input name="checkbox3" type="checkbox" class="checkbox" id="checkbox-3">
+									<label class="txt-centr" for="checkbox-3">Есть дети</label>
+								</div>
+								
+								
+							</div>
+							
+							<!--
+								еще
+							-->					
+							<div class="row guillotine-row form-fields-row clearfix">
+								<h3>Что мы еще должны учитывать?</h3>
+								<div class="textareablock">
+									<textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+								</div>
+							</div>
+							
+							<!--
+								ИМЯ/EMAIL/ТЕЛ
+							-->
+							
+							<div class="row guillotine-row form-fields-row clearfix version1-form">
+								<h2>4</h2>
+								<h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+								<div class="inputblock">
+									<input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+								</div>
+								<div class="inputblock">
+									<input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+								</div>
+								<div class="inputblock specialTelInput">
+									<input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+								</div>					
+							</div>
+							
+							
+							
+							<!--
+								ОТПРАВИТЬ
+							-->
+							
+							
+							<div class="row guillotine-row monstrous clearfix  opa">
+								<div class="white-tall-verticle"></div>
+								<div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+								<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+								<div class="checkMark"></div>
+							</div>
+							
+						</div>
+					</form>	
+				
+				
+				
+				
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--
+send4
+
+	ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР ПЕШИЙ ТУР 
+-->	
+
+	
+	
+	
+	<div class="cd-panel3 from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+		
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				
+				
+				
+				
+				
+				
+				<form class="inviteform" action="#" method="post" id="sendform4" enctype="multipart/form-data">
+					<div class="rgrid">
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>Забронировать Пеший тур</h3></br></br>
+							<h3>Требования:</h3>
+							<h3 class=about>
+								1) Трекинговая одежда для несложного восхождения, мази / спреи от насикомых, солнечных ожегов, а также личные предметы гигиены и спальные принадлежности <a class="HoverLine-not-blink" href="http://www.kamchatka-travel.com/ru/equip" target="_blank">подробно</a>.</br>
+								2) Медицинская страховка.</br>
+								3) Летная погода - молитесь своим богам или синоптикам сами. Мы тут бессильны!</br>	
+								
+							</h3>
+							
+						</div>
+						
+						<!--
+							ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+						-->
+						
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>1</h2>
+							<h3>ПЕРИОЙД КОГДА ХОТИТЕ СОВЕРШИТЬ ПЕШИЙ ТУР</h3>
+							<h3 class="dark">Доступно: с 10 июля по 15 октября</h3>
+							<div class="inputblock">
+								<input name="data1" class="data-form" type="date" required="required">
+							</div>
+							<div class="inputblock">
+								<h3 class="top-pos">ПО</h3>
+							</div>
+							<div class="inputblock specialTelInput">
+								<input name="data2" class="data-form" type="date" required="required">
+							</div>					
+						</div>
+						
+						<!--
+							КОЛ-ВО ЧЕЛОВЕК
+						-->                                      
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+							<div class="inputblock">
+							</div>
+							<div class="inputblock">
+								<div class="select-wrapper">
+									<!--     
+										<div class="select-arrow-3"></div>
+										<div class="select-arrow-3"></div>
+									-->
+									<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+										<option id="font-size-select">5 туристов</option>
+										<option id="font-size-select">6 туристов</option>
+										<option id="font-size-select">7 туристов</option>
+										<option id="font-size-select">8 туристов</option>
+										<option id="font-size-select">9 туристов</option>
+										<option id="font-size-select">10 туристов</option>	
+									</select>
+								</div>	
+							</div>
+							
+							<div class="inputblock">
+							</div>					
+						</div> 						
+						
+						<!--
+							ТУР
+						--> 						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>2</h2>
+							<h3>ВЫБОР ТУРА</h3>
+							<h3 class="dark">По желанию группы маршрут может быть изменен / скоректирован на любом этапе тура.</h3>
+							<div class="wrapper">
+								
+								<input type="radio" value="Вилючинский водопад от 10000Р 3-чел" name="tab" id="tab-4" checked>
+								<label for="tab-4"><span class="inline">ВОДО</span><span class="inline">ПАД</span></label>
+								<input type="radio" value="Голубые озера трансфер 2000Р 3-чел" name="tab" id="tab-5" >
+								<label for="tab-5"><span class="inline">ОЗЕ</span><span class="inline">РА</span></label>
+								<input type="radio" value="Вачкажец от 12000Р 3-чел" name="tab" id="tab-6" >
+								<label for="tab-6"><span class="inline">ВАЧК</span><span class="inline">АЖЕЦ</span></label>									
+								
+								
+								<div class="content">				
+									<article class="tab-4">
+										<p class="topic">Восхождение к Вилючинскому водопаду
+										</p>
+										</br>
+										<p class="topic">День</br>от <span class="price">10000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о водопаде имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href="https://goo.gl/RJxhcQ" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">08:00</span> Встреча туристов в месте сбора группы. Трансфер до подножия Вилючинского вулкана.</br>
+										<span Class="time">11:00</span> Подготовка к восхождению. Чаепитие.</br>
+										<span Class="time">12:00</span> Восхождение к водопаду.</br>
+										<span Class="time">17:00</span> Возвращение... Ужин.</br>
+										<span Class="time">19:00</span> Обратный трансфер с возможным заездом и купанием в горячих источниках.
+									</article>													
+									
+									<article class="tab-5">
+										<p class="topic">Самостоятельный Пеший тур к Голубым озерам
+										</p>
+										</br>
+										<p class="topic">Трансфер</br>от <span class="price">2000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о Голубых озерах имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href="https://goo.gl/cQtnvv" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">ДЕНЬ</span> Встреча туристов в месте сбора группы. Трансфер места старта самостоятельного пешего тура / Обратный трансфер</br>
+									</article>
+									
+									
+									<article class="tab-6">
+										<p class="topic">Пеший тур на Вачкажец
+										</p>
+										</br>
+										<p class="topic">день-ночь-день</br>от <span class="price">12000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о Вачкажец имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href="https://goo.gl/ZnIEcg" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">ДЕНЬ</span> Встреча туристов в месте сбора группы. Трансфер до подножия Вачкажец. Обед / Отдых - Восхождения </br>
+										<span Class="time">НОЧЬ</span> Ужин / Палаточный лагерь  озера.</br>
+										<span Class="time">ДЕНЬ</span> Завтрак / Отдых - Восхождения / Обед / Обратный трансфер.</br>
+									</article>
+									
+									
+									<br class="clear:both" />
+								</div><!-- //wrapper -->						
+							</div>						
+						</div>
+						
+						
+						
+						
+						
+						<!--
+							условия
+						-->                  
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>3</h2>
+							<h3>Выберите условия путешествия</h3>
+							<h3 class="dark">(Опционально)</h3>
+							
+							
+							
+							
+							
+							<div class="inputblock width-100">
+								<input name="checkbox1" type="checkbox" class="checkbox" id="checkbox-1" />
+								<label class="txt-centr" for="checkbox-1">Есть вегетарианцы</label>
+							</div>
+							
+							<div class="inputblock width-100">
+								<input name="checkbox2" type="checkbox" class="checkbox" id="checkbox-2">
+								<label class="txt-centr" for="checkbox-2">Есть ограничениями по здоровью</label>
+							</div>
+							
+							<div class="inputblock width-100">
+								<input name="checkbox3" type="checkbox" class="checkbox" id="checkbox-3">
+								<label class="txt-centr" for="checkbox-3">Есть дети</label>
+							</div>
+							
+							
+						</div>
+						
+						<!--
+							еще
+						-->					
+						<div class="row guillotine-row form-fields-row clearfix">
+							<h3>Что мы еще должны учитывать?</h3>
+							<div class="textareablock">
+								<textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+							</div>
+						</div>
+						
+						<!--
+							ИМЯ/EMAIL/ТЕЛ
+						-->
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>4</h2>
+							<h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+							<div class="inputblock">
+								<input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+							</div>
+							<div class="inputblock">
+								<input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+							</div>
+							<div class="inputblock specialTelInput">
+								<input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+							</div>					
+						</div>
+						
+						
+						
+						<!--
+							ОТПРАВИТЬ
+						-->
+						
+						
+						<div class="row guillotine-row monstrous clearfix  opa">
+							<div class="white-tall-verticle"></div>
+							<div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+							<div class="checkMark"></div>
+						</div>
+						
+					</div>
+				</form>	
+				
+				
+				
+				
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<!--
+send5
+
+
+	СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ СПЛАВ 
+-->	
+	
+	
+	
+	
+	<div class="cd-panel4 from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+		
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				
+				
+				
+				
+				
+				
+				<form class="inviteform" action="#" method="post" id="sendform5" enctype="multipart/form-data">
+					<div class="rgrid">
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>Заявка на сплав</h3></br></br>
+							<h3>Требования:</h3>
+							<h3 class=about>
+								1) +18</br>
+								2) Подходящая одежда для несложного сплава, мази / спреи от насикомых, солнечных ожегов, а также личные предметы гигиены и спальные принадлежности <a class="HoverLine-not-blink" href="http://tourskazka.ru/faq.html#3" target="_blank">подробно</a>.</br>
+								3) Медицинская страховка.</br>
+								4) Летная погода - молитесь своим богам или синоптикам сами. Мы тут бессильны!</br>	
+								
+							</h3>
+							
+						</div>
+						
+						<!--
+							ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+						-->
+						
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>1</h2>
+							<h3>ПЕРИОЙД КОГДА ХОТИТЕ СОВЕРШИТЬ СПЛАВ</h3>
+							<h3 class="dark">Доступно: с 8 мая по 15 октября</h3>
+							<div class="inputblock">
+								<input name="data1" class="data-form" type="date" required="required">
+							</div>
+							<div class="inputblock">
+								<h3 class="top-pos">ПО</h3>
+							</div>
+							<div class="inputblock specialTelInput">
+								<input name="data2" class="data-form" type="date" required="required">
+							</div>					
+						</div>
+						
+						<!--
+							КОЛ-ВО ЧЕЛОВЕК
+						-->                                      
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+							<div class="inputblock">
+							</div>
+							<div class="inputblock">
+								<div class="select-wrapper">
+									<!--     
+										<div class="select-arrow-3"></div>
+										<div class="select-arrow-3"></div>
+									-->
+									<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+										<option id="font-size-select">5 туристов</option>
+										<option id="font-size-select">6 туристов</option>
+										<option id="font-size-select">7 туристов</option>
+										<option id="font-size-select">8 туристов</option>
+										<option id="font-size-select">9 туристов</option>
+									</select>
+								</div>	
+							</div>
+							
+							<div class="inputblock">
+							</div>					
+						</div> 						
+						
+						<!--
+							ТУР
+						--> 						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>2</h2>
+							<h3>ВЫБОР СПЛАВА</h3>
+							<h3 class="dark">По желанию группы маршрут может быть изменен / скоректирован на любом этапе тура.</h3>
+							<div class="wrapper">
+								
+								<input type="radio" value="Сплав по р.Авача от 10000" name="tab" id="tab-7" checked>
+								<label class="col-2" for="tab-7"><span class="inline">АВА</span><span class="inline">ЧА</span></label>
+								<input type="radio" value="Сплав по р.Быстрая от 24000" name="tab" id="tab-8" >
+								<label class="col-2" for="tab-8"><span class="inline">БЫСТ</span><span class="inline">РАЯ</span></label>
+<!-- 								<input type="radio" value="Вачкажец" name="tab" id="tab-6" >
+								<label for="tab-6"><span class="inline">ВАЧК</span><span class="inline">АЖЕЦ</span></label>	 -->								
+								
+								
+								<div class="content">				
+									<article class="tab-7">
+										<p class="topic">Сплав по реке Авача
+										</p>
+										</br>
+										<p class="topic">День</br>от <span class="price">10000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о реке имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href=https://goo.gl/k7sLbb" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">08:00</span> Встреча туристов в месте сбора группы. Трансфер до реки.</br>
+										<span Class="time">10:00</span> Подготовка к сплаву. Чаепитие.</br>
+										<span Class="time">12:00</span> Сплав с остановками на перекусы.</br>
+										<span Class="time">18:00</span> Возвращение... Обратный трансфер.</br>
+									</article>													
+									
+									<article class="tab-8">
+										<p class="topic">Сплав по реке Быстрая
+										</p>
+										</br>
+										<p class="topic">вечер-ночь-день-ночь-день</br>от <span class="price">24000</span> Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о реке имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href="https://goo.gl/HbPgiA" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">ВЕЧЕР</span> Встреча туристов в месте сбора группы. Трансфер до реки. Ужин / ночевка в палатках.</br>
+										<span Class="time">ДЕНЬ</span> Подготовка к сплаву - сплав / Остановка / Разбитие лагеря / Ужин / Ночевка.</br>
+										<span Class="time">ДЕНЬ</span> Завтрак / Сбор лагеря / Сплав / Обратный трансфер.</br>
+									</article>
+									
+									
+<!-- 									<article class="tab-6">
+										<p class="topic">Пеший тур на Вачкажец
+										</p>
+										</br>
+										<p class="topic">день-ночь-день</br>от 12000Р</br>(за группу 3-чел)
+										</p>
+										</br>										
+										Вся основная информация о Вачкажец имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href="https://goo.gl/ZnIEcg" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										
+										<p class="topic">ПРОГРАММА</p>
+										<span Class="time">ДЕНЬ</span> Встреча туристов в месте сбора группы. Трансфер до подножия Вачкажец. Обед / Отдых - Восхождения </br>
+										<span Class="time">НОЧЬ</span> Ужин / Палаточный лагерь  озера.</br>
+										<span Class="time">ДЕНЬ</span> Завтрак / Отдых - Восхождения / Обед / Обратный трансфер.</br>
+									</article> -->
+									
+									
+									<br class="clear:both" />
+								</div><!-- //wrapper -->						
+							</div>						
+						</div>
+						
+						
+						
+						
+						
+						<!--
+							условия
+						-->                  
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>3</h2>
+							<h3>Выберите условия путешествия</h3>
+							<h3 class="dark">(Опционально)</h3>
+							
+							
+							
+							
+							
+							<div class="inputblock width-100">
+								<input name="checkbox1" type="checkbox" class="checkbox" id="checkbox-1" />
+								<label class="txt-centr" for="checkbox-1">Есть вегетарианцы</label>
+							</div>
+							
+							<div class="inputblock width-100">
+								<input name="checkbox2" type="checkbox" class="checkbox" id="checkbox-2">
+								<label class="txt-centr" for="checkbox-2">Есть ограничениями по здоровью</label>
+							</div>
+							
+
+							
+							
+						</div>
+						
+						<!--
+							еще
+						-->					
+						<div class="row guillotine-row form-fields-row clearfix">
+							<h3>Что мы еще должны учитывать?</h3>
+							<div class="textareablock">
+								<textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+							</div>
+						</div>
+						
+						<!--
+							ИМЯ/EMAIL/ТЕЛ
+						-->
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>4</h2>
+							<h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+							<div class="inputblock">
+								<input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+							</div>
+							<div class="inputblock">
+								<input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+							</div>
+							<div class="inputblock specialTelInput">
+								<input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+							</div>					
+						</div>
+						
+						
+						
+						<!--
+							ОТПРАВИТЬ
+						-->
+						
+						
+						<div class="row guillotine-row monstrous clearfix  opa">
+							<div class="white-tall-verticle"></div>
+							<div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+							<div class="checkMark"></div>
+						</div>
+						
+					</div>
+				</form>	
+				
+				
+				
+				
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+
+
+
+
+
+
+
+<!--
+send6
+
+
+	ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ ПОЛЕТ
+-->
+
+	<div class="cd-panel5 from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+		
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				
+				
+				
+				
+				
+				
+				<form class="inviteform" action="#" method="post" id="sendform6" enctype="multipart/form-data">
+					<div class="rgrid">
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>Заявка на полет в тандеме</h3></br></br>
+							<h3>Требования:</h3>
+							<h3 class=about>
+								1) Возраст от 18+.</br>
+								2) Без серьезных ограничений по здоровью.</br>
+								3) Подходящая одежда непродуваемая ветром...сами понимаете, на высоте переодется негде...</br>
+								4) Медицинская страховка.</br>
+								5) Летная погода - молитесь своим богам или синоптикам сами. Мы тут бессильны!</br>	
+								
+							</h3>
+							
+						</div>
+						<!--
+							СТОИМОСТЬ
+						-->
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>СТОИМОСТЬ</h3>
+							<h3 class="price">от <span class="price-big">3500</span> Р</h3>
+							<h3>ЗА ПОЛЕТ</h3>
+						</div>
+						
+						<!--
+							ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+						-->
+						
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>1</h2>
+							<h3>КОГДА ХОТИТЕ СОВЕРШИТЬ ПОЛЕТ</h3>
+							<div class="inputblock">
+								<h3 class="top-pos"></h3>
+							</div>							
+							<div class="inputblock">
+								<input name="data1" class="data-form" type="date" required="required">
+							</div>
+							<div class="inputblock">
+								<h3 class="top-pos"></h3>
+							</div>
+						</div>
+						
+						<!--
+							КОЛ-ВО ЧЕЛОВЕК
+						-->                                      
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+							<div class="inputblock">
+							</div>
+							<div class="inputblock">
+								<div class="select-wrapper">
+									<!--     
+										<div class="select-arrow-3"></div>
+										<div class="select-arrow-3"></div>
+									-->
+									<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+									</select>
+								</div>	
+							</div>
+							
+							<div class="inputblock">
+							</div>					
+						</div> 						
+						
+						
+						<!--
+							еще
+						-->					
+						<div class="row guillotine-row form-fields-row clearfix">
+							<h3>Что мы еще должны учитывать?</h3>
+							<div class="textareablock">
+								<textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+							</div>
+						</div>
+						
+						<!--
+							ИМЯ/EMAIL/ТЕЛ
+						-->
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>2</h2>
+							<h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+							<div class="inputblock">
+								<input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+							</div>
+							<div class="inputblock">
+								<input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+							</div>
+							<div class="inputblock specialTelInput">
+								<input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+							</div>					
+						</div>
+						
+						
+						
+						<!--
+							ОТПРАВИТЬ
+						-->
+						
+						
+						<div class="row guillotine-row monstrous clearfix  opa">
+							<div class="white-tall-verticle"></div>
+							<div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+							<div class="checkMark"></div>
+						</div>
+						
+					</div>
+				</form>	
+				
+				
+				
+				
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+	
+	
+	
+	
+<!--
+send7
+
+
+	SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP SUP 
+-->	
+	
+	<div class="cd-panel6 from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+		
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+				
+				
+				
+				
+				
+				
+				<form class="inviteform" action="#" method="post" id="sendform7" enctype="multipart/form-data">
+					<div class="rgrid">
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>Заявка на SUP</h3></br></br>
+							<h3>Требования:</h3>
+							<h3 class=about>
+								1) 18+</br>
+								2) Подходящая одежда.</br>
+								3) Медицинская страховка.</br>
+								4) Летная погода - молитесь своим богам или синоптикам сами. Мы тут бессильны!</br>	
+								
+							</h3>
+							
+						</div>
+						
+						<!--
+							ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+						-->
+						
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>1</h2>
+							<h3>ПЕРИОЙД КОГДА ХОТИТЕ SUP ТУР</h3>
+							<div class="inputblock">
+								<input name="data1" class="data-form" type="date" required="required">
+							</div>
+							<div class="inputblock">
+								<h3 class="top-pos">ПО</h3>
+							</div>
+							<div class="inputblock specialTelInput">
+								<input name="data2" class="data-form" type="date" required="required">
+							</div>					
+						</div>
+						
+						<!--
+							КОЛ-ВО ЧЕЛОВЕК
+						-->                                      
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+							<div class="inputblock">
+							</div>
+							<div class="inputblock">
+								<div class="select-wrapper">
+									<!--     
+										<div class="select-arrow-3"></div>
+										<div class="select-arrow-3"></div>
+									-->
+									<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+										<option id="font-size-select">5 туристов</option>
+										<option id="font-size-select">6 туристов</option>
+										<option id="font-size-select">7 туристов</option>
+										<option id="font-size-select">8 туристов</option>
+										<option id="font-size-select">9 туристов</option>
+										<option id="font-size-select">10 туристов</option>										
+									</select>
+								</div>	
+							</div>
+							
+							<div class="inputblock">
+							</div>					
+						</div> 						
+						
+						<!--
+							ТУР
+						--> 						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>2</h2>
+							<h3>ВЫБОР SUP ТУРА</h3>
+							<div class="wrapper">
+								
+								<input type="radio" value="SUP р.Паратунка от 3000Р" name="tab" id="tab-9" checked>
+								<label class="col-5" for="tab-9"><span class="inline">ПА</span><span class="inline">РА</span><span class="inline">ТУ</span><span class="inline">Н</span><span class="inline">КА</span></label>
+								<input type="radio" value="SUP р.Быстрая от 3000Р" name="tab" id="tab-10" >
+								<label class="col-5" for="tab-10"><span class="inline">БЫ</span><span class="inline">СТ</span><span class="inline">РА</span><span class="inline">Я</span></label>
+								<input type="radio" value="SUP р.Авача от 3000Р" name="tab" id="tab-11" >
+								<label class="col-5" for="tab-11"><span class="inline">АВ</span><span class="inline">АЧ</span><span class="inline">А</span></label>								
+								<input type="radio" value="SUP Авачинская бухта от 2000Р" name="tab" id="tab-12" >
+								<label class="col-5" for="tab-12"><span class="inline">БУ</span><span class="inline"><span class="inline">Х</span>ТА</span></label>
+								<input type="radio" value="SUP выходы к труднодоступным водоемам от 7000Р" name="tab" id="tab-13" >
+								<label class="col-5" for="tab-13"><span class="inline">HA</span><span class="inline">RD</span></label>
+
+								
+								
+								<div class="content">				
+									<article class="tab-9">
+										<p class="topic">SUP cплав по реке Паратунка
+										</p>
+										</br>
+										<p class="topic">3-4 часа</br>от <span class="price">3000</span> Р</br>(за 1-чел)
+										</p>
+										</br>										
+										Вся основная информация о реке имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href=https://goo.gl/cwWgJf" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ОПИСАНИЕ</p>
+										<p class="norm">Самый легкий из предлагаемых туров. Подойдет всем без исключения категориям туристов. Спокойная, извилистая река, протекающая сначала по лесу, затем по тундре. Рекомендуется новичкам. </p>
+										<span Class="time">Протяженность</span> 10-18 км.</br>
+										<span Class="time">Группа</span> до 10 человек.</br>
+										<span Class="time">Сложность</span> 2 из 5.</br>
+										<span Class="time">Стоимость</span> 3 600 рублей.</br>
+										<span Class="time">По предоплате</span> 3 000 рублей (не менее чем за 2 недели)</br>
+									</article>													
+									
+									<article class="tab-10">
+										<p class="topic">SUP cплав по реке Быстрая
+										</p>
+										</br>
+										<p class="topic">5-6 часов</br>от <span class="price">3000</span> Р</br>(за 1-чел)
+										</p>
+										</br>										
+										Вся основная информация о реке имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href=https://goo.gl/vquPTG" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ОПИСАНИЕ</p>
+										<p>Активный экстремальный тур. Совмещает SUP сплав по горной реке и пешие переходу по камчатским джунглям. Река очень извилистая и разнообразная. Пороги, завалы, перекаты, быстрые узкие протоки. Очень интересно, активно и экстремально. Рекомендуется опытным SUPерам, каякерам и рафтерам. Очень рекомендуется на этот тур взять себе в прокате хороший теплый гидрокостюм. </p>
+										<span Class="time">Протяженность</span> 10 км из них 3 км пешком.</br>
+										<span Class="time">Группа</span> до 10 человек.</br>
+										<span Class="time">Сложность</span> 4 из 5.</br>
+										<span Class="time">Стоимость</span> 3 600 рублей.</br>
+										<span Class="time">По предоплате</span> 3 000 рублей (не менее чем за 2 недели)</br>
+									</article>
+									
+									
+									<article class="tab-11">
+										<p class="topic">SUP cплав по реке Авача и выход в Авачинскую бухту
+										</p>
+										</br>
+										<p class="topic">5-6 часов</br>от <span class="price">3000</span> Р</br>(за 1-чел)
+										</p>
+										</br>										
+										Вся основная информация о реке имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href=https://goo.gl/3AQVBx" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ОПИСАНИЕ</p>
+										<p>Широкая глубокая река, протекающая по лесу, плавно переходящему в прибрежную тундру. Выход в разветвленную дельту реки и открытую воду Авачинской Бухты. Шикарные фирменные Камчатские виды!</p>
+										<span Class="time">Протяженность</span> 15-20 км.</br>
+										<span Class="time">Группа</span> до 10 человек.</br>
+										<span Class="time">Сложность</span> 3 из 5.</br>
+										<span Class="time">Стоимость</span> 3 600 рублей.</br>
+										<span Class="time">По предоплате</span> 3 000 рублей (не менее чем за 2 недели)</br>
+									</article>
+									
+									<article class="tab-12">
+										<p class="topic">SUP туры по Авачинской бухте
+										</p>
+										</br>
+										<p class="topic">2-7 часов</br>от <span class="price">2000</span> Р</br>(за 1-чел)
+										</p>
+										</br>										
+										Вся основная информация о бухте имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href=https://goo.gl/ohOCLX" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ОПИСАНИЕ</p>
+										<p>Морской порт, кладбище кораблей, скалы, птичьи базары на островах, экскурсии по гротам. </p>
+										<span Class="time">Протяженность</span> 2-15 км.</br>
+										<span Class="time">Группа</span> до 10 человек.</br>
+										<span Class="time">Сложность</span> 3 из 5.</br>
+										<span Class="time">Стоимость</span> 2 600 рублей.</br>
+										<span Class="time">По предоплате</span> 2 000 рублей (не менее чем за 2 недели)</br>
+									</article>
+
+									<article class="tab-13">
+										<p class="topic">SUP выходы к труднодоступным водоемам
+										</p>
+										</br>
+										<p class="topic">8-10 часов</br>от <span class="price">7000</span> Р</br>(за 1-чел)
+										</p>
+										</br>										
+										Вся основная информация о бухте имеется в свободном доступе: 
+										</br>
+										<p>
+											<a href=https://goo.gl/ohOCLX" target="_blank" class="wiki"> </a>
+										</p>
+										</br>
+										<p class="topic">ОПИСАНИЕ</p>
+										<p>Восхождение на вулкан Горелый, спуск к озеру которе находится в кратере вулкана. Часовой тур по озеру. Доступно людям в хорошей физической форме. Опыт восхождений необязателен. 
+											</br>
+											Входит транспорт из Петропавловска-Камчатского и обратно, прокат САПов, работа гидов на восхождении.</p>
+										<span Class="time">Протяженность</span> 15 км.</br>
+										<span Class="time">Группа</span> до 10 человек.</br>
+										<span Class="time">Сложность</span> 4 из 5.</br>
+										<span Class="time">Стоимость</span> 7 600 рублей.</br>
+										<span Class="time">По предоплате</span> 7 000 рублей (не менее чем за 2 недели)</br>
+									</article>
+
+									
+									<br class="clear:both" />
+								</div><!-- //wrapper -->						
+							</div>						
+						</div>
+						
+						
+						
+						
+						
+
+						
+						<!--
+							еще
+						-->					
+						<div class="row guillotine-row form-fields-row clearfix">
+							<h3>Что мы еще должны учитывать?</h3>
+							<div class="textareablock">
+								<textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+							</div>
+						</div>
+						
+						<!--
+							ИМЯ/EMAIL/ТЕЛ
+						-->
+						
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h2>3</h2>
+							<h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+							<div class="inputblock">
+								<input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+							</div>
+							<div class="inputblock">
+								<input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+							</div>
+							<div class="inputblock specialTelInput">
+								<input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+							</div>					
+						</div>
+						
+						
+						
+						<!--
+							ОТПРАВИТЬ
+						-->
+						
+						
+						<div class="row guillotine-row monstrous clearfix  opa">
+							<div class="white-tall-verticle"></div>
+							<div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+							<div class="checkMark"></div>
+						</div>
+						
+					</div>
+				</form>	
+				
+				
+				
+				
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+
+
+
+
+
+<!--
+send8
+
+	Fishing   Fishing   Fishing   Fishing   Fishing   Fishing   Fishing   Fishing   Fishing   Fishing   
+-->
+
+
+
+
+	<div class="cd-panel7 from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+
+
+
+
+
+	
+            <form class="inviteform" action="#" method="post" id="sendform8" enctype="multipart/form-data">
+                <div class="rgrid">
+                   
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>РЫБАЛКА НА КАМЧАТСКИХ ВОДОЕМАХ</h3></br></br>
+							<h3>Требования:</h3>
+							<h3 class=about>
+								1) <a class="HoverLine-not-blink" href="http://www.rybolov-sportsmen.ru/catalog/37/1240/" target="_blank">Одежда для для рыбалки</a>, мази / спреи от насикомых, солнечных ожегов, а также личные предметы гигиены и спальные принадлежности.</br>
+								2) Медицинская страховка.</br>	
+							</h3>
+							
+						</div>                   
+
+						<!--
+							СТОИМОСТЬ
+						-->
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>СТОИМОСТЬ</h3>
+							<h3 class="price">от <span class="price-big">15000</span> Р</h3>
+							<h3>В СУТКИ ЗА ГРУППУ 3 ЧЕЛ</h3>
+							
+							
+							
+										<p class="topic color-white">В стоимость входит:</p>
+										<span Class="time color-white">1</span> <span Class="color-white">Трансфер от места сбора группы до места спуска на водоем и обратно.</span></br>
+										<span Class="time color-white">2</span> <span Class="color-white">Услуги гида.</span></br>
+										<span Class="time color-white">3</span> <span Class="color-white">Рыболовные снасти и все необходимые принадлежности для рыбалки (лодки, моторы, удочки и т.д.)</span></br>
+										<span Class="time color-white">4</span> <span Class="color-white">Питание.</span></br>
+
+								</div>
+												
+<!--
+ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+-->
+                    
+                    
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>1</h2>
+                        <h3>ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ</h3>
+                        <div class="inputblock">
+                            <input name="data1" class="data-form" type="date" required="required">
+                        </div>
+                        <div class="inputblock">
+                            <h3 class="top-pos">ПО</h3>
+                        </div>
+	                    <div class="inputblock specialTelInput">
+                            <input name="data2" class="data-form" type="date" required="required">
+                        </div>					
+                    </div>                   
+<!--
+КОЛ-ВО ЧЕЛОВЕК
+-->                                      
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+						<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+                        <div class="inputblock">
+                        </div>
+                        <div class="inputblock">
+							<div class="select-wrapper">
+								<!--     
+									<div class="select-arrow-3"></div>
+									<div class="select-arrow-3"></div>
+								-->
+								<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+										<option id="font-size-select">5 туристов</option>
+										<option id="font-size-select">6 туристов</option>
+								</select>
+							</div>	
+                        </div>
+						
+	                    <div class="inputblock">
+                        </div>					
+                    </div>						
+<!--
+БЮДЖЕТ ПОЕЗДКИ
+-->					
+					<div class="next-smal">  </div> 					
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+						<h3>НА СКОЛЬКО СУТОК</h3>
+										<p class="topic color-white">От колличества выбранных дней зависит тур.</br>
+										Это может быть тур "выходного дня" (при выборе 1-сутки)</br>или же рыбалка, на самых отдаленных водоемах Камчатки</p>
+						
+						<div id="slider">
+							<input name="range" class="bar" type="range" id="rangeinput" value="2" onchange="rangevalue.value=value" min="1" max="10" step="1"/>
+							<span class="highlight"></span>
+							<output id="rangevalue">СУТКИ	</output>
+						</div>
+						<div class="next-smal">  </div> 				
+                    </div>	                   
+                   
+<!--
+условия
+-->                  
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>2</h2>
+                        <h3>Выберите условия путешествия</h3>
+                        <h3 class="dark">(Опционально)</h3>
+                        
+						
+						
+						
+						
+                        <div class="inputblock width-100">
+                            <input name="checkbox1" type="checkbox" class="checkbox" id="checkbox-1" />
+                            <label class="txt-centr" for="checkbox-1">Есть вегетарианцы</label>
+                        </div>
+						
+                        <div class="inputblock width-100">
+                            <input name="checkbox2" type="checkbox" class="checkbox" id="checkbox-2">
+                            <label class="txt-centr" for="checkbox-2">Есть ограничениями по здоровью</label>
+                        </div>
+						
+	                    <div class="inputblock width-100">
+                            <input name="checkbox3" type="checkbox" class="checkbox" id="checkbox-3">
+                            <label class="txt-centr" for="checkbox-3">Есть дети</label>
+                        </div>
+						
+						
+                    </div>
+
+<!--
+еще
+-->					
+                    <div class="row guillotine-row form-fields-row clearfix">
+                        <h3>Что мы еще должны учитывать?</h3>
+                        <div class="textareablock">
+                            <textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+                        </div>
+                    </div>
+				
+<!--
+ИМЯ/EMAIL/ТЕЛ
+-->
+                    
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>3</h2>
+                        <h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+                        <div class="inputblock">
+                            <input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+                        </div>
+                        <div class="inputblock">
+                            <input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+                        </div>
+	                    <div class="inputblock specialTelInput">
+                            <input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+                        </div>					
+                    </div>
+                    
+                    					
+                    										
+<!--
+ОТПРАВИТЬ
+-->
+                         																				
+					
+                    <div class="row guillotine-row monstrous clearfix  opa">
+                        <div class="white-tall-verticle"></div>
+                        <div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+                        <div class="checkMark"></div>
+                    </div>
+                    
+                </div>
+            </form>	
+          
+			
+
+
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+<!--
+send9
+
+	House	   House	   House	   House	   House	   House	   House	   House	   
+-->
+
+
+
+
+	<div class="cd-panel8 from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Close</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+
+
+
+
+
+	
+            <form class="inviteform" action="#" method="post" id="sendform9" enctype="multipart/form-data">
+                <div class="rgrid">
+                   
+						<div class="row guillotine-row form-fields-row clearfix version1-form">
+							<h3>ЗАЯВКА НА НОЧЛЕГ</h3></br></br>
+							<h3>ЧТО ЭТО</h3>
+							<h3 class=about>
+								Услуги частников, которые готовы предоставить аппартаменты для проживания туристам</br>
+								в локации</br>
+								<a class="HoverLine-not-blink" href="https://goo.gl/mJvaSi" target="_blank">г. П-Камчатский</a> 
+								+ 
+								<a class="HoverLine-not-blink" href="https://goo.gl/mT0z7h" target="_blank">г. Елизово</a>
+								</br>
+							</h3>
+							
+						</div>                   
+
+<!--
+ПЕРИОЙД КОГДА ХОТИТЕ ПОЕХАТЬ
+-->
+                    
+                    
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>1</h2>
+                        <h3>Планируете проживать с</h3>
+                        <div class="inputblock">
+                            <input name="data1" class="data-form" type="date" required="required">
+                        </div>
+                        <div class="inputblock">
+                            <h3 class="top-pos">ПО</h3>
+                        </div>
+	                    <div class="inputblock specialTelInput">
+                            <input name="data2" class="data-form" type="date" required="required">
+                        </div>					
+                    </div>                   
+<!--
+КОЛ-ВО ЧЕЛОВЕК
+-->                                      
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+						<h3>КОЛ-ВО ЧЕЛОВЕК</h3>
+                        <div class="inputblock">
+                        </div>
+                        <div class="inputblock">
+							<div class="select-wrapper">
+								<!--     
+									<div class="select-arrow-3"></div>
+									<div class="select-arrow-3"></div>
+								-->
+								<select name="select">
+										<option id="font-size-select">1 турист</option>
+										<option id="font-size-select">2 туриста</option>
+										<option id="font-size-select">3 туриста</option>
+										<option id="font-size-select">4 туриста</option>
+										<option id="font-size-select">5 туристов</option>
+										<option id="font-size-select">6 турист</option>
+										<option id="font-size-select">7 туриста</option>
+										<option id="font-size-select">8 туриста</option>
+										<option id="font-size-select">9 туриста</option>
+										<option id="font-size-select">10 туристов</option>
+
+										
+								</select>
+							</div>	
+                        </div>
+						
+	                    <div class="inputblock">
+                        </div>					
+                    </div>						
+<!--
+БЮДЖЕТ ПОЕЗДКИ
+-->					
+					<div class="next-smal">  </div> 					
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+						<h3>Планируемый бюджет на сутки всей группы?</h3>
+						<div id="slider">
+							<input name="range" class="bar" type="range" id="rangeinput" value="1000" onchange="rangevalue.value=value" min="500" max="20000" step="100"/>
+							<span class="highlight"></span>
+							<output id="rangevalue">РУБЛЕЙ	</output>
+						</div>
+						<div class="next-smal">  </div> 				
+                    </div>	                   
+                   
+<!--
+условия
+-->                  
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>2</h2>
+                        <h3>Выберите условия</h3>
+                        <h3 class="dark">(Опционально)</h3>
+                        
+						
+						
+						
+						
+                        <div class="inputblock width-100">
+                            <input name="checkbox1" type="checkbox" class="checkbox" id="checkbox-1" />
+                            <label class="txt-centr" for="checkbox-1">Необходим трансфер</label>
+                        </div>
+						
+                        <div class="inputblock width-100">
+                            <input name="checkbox2" type="checkbox" class="checkbox" id="checkbox-2">
+                            <label class="txt-centr" for="checkbox-2">Есть ограничениями по здоровью</label>
+                        </div>
+						
+	                    <div class="inputblock width-100">
+                            <input name="checkbox3" type="checkbox" class="checkbox" id="checkbox-3">
+                            <label class="txt-centr" for="checkbox-3">Есть дети</label>
+                        </div>
+
+	                    <div class="inputblock width-100">
+                            <input name="checkbox4" type="checkbox" class="checkbox" id="checkbox-4">
+                            <label class="txt-centr" for="checkbox-4">Есть животные</label>
+                        </div>
+
+						
+                    </div>
+
+<!--
+еще
+-->					
+                    <div class="row guillotine-row form-fields-row clearfix">
+                        <h3>Дополнительно</h3>
+                        <div class="textareablock">
+                            <textarea class="messageinput" name="message" rows="6" cols="40" placeholder="Например: - у меня насморк на грязь"></textarea>
+                        </div>
+                    </div>
+				
+<!--
+ИМЯ/EMAIL/ТЕЛ
+-->
+                    
+                    <div class="row guillotine-row form-fields-row clearfix version1-form">
+                        <h2>3</h2>
+                        <h3>ИМЯ&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;EMAIL&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;ТЕЛ</h3>
+                        <div class="inputblock">
+                            <input placeholder="Имя" name="name" value="" size="40" type="text" class="required nameinput" autocomplete="off">
+                        </div>
+                        <div class="inputblock">
+                            <input placeholder="Email" name="email" value="" size="40" type="email" class="required emailinput" autocomplete="off">
+                        </div>
+	                    <div class="inputblock specialTelInput">
+                            <input placeholder="Тел" name="tel" value="" size="40" type="tel" class="required" autocomplete="off">
+                        </div>					
+                    </div>
+                    
+                    					
+                    										
+<!--
+ОТПРАВИТЬ
+-->
+                         																				
+					
+                    <div class="row guillotine-row monstrous clearfix  opa">
+                        <div class="white-tall-verticle"></div>
+                        <div class="largeheader" id="largeheader">ОТПРАВИТЬ</div>
+							<input class="submitbutton"  value="OK" name="sendMail" type="submit" />
+                        <div class="checkMark"></div>
+                    </div>
+                    
+                </div>
+            </form>	
+          
+			
+
+
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+<script src="js/cd-panel-main.js"></script> <!-- Resource jQuery -->	
+	
+	
+	<!-- 	<link rel="stylesheet" type="text/css" href="css/component.css" />	 -->
+	<script src="js/custom-file-input.js"></script>	
+	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ 
+
+	
+
+
+		
+		
+</html>

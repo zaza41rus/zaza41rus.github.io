@@ -1,0 +1,16 @@
+User-agent: Yandex
+Disallow: /cgi-bin
+Disallow : /assets
+Disallow : /feedback
+Host: milkam.ru
+
+User-agent: Googlebot
+Disallow: /cgi-bin
+Disallow : /assets
+Disallow : /feedback
+
+User-agent: *
+Disallow: /cgi-bin
+Disallow : /assets
+Disallow : /feedback
+Sitemap: http://milkam.ru/sitemap.xml

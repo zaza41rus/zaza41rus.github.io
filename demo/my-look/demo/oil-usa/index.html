@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>Bardah Kendall Phillips 66 моторные масла на Камчатке. Фильтры Baldwin Filters</title>
+
+    <meta name="keywords" content="Для автомобилей, моторное масло, присадки, смазки, Бардаль, bardahl, моторное масло бардаль,  моторное масло bardahl, присадки bardahl, присадки бардаль, Кендал, Kendall, моторное масло кендал,  моторное масло Kendall, присадки Kendall, присадки кендал, Филипс 66, Phillips 66, моторное масло Филипс 66,  моторное масло Phillips 66, присадки Phillips 66, присадки Филипс 66 Фильтры топлевные  Baldwin Filters, балдвин фильтра,  сепараторы Baldwin балдвин" />
+
+
+
+
+    <meta property="og:site_name" content="Oil USA" />
+    <meta property="og:title" content="Оф. представитель Bardah | Kendall | Phillips 66 | Baldwin Filter на Камчатке"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://oilusa.ru/"/>
+    <meta property="og:image" content="http://oilusa.ru/img/oil-usa-share.jpg"/>
+    <meta property="og:description" content="Моторные масла, смазки, присадки по оптовым ценам для любых транспортных средст и агрегатов. Фильтра и фильтрующее оборудование."/>
+    <meta name="author" content="Mikhail Lebedev" />
+    <meta name="copyright" content="Oil USA 2016" />
+
+
+
+
+    <script src="https://use.typekit.net/ruc7ten.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load({
+                async: true
+            });
+        }
+        catch (e) {}
+    </script>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/app.js"></script>
+
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="static-assets/packages/bootstrap-3.3.1/css/bootstrap.min.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="manifest.json">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#000000">
+<link rel="shortcut icon" href="favicon.ico">
+<meta name="msapplication-config" content="browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body ng-controller="MainController">
+    <!-- <div class="authenticate"><a href="request/connect.html">Sign in</a> </div> -->
+    <div ng-init="showConnect = false" ng-class="{'show-connect': showConnect}" class="wrap landing">
+        <div class="aside">
+            <div class="aside-fixed">
+                <div class="logo"></div>
+                <div class="divider">Made <span>–</span> in <span>–</span> USA</div>
+
+                <a href="#0" class="cd-btn btn btn-lg btn-black request">Магазин</a>
+                <a href="#0" class="cd-btn btn btn-lg btn-white request">Магазин</a>
+
+                <a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-black request">Контакты</a>
+                <a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-white request">Контакты</a>
+
+                <div ng-class="{'show-connect': showConnect}" class="rad-humans">
+                    <div slide-in="{start: '#ben', end: '#marc'}" class="rad-human ben"></div>
+                    <div slide-in="{start: '#marc', end: '#ryan_veronica'}" class="rad-human marc"></div>
+                    <div slide-in="{start: '#ryan_veronica', end: '#helena'}" class="rad-human wide ryan_veronica"></div>
+                    <div slide-in="{start: '#helena', end: '#dan'}" class="rad-human helena"></div>
+                    <!-- <div slide-in="{start: '#dan', end: '#enrique'}" class="rad-human dan"></div>
+                    <div slide-in="{start: '#enrique', end: '#geoff'}" class="rad-human enrique"></div>
+                    <div slide-in="{start: '#geoff', end: '#mikael_steph'}" class="rad-human geoff"></div>
+                    <div slide-in="{start: '#mikael_steph', end: '#airbnb'}" class="rad-human mikael_steph"></div>
+                    <div slide-in="{start: '#airbnb', end: '#talent'}" class="rad-human airbnb"></div>
+                    <div slide-in="{start: '#talent', end: '#dann'}" class="rad-human talent"></div>
+                    <div slide-in="{start: '#dann', end: '#info'}" class="rad-human dann"></div> -->
+                </div>
+            </div>
+            <div ng-class="{'show-connect': showConnect}" slide-in="{start: '#intro_end', end: '#info'}" class="aside-bg"></div>
+
+
+            <div ng-class="{'show-connect': showConnect}" class="connect-form">
+                <a href="tel:8(900)444-22-21" class="btn btn-lg btn-black connect">8 (900) 444-222-1</a>
+                <a href="mailto:oilusa@mail.ru" class="btn btn-lg btn-black connect">oilusa@mail.ru</a>
+                <a href="https://yandex.ru/maps/?ll=158.561789%2C53.074585&z=19&mode=routes&rtext=53.075203%2C158.562787&rtt=auto" class="btn btn-lg btn-black connect">Карта проезда</a>
+                <a ng-click="showConnect = !showConnect" class="btn btn-lg btn-lightgray close">&times;</a> 
+            </div>
+
+
+
+
+
+        </div>
+        <div ng-class="{'show-connect': showConnect}" class="main connect">
+            <h2 class="push-bottom">
+        <span>Выбери способ<br /></span>
+        <span class="black">сотруднечества</span>
+      </h2> </div>
+        <div ng-class="{'show-connect': showConnect}" class="main">
+            <div parallax-it="2" class="landing-bg"></div>
+
+
+
+
+           <div class="sponsors">
+                <h2><span>Официальный<br /></span>
+                    <span>Представитель <br /></span>
+                    <span>на Камчатке<br /><br /></span>
+                     <span id="intro_end" class="black">Маслосмазочных<br /></span>
+                <span class="black">материалов  /<br /></span>
+                <span class="black">Фильтров <br /><br /></span>
+                <span>USA компаний:<br /></span>
+                </h2>
+            </div>
+
+
+
+
+            <h2 id="ben" class="push-big">
+        <span class="black">Bardahl<br /></span>
+        <span>Авто Масла / смазки<br /></span>
+        </h2>
+            <div class="sponsors co">
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                            	С 1939 года Bardahl Manufacturing Corporation производит инновационные продукты высокого качества для автомобильной промышленности, включая смазочные материалы, масла и присадки. Продукты Bardahl продаются по всему миру в более чем 90 странах на 6 континентах и упакованы в 16 языках. Широкая сеть производственных и упаковочных заводов было установлено Bardahl для поддержки его распространение во всем мире. Bardahl управляет своим бизнесом по всему миру из штаб-квартиры в Сиэтле, Вашингтон и и гордится своей продукцией сделанной в США.
+                            </p>
+                        </td>
+                        <td>
+<div class="none-mobi">
+<p>
+<iframe width="100%" height="50%" src="https://www.youtube.com/embed/BS7ttWwFkcg" frameborder="0" allowfullscreen></iframe> <br>
+</p> 
+<p>Официальный сайт компании <a href="http://www.bardahl.com/en/">www.bardahl.com</a></p>
+</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+      
+
+
+            <h2 id="marc" class="push-big">
+        <span class="black">Phillips 66<br /></span>
+        <span>Авто Масла / смазки<br /></span>
+      </h2>
+            <div class="sponsors co">
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                            	Бренд Phillips 66 начинает свою историю, которая насчитывает более века, в 1905 году. Именно тогда братья Филлипс смогли открыть в Оклахоме богатое нефтяное месторождение. В результате через 12 лет было создано Нефтяное предприятие Phillips. В будущем оно станет основанием современного бренда Phillips <br>
+
+															Компания Phillips 66 смогла разработать моторное масло для использования в любой сезон TropArtic® All Season еще в 1954 году. На 1979 год пришелся выпуск мультивязкостного авиамасла, особенностью которого стали дисперсионные характеристики. В составе материала отсутствовали зольные соединения X/C®.
+														</p>
+                        </td>
+                        <td>
+<div class="none-mobi">
+<p class="none-mobi">
+<iframe width="100%" height="50%" src="https://www.youtube.com/embed/-6RJkgFRBQk" frameborder="0" allowfullscreen></iframe> <br>
+</p>                            
+<p class="none-mobi">Официальный сайт компании <a href="http://www.phillips66.com/EN/Pages/index.aspx">www.phillips66.com</a></p>
+</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+
+
+
+            <h2 id="ryan_veronica" class="push-big">
+        <span class="black">Kendall<br /></span>
+        <span>Авто Масла / смазки<br /></span>
+      </h2>
+            <div class="sponsors co">
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+															Компания “Kendall Motor Oil” основана в г. Бредфорд, штат Пенсильвания, в 1881 году. В настоящий момент торговая марка “Kendall Motor Oil” является одним из брендов компании ConocoPhillips и продолжает оставаться одной из лидирующих в области переработки и производства нефтепродуктов для применения в легковом и грузовом автотранспорте, сельскохозяйственной технике и других напряженных отраслях промышленности. <br>
+
+															В погоне за постоянно растущим спросом в автомобильной индустрии в начале XX века в Пенсильвании был создан первый исследовательский центр по производству необходимых нефтепродуктов. В последнее время компания ConocoPhillips, в которую входят четыре торговые марки, включая Kendall Motor Oil, вышла на пятое место в мире по объему продаж конечного продукта.
+                            </p>
+                        </td>
+                        <td>
+<div class="none-mobi">  
+<p class="none-mobi">
+<iframe width="100%" height="50%" src="https://www.youtube.com/embed/h_ylOeK_6_M" frameborder="0" allowfullscreen></iframe> <br>
+</p>                        
+<p class="none-mobi">Официальный сайт компании <a href="http://www.kendallmotoroils.com/">www.kendallmotoroils.com</a></p>
+</div>
+                        </td>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+            <h2 id="helena" class="push-big">
+        <span class="black">Baldwin Filters<br /></span>
+        <span>Фильтра /<br /></span>
+        <span>фильтрующие оборудование<br /></span>
+      </h2>
+            <div class="sponsors co">
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+															Фирма "Болдуин филтерз", зародившаяся в 1936 г. - начало производства в Висконсине, как небольшое предприятие с менее чем 10 работниками, непрерывно росла и преуспевала с самого своего основания и превратилась в транснациональную компанию, продукция которой продается на шести континентах.
+                            </p>
+                        </td>
+                        <td>
+<div class="none-mobi">                     
+<p class="none-mobi">
+<iframe width="100%" height="50%" src="https://www.youtube.com/embed/PBtUx-yey7w" frameborder="0" allowfullscreen></iframe> <br>
+</p> 
+<p class="none-mobi">Официальный сайт компании <a href="http://www.baldwinfilter.com/ru/home.html">www.baldwinfilter.com</a></p>
+</div>
+                        </td>
+                </table>
+            </div>
+
+
+
+            <h2 id="dan" class="push-big"></h2>
+            <h2 id="info"></h2>
+
+            <div class="sponsors end">
+                <h2><span>Нас выбрали<br /></span>
+
+        </h2>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Профи и автолюбители сделали свой выбор. <a href="">Настало твое время!</a>.</p>
+                        </td>
+                        <td class="hide-mobile"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="background-image: url('https://scontent.cdninstagram.com/t51.2885-19/s150x150/12724650_767936630008418_2017507276_a.jpg')" class="sponsor-social"><a href="https://www.instagram.com/zaza41rus/" target="_blank">Mikhail Lebedev</a></h4>
+                            <p>Драйвер команды "AlcoTime"</p>
+                        </td>
+                        <td>
+                            <h4 style="background-image: url('https://scontent.cdninstagram.com/t51.2885-19/11820637_389772951224767_1708218966_a.jpg')" class="sponsor-social"><a href="https://www.instagram.com/rykov84/" target="_blank">Anton Rykov</a></h4>
+                            <p>Драйвер команды "AlcoTime"</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="background-image: url('https://scontent.cdninstagram.com/t51.2885-19/s150x150/13741192_266944223689888_383519560_a.jpg')" class="sponsor-social"><a href="https://www.instagram.com/sergey_alyushenko_/" target="_blank">Sergey Alyushenko</a></h4>
+                            <p>Нажмите на ссылку и проложите маршрут в Яндекс Навигаторе до нашего офиса / склада.</p>
+                        </td>
+                         <td>
+                            <h4 style="background-image: url('https://scontent.cdninstagram.com/t51.2885-19/s150x150/12724650_767936630008418_2017507276_a.jpg')" class="sponsor-social"><a href="https://www.instagram.com/zaza41rus/" target="_blank">Mikhail Lebedev</a></h4>
+                            <p>Драйвер команды "AlcoTime"</p>
+                        </td>
+                    </tr>
+<!--                     <tr>
+                        <td>
+                            <h4 style="background-image: url('../assets/conoco.svg')" class="sponsor-social"><a href="https://twitter.com/airbnb" target="_blank">Conoco</a></h4>
+                            <p>Airbnb is the world's largest community-driven hospitality company. With unique listings in 190 countries, travelers can belong anywhere.</p>
+                        </td>
+                        <td>
+                            <h4 style="background-image: url('../assets/bardahl.svg')" class="sponsor-social"><a href="https://twitter.com/patagonia" target="_blank">Bardahl</a></h4>
+                            <p>Tweets from the outdoor clothing company Patagonia. Get company news, links to great stories and alerts about new products, sales and special offers.</p>
+                            <ul class="social-team"> </ul>
+                        </td>
+                    </tr>  -->
+
+                </table>
+            </div>
+ 
+        </div>
+    </div>
+    <div class="social-items">
+    <a href="" target="_blank" class="icon instagram">Instagram</a>
+    <a href="" target="_blank" class="icon facebook">Facebook</a>
+    </div>
+    <div class="wrap creativedash">
+        <div class="aside"></div>
+        <div class="main">
+            <p>Web & Des <a href="https://my-look.ru">Mikhail</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="cd-panel from-right">
+
+
+<!--         <header class="cd-panel-header">
+            <h1>Title Goes Here</h1>
+            <a href="#0" class="cd-panel-close">Close</a>
+        </header> -->
+
+        <div class="cd-panel-container">
+            <div class="cd-panel-content">
+
+    <main class="cd-main-content">
+        <div class="cd-tab-filter-wrapper">
+            <div class="cd-tab-filter">
+                <div class="cd-filter-block">
+
+                        <div class="cd-select cd-filters">
+                            <select class="filter" name="selectThis" id="selectThis">
+                                <option value="">Показать все</option>
+                                <option value=".option1">Дизельное полусинтетика</option>
+                                <option value=".option2">Двухтактное</option>
+                                <option value=".option3">Четырехтактное мото</option>
+                                <option value=".option4">Декстрон 2,3</option>
+                                <option value=".option4">Автотракторное для КП</option>
+                                <option value=".option4">Трансмиссионное</option>
+                                <option value=".option4">Гидравлическое</option>
+                                <option value=".option4">Декстрон 2,3</option>
+                                <option value=".option4">Антифриз концентрат</option>
+                            </select>
+                        </div> <!-- cd-select -->
+
+                </div> <!-- cd-filter-block -->
+            </div> <!-- cd-tab-filter -->
+        </div> <!-- cd-tab-filter-wrapper -->
+
+        <section class="cd-gallery">
+            <ul>
+                <li class="mix option1"><img src="data-provider/images/Disel05/FAMILY-GUARDOL-ECT(Ti)-15W40-208-2.jpg" alt="Image 2">
+                    <div>
+                        <p class="tittle">FAMILY,GUARDOL ECT(Ti)</p>
+                        <p class="tittle2">15W40&emsp;|&emsp;1/55</p>
+                        <p class="tittle3">208.2 L</p>
+                        <p class="tittle4">55.650 Р</p>
+                    </div>
+                    <a data-productindex="lscf0001" href="#/product/uid-lscf0001/dell-alienware" class="buy">
+                    Подробно
+                    </a>
+                </li>            
+                <li class="mix option1"><img src="data-provider/images/Disel05/FAMILY-GUARDOL-ECT(Ti)-15W40-3-785.jpg" alt="Image 2">
+                    <div>
+                        <p class="tittle">FAMILY,GUARDOL ECT(Ti)</p>
+                        <p class="tittle2">15W40&emsp;|&emsp;4/1</p>
+                        <p class="tittle3">3.785 L</p>
+                        <p class="tittle4">1.407 Р</p>
+                    </div>
+                    <a data-productindex="lscf000255" href="#/product/uid-lscf000255/dell-alienware" class="buy">
+                    Подробно
+                    </a>
+                </li>
+                <li class="mix option1"><img src="data-provider/images/Disel05/FAMILY-GUARDOL-ECT(Ti)-15W40-18-93.jpg" alt="Image 2">
+                    <div>
+                        <p class="tittle">FAMILY,GUARDOL ECT(Ti)</p>
+                        <p class="tittle2">15W40&emsp;|&emsp;1/5P</p>
+                        <p class="tittle3">18.93 L</p>
+                        <p class="tittle4">6.510 Р</p>
+                    </div>
+                    <a data-productindex="lscf00025" href="#/product/uid-lscf00025/dell-alienware" class="buy">
+                    Подробно
+                    </a>
+                </li>
+
+               <li class="mix option1"><img src="data-provider/images/Disel05/FAMILY-GUARDOL-ECT(Ti)-15W40-208-2.jpg" alt="Image 2">
+                    <div>
+                        <p class="tittle">FAMILY,GUARDOL ECT(Ti)</p>
+                        <p class="tittle2">10W40&emsp;|&emsp;1/55</p>
+                        <p class="tittle3">208.2 L</p>
+                        <p class="tittle4">55.650 Р</p>
+                    </div>
+                    <a data-productindex="lscf0001" href="#/product/uid-lscf0001/dell-alienware" class="buy">
+                    Подробно
+                    </a>
+                </li>            
+                <li class="mix option1"><img src="data-provider/images/Disel05/FAMILY-GUARDOL-ECT(Ti)-15W40-3-785.jpg" alt="Image 2">
+                    <div>
+                        <p class="tittle">FAMILY,GUARDOL ECT(Ti)</p>
+                        <p class="tittle2">10W40&emsp;|&emsp;4/1</p>
+                        <p class="tittle3">3.785 L</p>
+                        <p class="tittle4">1.407 Р</p>
+                    </div>
+                    <a data-productindex="lscf0001" href="#/product/uid-lscf0001/dell-alienware" class="buy">
+                    Подробно
+                    </a>
+                </li>
+                <li class="mix option1"><img src="data-provider/images/Disel05/FAMILY-GUARDOL-ECT(Ti)-15W40-18-93.jpg" alt="Image 2">
+                    <div>
+                        <p class="tittle">FAMILY,GUARDOL ECT(Ti)</p>
+                        <p class="tittle2">10W40&emsp;|&emsp;1/5P</p>
+                        <p class="tittle3">18.93 L</p>
+                        <p class="tittle4">6.510 Р</p>
+                    </div>
+                    <a data-productindex="lscf0001" href="#/product/uid-lscf0001/dell-alienware" class="buy">
+                    Подробно
+                    </a>
+                </li>
+
+
+
+
+                <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+                <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+                <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+                <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+                <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+                <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+                <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+                <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
+
+
+                <li class="gap"></li>
+                <li class="gap"></li>
+                <li class="gap"></li>
+            </ul>
+            <div class="cd-fail-message">No results found</div>
+        </section> <!-- cd-gallery -->
+    </main> <!-- cd-main-content -->
+
+            </div> <!-- cd-panel-content -->
+        </div> <!-- cd-panel-container -->
+      <!-- Show Cart Button -->
+      <span class="oval green shopping-cart-btn-container"></span> 
+      <!-- /Show Cart Button -->
+    </div> <!-- cd-panel -->
+
+
+
+
+
+
+
+<!--     <link rel="stylesheet" href="css/reset.css">  --><!-- CSS reset -->
+    <link rel="stylesheet" href="css/cd-panel-style.css"> <!-- Resource style -->
+
+
+<!--     <script src="js/modernizr.js"></script>  --><!-- Modernizr -->    
+    <script src="js/cd-panel-main.js"></script> <!-- Resource jQuery -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<!-- Modal Placeholder -->
+<div id="modalContainer"> 
+  <div class="modal fade" id="commonModal"> 
+  <div class="modal-dialog">
+    <div class="modal-content common-modal-content">
+   </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div>
+</div>
+<!-- Modal Placeholder -->
+<!--  Templates --> 
+<!-- Submit Order form -->
+<script type="text/template" class="submit-order-form-template">
+
+
+
+
+<div class="shad">
+    <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-sound-dolby"></span></button>
+
+      <h3 class="order-page-header">Ваши данные</h3>
+    </div>
+    <div class="modal-body order-page-body"> 
+
+      <!-- Submit Order Form -->
+      <form class="form-horizontal bs-3-form" id="submitOrderForm">
+      <div class="bs-callout bs-callout-danger">
+    
+  </div>
+<div>
+    <!--  Name -->
+      <div class="form-group">
+          <label for="fname" class="col-sm-3 col-md-3 col-lg-3 control-label">
+          <span class="glyphicon glyphicon-user"></span> 
+          </label>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <input type="text" name="fname" value="" id="fname" class="form-control" placeholder="Ф.И.О." autofocus="">
+ 
+          </div>
+
+                  </div>
+    <!--  /Name --> 
+ 
+    <!--  Email -->
+    <div class="form-group">
+            <label for="sof_email" class="col-sm-3 col-md-3 col-lg-3 control-label"><strong class="color-red">*</strong>
+            <span class="glyphicon glyphicon-envelope"></span>
+            </label>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <input type="email" name="sof_email" value="" id="sof_email" class="form-control required" required placeholder="Введите ваш e-mail">
+ 
+                          </div>
+          </div>
+          <!--  /Email -->
+
+    <!--  Phone -->
+    <div class="form-group">
+            <label for="sof_email" class="col-sm-3 col-md-3 col-lg-3 control-label"><strong class="color-red">*</strong>
+            <span class="glyphicon glyphicon-earphone"></span>
+            </label>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <input type="tel" name="sof_ph" value="" id="sof_ph" class="form-control required" required placeholder="Телефон  8(***) ***-**-**">
+            </div>
+          </div>
+    <!--  /Phone --> 
+
+          <!--  Address -->
+<!--           <div class="form-group">
+<label for="sof_add" class="col-sm-3 col-md-3 col-lg-3 control-label"><span class="glyphicon glyphicon-tag"></span></label>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <div class="input-group">
+        <span class="input-group-btn">
+        <button class="btn btn-danger" type="button"
+        onClick="window.open('http://www.paywithatweet.com/pay?id=111f9e1b-768f-4072-9a4f-011eb15fac52','windowname')"
+        >Получить скидку</button>
+      </span> 
+      <input type="text" name="sof_add" value="" id="sof_add" class="form-control" placeholder="Введите код">
+              
+
+              
+              
+            </div>
+            </div>
+          </div> -->
+ 
+          <!--  /Address --> 
+    
+          <!--  Message -->
+          <div class="form-group bot">
+ <label for="sof_message" class="col-sm-3 col-md-3 col-lg-3 control-label">
+<span class="glyphicon glyphicon-pencil"></span>
+ </label>
+              <div class="col-sm-8 col-md-8 col-lg-8">
+                <textarea name="sof_message" cols="40" rows="10" id="sof_message" class="form-control" placeholder="Детали к заказу или прочая информация"></textarea>
+            </div>
+            </div>
+          <!--  /Message -->
+      </form>
+      <!-- /Submit Order Form -->   
+    
+    </div>
+    <div class="modal-footer"> 
+      <!--  Action Buttons -->
+      <div><a id="backToCartBtn" href="#" class="btn btn-default pull-left"><i class="glyphicon glyphicon-arrow-left"></i></a>
+    
+      <a href="#" id="submitOrderBtn" disabled class="btn btn-primary">Заказать</a> 
+      <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></div>
+      
+      </div>
+     <!--  /Action Buttons --> 
+    </div>
+</div>
+</script>
+<!-- /Submit Order form -->
+<!-- Shopping Cart. --> 
+<script type="text/template" class="shopping-cart-template">
+
+
+<div class="shad">
+    <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-sound-dolby"></span></button>
+      <h3>Ваш заказ</h3>
+    </div>
+    <div class="modal-body"> 
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th class="right-align">Цена</th>
+            <th class="right-align">Кол-во</th>
+            <th class="right-align">Итого</th>
+            <th><span class="btn btn-link no-cursor"><i class="glyphicon glyphicon-trash"></i></span></th>
+          </tr>
+        </thead>
+        <tbody id="shoppingCartData">
+            <% if( _oData.cartProductsCollection.length > 0 ) {
+            _.each( _oData.cartProductsCollection, function(listItem, nCartRowIndex ) { 
+              var listItemProduct = _oData.allProductsCollection[listItem.index]; %>
+              <tr>
+                <td><%- listItemProduct.name %> <br>
+                <small>
+                <% if(listItem.size && (listItem.size != "NA")) { %>
+                 <strong><span class="glyphicon glyphicon-time"></span> </strong><%- listItem.size %>
+                <% };
+                if(listItem.color && (listItem.color != "NA")) { %>
+                 <strong><span class="glyphicon glyphicon-download-alt"></span> </strong><%- listItem.color %>
+                <% } %>
+                </small>
+                </td>
+                <td class="right-align"><%- listItemProduct.formattedPrice %></td>
+                <td><input data-cartrowindex="<%- nCartRowIndex %>" type="number" step="1" min="1" value="<%- listItem.qty %>" class="cart-product-qty center-align"/></td>
+                <td class="right-align"><%- _oData.fnMisc.formatAmount(listItemProduct.price *  listItem.qty) %></td>
+                <td><button type="button" data-cartrowindex="<%- nCartRowIndex %>" href="#" class="btn btn-link delete-product-from-cart" title="Remove from Cart"><i class="glyphicon glyphicon-trash"></i></button></td>
+              </tr>
+            <% }); } else { %>
+                <td colspan="6"><div class="alert alert-info">Корзина пуста!</div></td>
+            <% } %>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="modal-footer"> 
+      <div id="shopping_cart_total" class="alert alert-info tar"><!-- <strong><%- _oData.cartStats.totalItems %></strong> --> итого <%- _oData.cartStats.amountFormatted %>
+      <% if( _oData.configOptions.shippingCharges ) { %>
+      + Shipping: <%- _oData.fnMisc.formatAmount( _oData.configOptions.shippingCharges ) %> = 
+      <strong> <%- _oData.fnMisc.fullFormatAmount( _oData.cartStats.subTotal +  _oData.configOptions.shippingCharges) %> </strong>
+      <% } %>
+      </div>
+      
+      <div class="check"> 
+
+      </div>
+<!--       <a href="#" class="btn btn-default pull-left" data-dismiss="modal"><i class="glyphicon glyphicon-arrow-left"></i> Продолжить покупки</a> </div> -->
+
+    <a id="checkoutSubmitOrderBtn" <% if( ! _oData.generalVars.enableOrderBtn) { %> disabled <% } %> class="btn btn-primary"  title="Submit order by Email" href="#/shopping-cart/uid-submit-order">Оформить<!-- <i class="glyphicon glyphicon-envelope"></i> --></a>      
+     
+     </div>
+</script>
+<!-- /Shopping Cart. --> 
+<!-- Shopping Cart button. --> 
+<script type="text/template" class="shopping-cart-btn-template">
+<p class="pull-right">
+  <a title="View Cart" class="oval green btn btn-default show-shopping-cart-btn" href="#/shopping-cart/uid-show">
+   <span class="ooo glyphicon glyphicon-shopping-cart1">Корзина</span> <span class="numb"><%- _oData.cartStats.totalItems %></span></a> 
+</p>
+</script>
+<!-- /Shopping Cart button. --> 
+<!-- Add to cart button. -->
+<script type="text/template" class="add-to-cart-btn-template">
+<% if( ! _oData.nProductInCart ) { %>
+    <a href="#" class="btn btn-danger add-to-cart-btn"><span class="add-to-cart-btn-text">В Корзину</span> <i class="glyphicon glyphicon-shopping-cart"></i></a>
+<% } else { %>
+    <a href="#" class="btn btn-danger add-to-cart-btn"><span class="add-to-cart-btn-text">В корзине</span> <i class="glyphicon glyphicon-shopping-cart"></i>: <%- _oData.nProductInCart %> </a>
+<% }%>
+</script>
+<!-- Sidebar Categories. -->
+<script type="text/template" class="sidebar-catgegories-template">
+<% _.each(_oData.categoriesCollection,function( listItem ){ %>
+  <li class="list-group-item category-list-item-<%- listItem.index %>">
+     <a data-categoryindex="<%- listItem.index %>" href="#/category/uid-<%- listItem.index %>/<%- listItem.slug %>" class="category-link-<%- listItem.index %> category-link btn-block"><%- listItem.name %> <i class="glyphicon glyphicon-arrow-right pull-right"></i></a>
+  </li>
+<% }) %>
+</script>
+<!-- /Add to cart button. -->
+<!-- Products Grid -->
+<script type="text/template" class="products-grid-template">
+<% if( _oData.currentProductCollection.length < 1) { %>
+<div class="alert alert-warning">
+  No Products to Display
+</div>
+<% } else { %>
+<% _.each( _oData.currentProductCollection, function( listItem ){ %>
+    <li data-productindex="<%- listItem.index %>" class="product-item">
+  <div class="thumbnail">
+  <h4 class="product-name"> <%- listItem.name %></h4>
+  <a data-productindex="<%- listItem.index %>" href="#/product/uid-<%- listItem.index %>/<%- listItem.slug %>" class="product-id-<%- listItem.index %> product-link">
+    <div class="thumb-holder"><img src="<%- listItem.thumbPath %>" alt="<%- listItem.name %>"></div>
+    </a>
+    <h4 class="product-price"><%- listItem.formattedPrice %>
+       <% if(listItem.oldPrice){ %>
+      <small class="old-product-price">/ <%- listItem.oldPrice.formatted %></small>
+      <% } %>
+    </h4>
+
+    <a data-productindex="<%- listItem.index %>" href="#/product/uid-<%- listItem.index %>/<%- listItem.slug %>" class="product-id-<%- listItem.index %> product-link btn btn-primary btn-block"><i class="glyphicon glyphicon-info-sign"></i> Дополнительная информация </a>
+  </div>
+</li>
+<% }); }; %>
+</script>
+
+
+<!-- /Products Grid -->
+<!-- Product Details Modal -->
+<script type="text/template" class="products-details-modal-template">
+
+<div class="shad">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-sound-dolby"></span></button>
+<!-- <h4 class="modal-title"><%- _oData.oCurrentProductData.name %></h4> -->
+    <span class="product-attributes">
+    <% var categoryItem = _oData.categoriesCollection[_oData.oCurrentProductData.categoryIndex]; %>
+    <strong><!-- Category:  --></strong><a data-categoryindex="<%- categoryItem.index %>" href="#/category/uid-<%- categoryItem.index %>/<%- categoryItem.slug %>" class="category-link-<%- categoryItem.index %> category-link"><%- categoryItem.name %></a>
+<!--     <strong>Product ID: </strong><%- _oData.oCurrentProductData.id %> |  
+    <strong>Price: </strong><strong class="product-price"><%- _oData.oCurrentProductData.formattedPrice %></strong></span> -->
+  </div>
+
+
+  <div class="modal-body lw-modal-body">
+    <%= _oData.oCurrentProductData.details %>
+
+
+
+    
+    <span class="product-attributes">
+        <% var categoryItem = _oData.categoriesCollection[_oData.oCurrentProductData.categoryIndex]; %>
+        <strong class="product-price"><%- _oData.oCurrentProductData.formattedPrice %></strong>
+    </span>
+
+  </div>
+
+
+
+  <div class="modal-footer">
+  <div class="form-inline">
+<% var ddSizes = _oData.oCurrentProductData.options.sizes;
+if((ddSizes.length > 0) && (ddSizes[0].name != "NA")) { %>
+<div class="input-group">
+  <!-- <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span> -->
+   <select id="productSizeSelector" class="form-control product-size-selector option-selector">
+
+<% _.each(ddSizes,function(ddSize){ %>
+<option value="<%- ddSize.value %>"><%- ddSize.name %></option>
+<% }) %> 
+</select>
+</div>
+<% }%>
+<% var ddColors = _oData.oCurrentProductData.options.colors;
+if((ddColors.length > 0) && (ddColors[0].name != "NA")) { %>
+<div class="input-group">
+  <span class="input-group-addon"><span class="glyphicon glyphicon-download-alt"></span></span>
+   <select id="productColorSelector" class="form-control product-color-selector option-selector">
+<% _.each(ddColors,function(ddColor){ %>
+<option value="<%- ddColor.value %>"><%- ddColor.name %></option>
+<% }) %> 
+</select>
+</div>
+<% }%>
+<span id="addToCartBtnContainer"></span>
+      <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+  </div>
+  </div>
+
+
+  </div>
+</script>
+<!-- /Product Details Modal -->
+<!-- Placed at the end of the document so the pages load faster --> 
+
+
+
+<!--  javascript    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="static-assets/lw-jquery-xml-cart/js/all-other-site.js"></script>
+<script type="text/javascript" src="static-assets/packages/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static-assets/packages/other-js-libs/all-other-shop-js-libs.js"></script> 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.mixitup.min-Filters.js"></script>
+<script src="js/main-Filters.js"></script> <!-- Resource jQuery -->
+<link rel="stylesheet" href="css/style-Filters.css"> <!-- Resource style -->
+
+
+<link rel="stylesheet" href="css/1my1.css">
+</body>

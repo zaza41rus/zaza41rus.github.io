@@ -1,0 +1,152 @@
+
+  @media screen and (max-width: 769px) {
+	
+.svg1 {
+    left: 14%;
+    top: 20vh;
+}
+
+.svg2 {
+    left: 10.355%;
+    top: 32vh;
+}
+
+.svg3 {
+    left: 14.9%;
+    top: 47vh;
+}
+.date {
+    left: -17vw;
+}
+.intro__title {
+    left: -33.9vw;
+}
+.txt1 {
+    left: -42vw;
+}	
+.goMee {
+    top: 93vh;
+    left: -12%;
+}
+.widthForm {
+    top: 180vh;
+}
+.cocial {
+    top: 127vh;
+    left: 47%;
+}
+
+
+	
+}
+
+
+  @media screen and (max-width: 600px) {
+.svg {
+    position: relative;
+    width: 35px;
+    height: 35px;
+}	
+.svg1 {
+    left: 17%;
+    top: 20vh;
+}	
+
+.svg2 {
+    left: 13.355%;
+    top: 28vh;
+}
+
+.svg3 {
+    left: 16.9%;
+    top: 40vh;
+}
+.date {
+    left: -12vw;
+    top: -62px;
+    font-size: .45em;
+}	
+.intro__title {
+    font-size: 2em;
+    left: -29.9vw;
+    top: 7vh;
+    font-family: Futura Md BT Bold;
+    font-family: FuturaBT-Medium;
+}	
+.txt1 {
+    left: -40vw;
+    top: 30vh;
+    font-size: 0.45em;
+}	
+
+.footer-bar {
+	display: none;
+}	
+p.intro__subtitle.txt2 {
+    left: -18vw;
+    /* color: rgba(56, 56, 56, 0.8); */
+    font-size: .4em;
+    text-align: left;
+    width: 69vw;
+    padding: 1em;
+    /* background: rgba(255,255,255,0.5); */
+    float: right;
+}	
+.goMee {
+    top: 95vh;
+    left: -12vw;
+    margin-left: 15px;
+    letter-spacing: 15px;
+    font-size: 150%;
+}
+.widthForm {
+    top: 183vh;
+}
+.cocial {
+    top: 138vh;
+    left: 44vw;
+    font-size: 0.75em;
+}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

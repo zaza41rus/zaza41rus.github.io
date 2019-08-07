@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1800px" height="617px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1219810 418124"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#2C3E50;stroke-width:1600.8;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+
+.line1 {
+  fill: rgba(255, 255, 255, 0);
+  stroke-opacity: 0;
+  stroke-width: 1600.8;
+  stroke-dasharray: 250000;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash-line1 5s ease-in alternate infinite;
+          animation: dash-line1 5s ease-in alternate infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes dash-line1 {
+  from {
+    stroke-dashoffset: 250000;
+    stroke: #2C3E50;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #2C3E50;
+    stroke-opacity: 1;
+  }
+}
+
+@keyframes dash-line1 {
+  from {
+    stroke-dashoffset: 250000;
+    stroke: #2C3E50;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke: #2C3E50;
+    stroke-opacity: 1;
+  }
+}
+
+
+   ]]>
+   
+ 
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="1219810" height="418124"/>
+  <path class="line1" d="M284791 280389l3179 -7805c2901,-15025 3162,-28722 1119,-36336"/>
+  <path class="line1" d="M266076 244048c-3403,18362 -11817,25793 -12214,34317"/>
+  <path class="line1" d="M256121 191323c26199,7327 25252,24857 -2892,52609 -3805,2072 -9635,24232 -14019,30061"/>
+  <path class="line1" d="M214786 271249c3213,-4223 4495,-10904 3469,-20522 1156,-6987 4480,-13683 3468,-20959l-7371 1591c-2264,-4384 -14501,-8334 -23269,-21389 -8471,-2162 -16097,-5450 -22256,-10695l-11852 1734"/>
+  <path class="line1" d="M188574 161134c-9404,476 -17622,2037 -22206,5404l-3758 4625c-5541,627 -7567,2005 -13954,1987 -1589,-4 -4044,459 -4370,2178 -751,3973 1436,4891 1848,7903 6456,2554 15585,626 19367,7660l-2745 2529 -5781 7589c-868,2023 1444,3612 2167,5419 1916,3726 1383,5788 -2096,5853l-9178 0c-3796,-185 -4031,-2200 -1084,-5853l3252 -4192c-2998,-1030 -3072,-2680 289,-5058 -413,-1682 -213,-3232 723,-4625l-940 -1880c1939,-1605 3990,-2710 6121,-3449 4718,-61 7240,1412 6527,6196"/>
+  <path class="line1" d="M158449 200794c3674,7916 6877,6262 9780,-1432"/>
+  <path class="line1" d="M196502 167516c-7188,-14217 -10242,-8915 -6359,5781"/>
+  <path class="line1" d="M322964 253655c-3999,8913 -10599,17247 -11995,26738"/>
+  <path class="line1" d="M340815 276306c-6407,-17633 -24088,-17488 -28328,-51597"/>
+  <path class="line1" d="M362853 272300c2553,-16477 -11948,-31363 -578,-45093 2753,-12239 125,-24289 -14984,-35902 -6131,-4710 -40195,-7334 -52554,-10971 -14239,-4189 -29919,-14322 -44941,-16511 -10891,-1586 -23539,2253 -33202,2287 -12123,42 -20382,-3581 -24017,-5026"/>
+  <path class="line1" d="M254670 242496c15055,5415 28280,-4288 30412,-12621"/>
+  <path class="line1" d="M415824 260592c2080,-3487 3070,-13175 414,-16273 -3359,-3920 -10543,-939 -14217,15840"/>
+  <path class="line1" d="M394217 225472c-583,13249 -3272,25535 -8093,36855"/>
+  <path class="line1" d="M431216 264495c38,-8757 1357,-17642 3325,-26593"/>
+  <path class="line1" d="M432553 248463c12800,6992 18115,7870 24212,6671"/>
+  <path class="line1" d="M476743 263339c-2650,-6360 -3854,-8672 -6071,-18645 1708,-28569 -9451,-23881 -32952,-35698"/>
+  <path class="line1" d="M437720 208996c-4948,-6160 -7397,-7428 -14675,-11720 -5261,-3103 -13846,154 -20038,-1434 -1853,-476 -5523,-6538 -7158,-7407 -1187,-630 -1762,3157 -2932,2495"/>
+  <path class="line1" d="M394217 225472c-5712,-3927 -10682,-11328 -16974,-12549 -2428,-469 -1160,-149 -2867,-1866 -2443,-2456 -5707,-3229 -8341,-7553 1685,0 3408,506 5057,0 -975,-988 -3468,-1253 -5202,-1879 -549,-1258 -657,-2596 -145,-4046l11562 -1735c867,-3372 10768,-2481 15610,-4914"/>
+  <path class="line1" d="M441465 252877c1269,4010 2869,7655 5102,10605"/>
+  <path class="line1" d="M453649 238190c144,11315 3745,20958 8382,25437"/>
+  <path class="line1" d="M282322 235199c6933,-166 14446,1571 20596,13455"/>
+ </g>
+</svg>

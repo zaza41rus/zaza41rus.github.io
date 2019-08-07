@@ -1,0 +1,2 @@
+Disallow:/2D-index.html
+Disallow:/3D-index.html

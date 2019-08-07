@@ -1,0 +1,10 @@
+﻿<configuration
+storeName="Семейная ферма"
+logoImage="logo.png"
+currency = ""
+currencySymbol = "руб."
+businessEmail = "farmily.ru@gmail.com"
+UsePaypal = "1"
+UseSubmitOrder = "1"
+ShippingCharges = "0"
+/>

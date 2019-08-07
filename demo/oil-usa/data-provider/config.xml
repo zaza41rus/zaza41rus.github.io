@@ -1,0 +1,10 @@
+﻿<configuration
+storeName="Oil USA"
+logoImage="logo.png"
+currency = ""
+currencySymbol = "руб."
+businessEmail = "zaza41rus@mail.ru"
+UsePaypal = "1"
+UseSubmitOrder = "1"
+ShippingCharges = "0"
+/>

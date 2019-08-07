@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 15143 27940"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ data-name="Layer 1">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str2 {
+      stroke: #CCCCCC;
+      stroke-width: 105.21
+    }
+    
+    .str4 {
+      stroke: #3DB773;
+      stroke-width: 282.22
+    }
+    
+    .str3 {
+      stroke: #373435;
+      stroke-width: 211.66
+    }
+    
+    .str1 {
+      stroke: #373435;
+      stroke-width: 20
+    }
+    
+    .str0 {
+      stroke: #E46D70;
+      stroke-width: 7.62
+    }
+    
+    .fil0 {
+      fill: none
+    }
+    
+    .fil9 {
+      fill: none;
+      fill-rule: nonzero
+    }
+    
+    .fil1 {
+      fill: none
+    }
+    
+    .fil10 {
+      fill: #2C3E50
+    }
+    
+    .fil3 {
+      fill: #6DAADE
+    }
+    
+    .fil6 {
+      fill: #CCCCCC
+    }
+    
+    .fil8 {
+      fill: #2C3E50;
+      fill-rule: nonzero
+    }
+    
+    .fil4 {
+      fill: #3DB773;
+      fill-rule: nonzero
+    }
+    
+    .fil2 {
+      fill: #6DABDE;
+      fill-rule: nonzero
+    }
+    
+    .fil7 {
+      fill: #FEFEFE;
+      fill-rule: nonzero
+    }
+    
+    .fil5 {
+      fill: #6DABDE;
+      fill-rule: nonzero;
+      fill-opacity: 0.501961
+    }
+    
+    .line1 {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 150;
+      stroke-dasharray: 25000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-line 1s ease-in alternate infinite;
+      animation: dash-line 1s ease-in alternate infinite;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    .line1-1 {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 150;
+      stroke-dasharray: 25000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-line 1s ease-in alternate infinite;
+      animation: dash-line 1s ease-in alternate infinite;
+      -webkit-animation-delay: 0.65s;
+      animation-delay: 0.65s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    .line2 {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 75;
+      stroke-dasharray: 25000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-line 2s ease-in alternate infinite;
+      animation: dash-line 2s ease-in alternate infinite;
+      -webkit-animation-delay: 1s;
+      animation-delay: 1s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    .line3 {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 100;
+      stroke-dasharray: 25000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-line 1.5s ease-in alternate infinite;
+      animation: dash-line 1.5s ease-in alternate infinite;
+      -webkit-animation-delay: 3.25s;
+      animation-delay: 3.25s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    .line4 {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 100;
+      stroke-dasharray: 30000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-line 1.5s ease-in alternate infinite;
+      animation: dash-line 1.5s ease-in alternate infinite;
+      -webkit-animation-delay: 4.5s;
+      animation-delay: 4.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-line {
+      from {
+        stroke-dashoffset: 30000;
+        stroke: #6DABDE;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    @keyframes dash-line {
+      from {
+        stroke-dashoffset: 30000;
+        stroke: #6DABDE;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    .lineok {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 100;
+      stroke-dasharray: 30000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-lineok 1.5s ease-in alternate infinite;
+      animation: dash-lineok 1.5s ease-in alternate infinite;
+      -webkit-animation-delay: 5.5s;
+      animation-delay: 5.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-lineok {
+      from {
+        stroke-dashoffset: 30000;
+        stroke: #6DABDE;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    @keyframes dash-lineok {
+      from {
+        stroke-dashoffset: 30000;
+        stroke: #6DABDE;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    .line6 {
+      fill: none;
+      stroke-opacity: 0;
+      stroke-width: 100;
+      stroke-dasharray: 40000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-line6 5s ease-in alternate infinite;
+      animation: dash-line6 5s ease-in alternate infinite;
+      -webkit-animation-delay: 8.15s;
+      animation-delay: 8.15s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-line6 {
+      from {
+        stroke-dashoffset: 40000;
+        stroke: #6DABDE;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    @keyframes dash-line6 {
+      from {
+        stroke-dashoffset: 40000;
+        stroke: #6DABDE;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    .lineTrip {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 70;
+      stroke-dasharray: 40000;
+      -webkit-animation: dash-lineTrip 4s ease-in alternate infinite;
+      animation: dash-lineTrip 4s ease-in alternate infinite;
+      -webkit-animation-delay: 11.5s;
+      animation-delay: 11.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-lineTrip {
+      0% {
+        stroke-dashoffset: 40000;
+        stroke: #CCCCCC;
+        stroke-opacity: 0;
+      }
+      10% {
+        stroke-opacity: 1;
+        stroke: #CCCCCC;
+      }
+      90% {
+        stroke: #CCCCCC;
+        stroke-opacity: 1;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        stroke: #CCCCCC;
+        stroke-opacity: 0;
+      }
+    }
+    
+    @keyframes dash-lineTrip {
+      0% {
+        stroke-dashoffset: 40000;
+        stroke: #CCCCCC;
+        stroke-opacity: 0;
+      }
+      10% {
+        stroke-opacity: 1;
+        stroke: #CCCCCC;
+      }
+      90% {
+        stroke: #CCCCCC;
+        stroke-opacity: 1;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        stroke: #CCCCCC;
+        stroke-opacity: 0;
+      }
+    }
+    
+    .user-ok {
+      fill: #CCCCCC;
+      -webkit-animation: dash-user-ok 9s ease-in alternate infinite;
+      animation: dash-user-ok 9s ease-in alternate infinite;
+      -webkit-animation-delay: 2.4s;
+      animation-delay: 2.4s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-user-ok {
+      0% {
+        fill: #CCCCCC;
+      }
+      2% {
+        fill: #6DABDE;
+      }
+      98% {
+        fill: #6DABDE;
+      }
+      100% {
+        fill: #3DB773;
+      }
+    }
+    
+    @keyframes dash-user-ok {
+      0% {
+        fill: #CCCCCC;
+      }
+      2% {
+        fill: #6DABDE;
+      }
+      98% {
+        fill: #6DABDE;
+      }
+      100% {
+        fill: #3DB773;
+      }
+    }
+    
+    .user-error {
+      fill: #CCCCCC;
+      -webkit-animation: dash-user-error .8s ease-in alternate infinite;
+      animation: dash-user-error .8s ease-in alternate infinite;
+      -webkit-animation-delay: 2.3s;
+      animation-delay: 2.3s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-user-error {
+      0% {
+        fill: #CCCCCC;
+      }
+      40% {
+        fill: #E46D70;
+      }
+      60% {
+        fill: #E46D70;
+      }
+      100% {
+        fill: #CCCCCC;
+      }
+    }
+    
+    @keyframes dash-user-error {
+      0% {
+        fill: #CCCCCC;
+      }
+      40% {
+        fill: #E46D70;
+      }
+      60% {
+        fill: #E46D70;
+      }
+      100% {
+        fill: #CCCCCC;
+      }
+    }
+    
+    .user-ok2 {
+      fill: #CCCCCC;
+      -webkit-animation: dash-user-ok2 3.5s ease-in alternate infinite;
+      animation: dash-user-ok2 3.5s ease-in alternate infinite;
+      -webkit-animation-delay: 2.3s;
+      animation-delay: 2.3s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-user-ok2 {
+      0% {
+        fill: #CCCCCC;
+      }
+      10% {
+        fill: #6DABDE;
+      }
+      90% {
+        fill: #6DABDE;
+      }
+      100% {
+        fill: #CCCCCC;
+      }
+    }
+    
+    @keyframes dash-user-ok2 {
+      0% {
+        fill: #CCCCCC;
+      }
+      10% {
+        fill: #6DABDE;
+      }
+      90% {
+        fill: #6DABDE;
+      }
+      100% {
+        fill: #CCCCCC;
+      }
+    }
+    
+    .user-ok3 {
+      fill: none;
+      -webkit-animation: dash-user-ok3 0.4s ease-in alternate infinite;
+      animation: dash-user-ok3 0.4s ease-in alternate infinite;
+      -webkit-animation-delay: 7.5s;
+      animation-delay: 7.5s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-user-ok3 {
+      from {}
+      to {
+        fill: #E46D70;
+      }
+    }
+    
+    @keyframes dash-user-ok3 {
+      from {}
+      to {
+        fill: #E46D70;
+      }
+    }
+    
+    .ok {
+      fill: none;
+      stroke-opacity: 1;
+      stroke-width: 300;
+      stroke-dasharray: 35000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-pass 1.6s ease-in alternate infinite;
+      animation: dash-pass 1.6s ease-in alternate infinite;
+      -webkit-animation-delay: 15.25s;
+      animation-delay: 15.25s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-pass {
+      from {
+        stroke-dashoffset: 35000;
+        stroke: #3DB773;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #3DB773;
+        stroke-opacity: 1;
+      }
+    }
+    
+    @keyframes dash-pass {
+      from {
+        stroke-dashoffset: 35000;
+        stroke: #3DB773;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #3DB773;
+        stroke-opacity: 1;
+      }
+    }
+    
+    .mail {
+      fill: none;
+      stroke: rgb(228, 228, 228);
+      stroke-opacity: 1;
+      stroke-width: 100;
+      stroke-dasharray: 35000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-mail 1.3s ease-in alternate infinite;
+      animation: dash-mail 1.3s ease-in alternate infinite;
+      -webkit-animation-delay: 6.8s;
+      animation-delay: 6.8s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-mail {
+      0% {
+        stroke: rgb(228, 228, 228);
+      }
+      30% {
+        stroke: #6DABDE;
+      }
+      75% {
+        stroke: #6DABDE;
+        stroke-opacity: 1;
+      }
+      100% {
+        stroke-opacity: 0;
+      }
+    }
+    
+    @keyframes dash-mail {
+      0% {
+        stroke: rgb(228, 228, 228);
+      }
+      30% {
+        stroke: #6DABDE;
+      }
+      75% {
+        stroke: #6DABDE;
+        stroke-opacity: 1;
+      }
+      100% {
+        stroke-opacity: 0;
+      }
+    }
+    
+    .fly {
+      stroke-opacity: 0;
+      fill: none;
+      stroke-width: 150;
+      stroke-dasharray: 35000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-fly 3s ease-in alternate infinite;
+      animation: dash-fly 3s ease-in alternate infinite;
+      -webkit-animation-delay: 8s;
+      animation-delay: 8s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-fly {
+      0% {
+        fill: none;
+      }
+      10% {
+        fill: #6DABDE;
+      }
+      90% {
+        fill: #6DABDE;
+      }
+      100% {
+        fill: none;
+      }
+    }
+    
+    @keyframes dash-fly {
+      0% {
+        fill: none;
+      }
+      10% {
+        fill: #6DABDE;
+      }
+      90% {
+        fill: #6DABDE;
+      }
+      100% {
+        fill: none;
+      }
+    }
+    
+    .bear {
+      fill: #6DABDE;
+      -webkit-animation: dash-bear 1s ease-in alternate infinite;
+      animation: dash-bear 1s ease-in alternate infinite;
+      -webkit-animation-delay: 2s;
+      animation-delay: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-bear {
+      from {
+        fill: #6DABDE;
+      }
+      to {
+        fill: #6DABDE;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+    }
+    
+    @keyframes dash-bear {
+      from {
+        fill: #6DABDE;
+      }
+      to {
+        fill: #6DABDE;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+    }
+    
+    .hollidayHome {
+      fill: none;
+      -webkit-animation: dash-hollidayHome 7s ease-in alternate infinite;
+      animation: dash-hollidayHome 7s ease-in alternate infinite;
+      -webkit-animation-delay: 8.8s;
+      animation-delay: 8.8s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-hollidayHome {
+      0% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      9% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      73% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      84% {
+        fill: #B88B7D;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      91% {
+        fill: #B88B7D;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      100% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+    
+    @keyframes dash-hollidayHome {
+      0% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      9% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      73% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      84% {
+        fill: #B88B7D;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      91% {
+        fill: #B88B7D;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      100% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+    
+    .hollidayFire {
+      fill: none;
+      -webkit-animation: dash-hollidayFire 7s ease-in alternate infinite;
+      animation: dash-hollidayFire 7s ease-in alternate infinite;
+      -webkit-animation-delay: 9.1s;
+      animation-delay: 9.1s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-hollidayFire {
+      0% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      9% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      62% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      70% {
+        fill: #E46D70;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      73% {
+        fill: #E46D70;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      84% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      100% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+    
+    @keyframes dash-hollidayFire {
+      0% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      9% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      62% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      70% {
+        fill: #E46D70;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      73% {
+        fill: #E46D70;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      84% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      100% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+    
+    .hollidayStep {
+      fill: none;
+      -webkit-animation: dash-hollidayStep 6.4s ease-in alternate infinite;
+      animation: dash-hollidayStep 6.4s ease-in alternate infinite;
+      -webkit-animation-delay: 10s;
+      animation-delay: 10s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-hollidayStep {
+      0% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      9% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      44% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      50% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      58% {
+        fill: #F2AE7D;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      64% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      100% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+    
+    @keyframes dash-hollidayStep {
+      0% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      9% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      44% {
+        fill: none;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+      50% {
+        fill: #F2AE7D;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      58% {
+        fill: #F2AE7D;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      64% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+      100% {
+        fill: #CCCCCC;
+        opacity: 1;
+        filter: alpha(opacity=100);
+      }
+    }
+    
+    .xxx {
+      stroke-opacity: 0;
+      fill: none;
+      stroke-dasharray: 35000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-xxx 0.8s ease-in alternate infinite;
+      animation: dash-xxx 0.8s ease-in alternate infinite;
+      -webkit-animation-delay: 14.8s;
+      animation-delay: 14.8s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-xxx {
+      0% {
+        fill: none;
+      }
+      20% {
+        fill: #E46D70;
+      }
+      50% {
+        fill: #E46D70;
+      }
+      100% {
+        fill: #E46D70;
+      }
+    }
+    
+    @keyframes dash-xxx {
+      0% {
+        fill: none;
+      }
+      20% {
+        fill: #E46D70;
+      }
+      50% {
+        fill: #E46D70;
+      }
+      100% {
+        fill: #E46D70;
+      }
+    }
+    
+    .VulkanUp {
+      fill: none;
+      stroke: #CCCCCC;
+      stroke-width: 70.55;
+    }
+    
+    .VulkanDown {
+      fill: none;
+      stroke: #CCCCCC;
+      stroke-opacity: 0;
+      stroke-width: 70.55;
+      stroke-dasharray: 30000;
+      stroke-dashoffset: 0;
+      -webkit-animation: dash-VulkanDown 1s ease-in alternate infinite;
+      animation: dash-VulkanDown 1s ease-in alternate infinite;
+      -webkit-animation-delay: 2.5s;
+      animation-delay: 2.5s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-VulkanDown {
+      from {
+        stroke-opacity: 0;
+        stroke-dashoffset: 30000;
+        stroke: #CCCCCC;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #CCCCCC;
+        stroke-opacity: 1;
+      }
+    }
+    
+    @keyframes dash-VulkanDown {
+      from {
+        stroke-opacity: 0;
+        stroke-dashoffset: 30000;
+        stroke: #CCCCCC;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #CCCCCC;
+        stroke-opacity: 1;
+      }
+    }
+    
+    .VulkanFire {
+      fill: none;
+      stroke-opacity: 0;
+      stroke-width: 50;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 0;
+      -webkit-animation-delay: 2.5s;
+      animation-delay: 2.5s;
+      -webkit-animation: dash-VulkanFire 2s ease-in infinite;
+      animation: dash-VulkanFire 2s ease-in infinite;
+    }
+    
+    @-webkit-keyframes dash-VulkanFire {
+      0% {
+        stroke-opacity: 0;
+        stroke-dashoffset: 1000;
+        stroke: #6DABDE;
+      }
+      50% {
+        stroke: #E46D70;
+        stroke-opacity: 1;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    @keyframes dash-VulkanFire {
+      0% {
+        stroke-opacity: 0;
+        stroke-dashoffset: 1000;
+        stroke: #6DABDE;
+      }
+      50% {
+        stroke: #E46D70;
+        stroke-opacity: 1;
+      }
+      100% {
+        stroke-dashoffset: 0;
+        stroke: #6DABDE;
+        stroke-opacity: 0;
+      }
+    }
+    
+    .lineTrip2 {
+      fill: none;
+      stroke-opacity: 0;
+      stroke-width: 50;
+      stroke-dasharray: 170.540000;
+      stroke-dashoffset: 176.350000;
+      -webkit-animation: dash-lineTrip2 1.5s ease-in alternate infinite;
+      animation: dash-lineTrip2 1.5s ease-in alternate infinite;
+      -webkit-animation-delay: 14s;
+      animation-delay: 14s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+    
+    @-webkit-keyframes dash-lineTrip2 {
+      from {
+        stroke-dashoffset: 170.540000;
+        stroke-opacity: 0;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #E46D70;
+        stroke-opacity: 1;
+      }
+    }
+    
+    @keyframes dash-lineTrip2 {
+      from {
+        stroke-dashoffset: 170.540000;
+        stroke-opacity: 0;
+      }
+      to {
+        stroke-dashoffset: 0;
+        stroke: #E46D70;
+        stroke-opacity: 1;
+      }
+    }
+
+
+  
+   ]]>
+
+   
+  
+
+   
+  </style>
+   <clipPath id="id0">
+    <path d="M580 27130l13983 0 0 -19556 -13983 0 0 19556z"/>
+   </clipPath>
+   <clipPath id="id1">
+    <path d="M580 27130l13983 0 0 -19556 -13983 0 0 19556z"/>
+   </clipPath>
+     <mask id="id2">
+  <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="7571.08" y1="27123" x2="7571.08" y2="7581.15">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+      <rect style="fill:url(#id3)" x="583" y="7577" width="13975" height="19549"/>
+     </mask>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="15143" height="27940"/>
+  <g style="clip-path:url(#id0)">
+   <polygon class="fil1" points="580,7574 14563,7574 14563,27130 580,27130 "/>
+  </g>
+  <g style="clip-path:url(#id1)">
+   <g id="_723988208">
+    <path id="1" class="fil2" style="mask:url(#id2)" d="M5748 7931c-73,71 -145,145 -216,219 76,39 155,75 235,115 15,5 17,15 9,25 0,0 0,0 0,0 -21,19 -40,41 -59,62 -9,9 -29,17 -56,23 -71,19 -141,37 -212,56 -120,124 -244,254 -369,383 -5,7 -11,10 -18,15 -318,189 -648,386 -990,589 -10,6 -23,12 -39,17 -211,76 -421,151 -635,226 -82,79 -165,156 -248,236 -21,21 -73,39 -128,46 -264,44 -531,88 -797,130 56,15 114,29 173,45 17,4 28,9 32,16 0,0 0,0 0,0 55,89 109,183 166,276 3,10 0,20 -12,29 0,0 0,0 2,0 -199,192 -406,391 -620,598 -5,4 -12,10 -18,12 -259,172 -525,349 -799,531 -71,225 -142,459 -219,701 11,256 18,523 31,796 491,973 1057,2086 1717,3376 644,688 1346,1430 2102,2235 828,883 1729,1861 2725,2925 16,16 25,38 33,54 278,615 565,1290 881,1967 521,615 1080,1230 1669,1874 364,272 739,542 1119,809 237,-731 462,-1404 676,-2045 78,-749 149,-1430 219,-2107 6,-58 41,-112 97,-147 150,-111 303,-221 455,-332 168,-333 332,-667 490,-978 -75,-949 -146,-1805 -209,-2599 -211,-152 -414,-303 -615,-446 -98,1 -196,0 -292,0 -122,-1 -213,-65 -199,-141 21,-152 43,-301 66,-456 -79,-127 -155,-241 -231,-359 -80,-1 -159,-2 -237,0 -58,-1 -106,-17 -141,-39 -107,-74 -213,-149 -317,-224 -71,-50 -54,-130 37,-177 132,-71 262,-143 393,-211 75,-39 177,-46 249,-18 158,49 317,97 477,150 378,-440 740,-865 1084,-1266 26,-31 74,-52 127,-62 283,-51 566,-102 849,-151 0,-18 0,-36 1,-55 -504,-222 -991,-448 -1465,-657 -25,-10 -43,-24 -53,-42 0,0 0,0 0,0 -160,-321 -315,-621 -463,-916 -3,-8 -5,-18 -4,-26 0,0 0,0 0,0 39,-229 76,-457 114,-675 2,-15 16,-29 35,-40 301,-212 594,-410 879,-607 28,-20 80,-31 130,-31 0,0 0,0 0,0 86,-1 173,-1 261,-1 41,1 78,7 103,21 37,16 74,33 114,49 144,-119 286,-238 425,-359 3,-95 5,-185 7,-276 -472,-137 -929,-267 -1377,-398 -22,-7 -38,-16 -46,-24 -204,-225 -399,-446 -587,-655 -7,-9 -8,-17 -4,-27 0,0 0,0 0,0 118,-220 231,-431 341,-637 -54,-19 -107,-41 -159,-61 -39,-14 -40,-37 -7,-52 78,-50 157,-101 234,-149 41,-25 137,-30 190,-10 0,0 0,0 0,0 66,24 131,50 197,75 23,8 32,18 31,30 0,0 0,0 0,0 -9,63 -18,124 -27,186 72,1 146,-1 219,-1 59,-55 118,-112 178,-169 -315,-96 -626,-185 -931,-278 -10,-2 -18,-6 -24,-11 -81,26 -163,53 -246,80 -49,16 -122,16 -164,0 -188,-73 -372,-146 -552,-214 -7,-2 -13,-4 -16,-9 -111,-68 -220,-135 -327,-202 -10,-5 -13,-14 -11,-19 0,0 0,0 0,0 21,-63 44,-127 66,-190 -36,-53 -69,-106 -102,-159 -275,0 -549,1 -824,1 -32,8 -64,18 -94,28 30,11 62,25 96,37 47,18 13,49 -65,58 -135,20 -270,41 -405,61 -32,5 -69,5 -97,0 -118,-20 -234,-42 -350,-64 -25,-4 -39,-12 -43,-19 -85,-185 -165,-364 -242,-535 -2,-4 0,-7 1,-10 -1,0 -1,0 -1,0 23,-37 46,-74 68,-112 44,-92 242,-67 221,-32 -28,47 -55,94 -82,139 78,165 159,335 246,513 88,16 177,33 267,47 71,-10 142,-19 214,-31 -24,-9 -48,-19 -71,-27 -34,-14 -22,-37 26,-51 72,-21 144,-41 217,-63 23,-5 52,-9 81,-9 314,0 626,0 939,1 0,0 0,0 0,0 44,0 82,8 92,23 41,61 81,122 125,185 5,4 7,7 5,14 -20,60 -41,122 -61,183 101,61 205,126 311,191 155,57 313,116 471,179 117,-38 233,-76 349,-113 75,-25 197,-8 191,28 -4,16 -6,33 -10,51 309,93 624,184 946,279 39,10 56,29 38,47 -76,76 -153,151 -230,228 -14,21 -65,37 -124,36 -144,0 -287,0 -431,0 -61,-1 -108,-19 -113,-40 -94,184 -192,374 -290,568 184,201 373,408 571,619 454,133 918,263 1395,399 43,10 73,30 73,53 0,106 0,213 0,323 -3,0 -3,0 -3,0 0,10 -4,20 -15,30 -171,150 -347,298 -526,457 -40,45 -174,58 -250,22 -112,-32 -222,-68 -330,-102 -263,186 -530,371 -808,568 -29,208 -61,424 -92,643 147,282 299,566 460,872 478,208 971,425 1479,649 50,18 81,50 81,85 0,59 0,116 0,173 0,0 0,0 0,0 0,43 -49,86 -127,100 -303,56 -607,111 -913,168 -357,424 -734,883 -1130,1361 0,0 0,0 0,0 -57,67 -183,97 -287,63 -186,-61 -372,-121 -554,-185 -42,23 -81,44 -123,68 137,33 276,65 412,99 0,0 0,0 0,0 76,1 143,25 172,70 97,147 195,291 298,435 17,24 27,48 23,75 -14,118 -28,236 -42,352 52,0 105,-2 162,-1 0,0 0,0 0,0 54,1 108,15 148,43 237,162 477,326 726,501 -1,2 -1,2 -1,2 34,22 55,55 57,91 87,815 180,1706 284,2685 0,0 0,0 0,0 2,25 -2,54 -15,80 -166,345 -335,703 -508,1061 -12,37 -41,74 -79,104 -141,102 -278,203 -418,306 -53,660 -107,1317 -166,2043 0,0 0,0 0,0 -1,16 -2,32 -9,54 -245,775 -505,1638 -779,2524 0,0 0,0 0,0 -66,210 -339,309 -521,193 -520,-354 -1024,-713 -1515,-1074 -21,-18 -41,-30 -58,-54 -590,-708 -1157,-1338 -1690,-1968 0,0 0,0 0,0 -11,-16 -20,-32 -30,-48 -305,-714 -585,-1394 -849,-2041 -981,-1093 -1875,-2077 -2691,-2974 -749,-822 -1434,-1587 -2064,-2293 0,0 0,0 1,0 -4,-4 -7,-10 -10,-14 -632,-1319 -1178,-2454 -1654,-3436 0,0 0,0 0,0 -1,-4 -3,-7 -1,-12 -5,-284 -7,-559 -13,-820 0,0 0,0 0,0 0,-2 0,-4 3,-9 86,-252 166,-492 247,-725 1,-12 10,-24 31,-37 283,-183 557,-363 825,-539 210,-199 414,-390 611,-574 -49,-86 -96,-172 -143,-256 -112,-25 -222,-55 -329,-82 -73,-18 -13,-72 102,-91 333,-53 666,-106 995,-160 78,-71 157,-147 237,-221 0,0 0,0 1,0 10,-9 25,-16 48,-24 221,-77 439,-154 657,-234 338,-197 666,-390 984,-578 133,-134 262,-267 390,-395 0,0 0,0 0,0 9,-9 29,-19 56,-27 81,-27 161,-56 243,-85 -79,-37 -158,-76 -234,-113 -13,-7 -16,-15 -6,-25 79,-79 158,-159 238,-238 0,0 0,0 0,0 2,-3 6,-4 9,-6 154,-95 306,-188 454,-279 10,-6 24,-11 44,-18 -8,2 170,-24 179,24 -157,91 -319,188 -482,283l1 0zm7068 1376c3,0 5,2 7,2 -13,-41 -26,-83 -38,-126 -37,24 -73,47 -110,71 47,17 95,35 141,53l0 0z"/>
+   </g>
+  </g>
+  <polygon class="fil0" points="580,27130 14563,27130 14563,7574 580,7574 "/>
+
+
+  <g id="_320235776">
+   <g>
+    <g>
+     <path class="bear" d="M7990 8900l-585 -3c-218,-228 -503,-116 -418,302 -348,395 -203,749 -333,1335 -355,488 -628,1027 -750,1658 -63,280 -40,559 89,762 267,318 356,338 710,475l33 -61 133 18 8 -60 89 10 -8 -101 92 13 -9 -91 85 -25c-190,-724 -501,-306 -776,-565l299 -58 -250 -68 132 -76 -126 -72 209 -24 -131 -82 115 -3 -67 -63 151 -20 -151 -113 214 -22 -182 -108 233 -54 -199 -98 240 -43 -212 -48 221 -65 -176 -23 166 -113 -110 -103 142 16 -65 -86 62 -31 29 -71 19 71 69 28 -59 106 118 36 -102 114 118 23 -84 77 110 29 -88 65 137 45 -113 95 120 58 -119 40 106 40 -99 92 359 -1 -204 -126 235 -73 -212 -73 163 -54 -123 -76 98 -8 -70 -64 187 -50 -201 -101 177 -32 -134 -73 148 -11 -153 -115 176 -5 -70 -129 59 7 -5 -134 63 23 14 -117 71 28 -27 80 66 -17 -40 131 109 -29 -47 124 116 63 -143 63 203 51 -190 66 176 48 -145 71 206 66 -162 82 202 51 -122 97 129 27 -28 50 37 45 -40 51 155 5 -64 -86 115 -21 -67 -98 94 -19 -78 -98 118 2 -79 -133 79 14 -12 -108 56 -30 -25 -39 53 -72 42 65 -27 61 58 -27 -63 163 98 -54 -5 123 67 53 -110 74 175 49 -145 67 120 61 -119 62 198 66 -166 91 192 51 -116 93 112 37 -54 42 115 17 -108 51 157 48 -117 63 157 38 9 42c-385,151 -606,24 -729,512l-15 116 53 7 -23 149 89 9 -21 61 125 0 2 38 121 -6 12 62 155 -25c659,-271 895,-744 736,-1404 -150,-740 -552,-1345 -829,-2016 -139,40 -285,67 -438,73 281,-211 866,-124 845,-632 63,-3 61,-195 -30,-219 -365,-65 -372,-330 -783,-472l0 0 0 0 0 0 0 0 0 0 0 0zm0 0l0 0 0 0z"/>
+    </g>
+    <path class="bear" d="M8438 9167c137,-182 -69,-339 -236,-209 77,67 172,131 236,209z"/>
+   </g>
+  </g>
+  
+  <path class="fil5" d="M11213 11157c-138,0 -287,-38 -287,-122 0,-84 149,-121 287,-121 140,0 289,38 289,121 0,84 -149,122 -289,122zm-738 13458c-244,0 -505,-66 -505,-213 0,-146 261,-212 505,-212 242,0 503,66 503,212 0,147 -261,213 -503,213zm0 -305l0 0c-246,0 -377,68 -385,94 8,23 139,91 385,91 244,0 376,-68 383,-94 -7,-23 -139,-91 -383,-91zm-2160 -5253c-196,0 -406,-54 -406,-171 0,-118 210,-171 406,-171 195,0 406,53 406,171 0,117 -211,171 -406,171zm0 -246l0 0c-197,0 -302,55 -308,75 6,20 111,74 308,74 197,0 302,-54 309,-76 -7,-18 -112,-73 -309,-73zm-3642 -1694c-173,0 -361,-47 -361,-152 0,-105 188,-153 361,-153 174,0 360,48 360,153 0,105 -186,152 -360,152zm0 -219l0 0c-175,0 -269,49 -275,67 6,18 100,65 275,65 175,0 268,-47 274,-67 -6,-16 -99,-65 -274,-65zm6540 -5916l0 0c-139,0 -214,40 -219,54 5,13 80,52 219,52 141,0 216,-39 221,-53 -5,-13 -80,-53 -221,-53zm-8781 2335c-157,0 -326,-43 -326,-138 0,-93 169,-137 326,-137 156,0 324,44 324,137 0,95 -168,138 -324,138zm0 -197l0 0c-158,0 -242,44 -248,61 6,14 90,58 248,58 156,0 240,-44 247,-61 -7,-14 -91,-59 -247,-59l0 1zm9111 8093c-218,0 -451,-60 -451,-190 0,-131 233,-190 451,-190 217,0 450,59 450,190 0,130 -233,190 -450,190zm0 -274l0 0c-218,0 -336,61 -343,85 7,21 125,81 343,81 218,0 335,-60 343,-84 -8,-21 -125,-82 -343,-82z"/>
+ 
+  
+  <path class="user-ok" d="M11539 18986c429,3 775,351 775,781 0,413 -715,1149 -775,1217 -61,-68 -777,-804 -777,-1217 0,-430 347,-778 777,-781z"/>
+  <path class="user-ok2" d="M2428 11713c308,2 559,253 559,562 0,298 -515,828 -559,876 -45,-48 -559,-578 -559,-876 0,-309 250,-560 559,-562z"/>
+  <path class="user-error" d="M10469 22121c481,2 870,392 870,874 0,463 -802,1288 -870,1363 -68,-75 -870,-900 -870,-1363 0,-482 390,-872 870,-874zm-2159 -5068c387,2 699,316 699,703 0,371 -643,1034 -699,1095 -55,-61 -698,-724 -698,-1095 0,-387 312,-701 698,-703zm-3641 -1718c343,2 621,281 621,625 0,331 -572,920 -621,974 -49,-54 -621,-644 -621,-974 0,-344 278,-623 621,-625zm6542 -5603c275,1 497,225 497,499 0,265 -458,737 -497,779 -38,-42 -497,-514 -497,-779 0,-274 223,-498 497,-499z"/>
+
+  <path class="fil7" d="M11067 22995c0,328 -265,593 -592,593 -328,0 -594,-265 -594,-593 0,-327 266,-593 594,-593 327,0 592,266 592,593zm1005 -3228c0,292 -237,529 -529,529 -293,0 -530,-237 -530,-529 0,-292 237,-529 530,-529 292,0 529,237 529,529zm-519 -9536c0,187 -152,339 -340,339 -186,0 -338,-152 -338,-339 0,-186 152,-338 338,-338 188,0 340,152 340,338zm-8741 2044c0,210 -170,382 -380,382 -211,0 -382,-172 -382,-382 0,-209 171,-380 382,-380 210,0 380,170 380,380zm2284 3685c0,234 -190,424 -423,424 -234,0 -424,-190 -424,-424 0,-233 190,-423 424,-423 233,0 423,190 423,423zm3695 1796c0,263 -213,476 -476,476 -263,0 -476,-213 -476,-476 0,-263 213,-477 476,-477 263,0 476,214 476,477z"/>
+  <path class="fil8" d="M4842 15884c0,94 -75,170 -169,170 -94,0 -169,-76 -169,-170 0,-93 75,-169 169,-169 94,0 169,76 169,169zm-169 500l0 0c126,0 238,-56 316,-143 -61,-96 -179,-161 -316,-161 -137,0 -256,65 -317,161 78,87 191,143 317,143zm3642 1848l0 0c142,0 269,-62 356,-161 -69,-107 -202,-181 -356,-181 -153,0 -287,74 -355,181 86,99 213,161 355,161zm190 -561c0,104 -85,190 -190,190 -105,0 -191,-86 -191,-190 0,-106 86,-191 191,-191 105,0 190,85 190,191zm1970 5917l0 0c176,0 333,-77 442,-199 -85,-134 -252,-226 -442,-226 -192,0 -358,92 -443,226 108,122 265,199 443,199zm236 -699c0,132 -106,238 -236,238 -132,0 -238,-106 -238,-238 0,-130 106,-236 238,-236 130,0 236,106 236,236zm639 -12718c0,74 -61,135 -137,135 -74,0 -134,-61 -134,-135 0,-75 60,-136 134,-136 76,0 137,61 137,136zm-137 399l0 0c102,0 192,-44 253,-114 -48,-76 -142,-128 -253,-128 -108,0 -204,52 -252,128 62,70 152,114 252,114zm542 9103c0,116 -96,211 -212,211 -117,0 -212,-95 -212,-211 0,-118 95,-212 212,-212 116,0 212,94 212,212zm-212 623l0 0c157,0 298,-69 395,-178 -76,-120 -225,-201 -395,-201 -171,0 -320,81 -395,201 97,109 238,178 395,178zm-8960 -8088c0,84 -68,152 -151,152 -85,0 -153,-68 -153,-152 0,-84 68,-153 153,-153 83,0 151,69 151,153zm-151 449l0 0c112,0 214,-50 284,-128 -55,-87 -162,-146 -284,-146 -124,0 -231,59 -286,146 71,78 172,128 286,128z"/>
+
+
+  <line class="line2" x1="8490" y1="14350" x2="10331" y2= "21684" />
+  <line class="line2" x1="8936" y1="13993" x2="11074" y2= "18447" />
+  <line class="line2" x1="7828" y1="14522" x2="8045" y2= "16636" />
+  <line class="line2" x1="5877" y1="13667" x2="5106" y2= "15003" />
+  <line class="line2" x1="5491" y1="11603" x2="3294" y2= "12212" />
+  <line class="line2" x1="9084" y1="10935" x2="10539" y2= "10638" />
+  
+  
+  
+
+  <g id="_678418320">
+   <rect class="fil9 mail" x="5849" y="810" width="3445" height="2494"/>
+   <polyline class="fil9 mail" points="5849,810 7571,2354 9293,810 "/>
+  </g>
+  
+  
+  
+
+
+
+
+
+  
+  <path class="line3" d="M1989 11549c-1135,-3375 141,-8089 3516,-9492"/>
+  <path class="line3" d="M12121 18864c2148,-7192 2629,-15025 -2483,-16807"/>
+  <path class="line4" d="M9638 2057c4751,1538 4920,8867 2483,16807"/>  
+  <path class="lineok" d="M12121 18864c2148,-7192 2629,-15025 -2483,-16807"/>  
+  
+  <g id="_727799440">
+   <line class="line1" x1="7572" y1="4648" x2="7572" y2= "7262" />
+   <line class="line1-1" x1="7572" y1="7305" x2="7572" y2= "7518" />
+   <line class="line1-1" x1="7572" y1="7560" x2="7572" y2= "7773" />
+   <line class="line1-1" x1="7423" y1="7411" x2="7210" y2= "7411" />
+   <line class="line1-1" x1="7721" y1="7411" x2="7933" y2= "7411" />
+  </g>
+  <g id="_732331680">
+   <path class="hollidayHome" d="M5473 11252l-552 -985 170 -305 -68 -39 -147 264 -149 -264 -66 38 172 305 -552 986 34 58 1126 0 32 -58zm-762 -21l166 -295 166 295 -332 0zm420 0l-220 -393 -69 0 -220 393 -241 0 495 -884 496 884 -241 0 0 0z"/>
+   <path class="hollidayFire" d="M7540 12972c180,0 326,-146 326,-326 0,-162 -258,-679 -286,-736l-78 0c-31,59 -286,574 -286,736 0,2 0,3 0,4 0,178 145,322 323,322 0,0 1,0 1,0l0 0zm0 -944c91,188 239,516 239,618 0,131 -107,238 -239,238 -132,0 -238,-107 -238,-238 0,-100 148,-430 238,-618z"/>
+   <polygon class="hollidayFire" points="8073,13118 8045,13035 7540,13199 7035,13035 7007,13118 7397,13244 7007,13369 7035,13453 7540,13289 8045,13453 8073,13369 7683,13244 "/>
+   <path class="hollidayStep" d="M10522 14082l-139 0c-21,-93 -103,-158 -197,-158 -95,0 -177,65 -197,158l-140 0c-143,0 -260,117 -260,260 0,0 0,0 0,0l0 213 47 46 21 0 0 774 43 43 972 0 43 -43 0 -777 21 0 46 -46 0 -210c0,0 0,-1 0,-1 0,-143 -116,-259 -259,-259 0,0 -1,0 -1,0l0 0zm-336 -75c0,0 0,0 0,0 48,0 92,29 110,74l-222 0c19,-45 63,-74 112,-74l0 0zm-504 335c0,0 0,0 0,0 0,-92 75,-167 167,-167 0,0 0,0 0,0l673 0c1,0 1,0 1,0 92,0 167,75 167,167 0,0 0,0 0,0l0 166 -241 0 0 -128 -83 0 0 127 -361 0 0 -127 -83 0 0 127 -239 0 0 -165 -1 0zm61 988l0 -243 883 0 0 243 -883 0zm885 -334l-885 0 0 -398 180 0 0 269 82 0 0 -269 361 0 0 269 83 0 0 -269 179 0 0 398 0 0z"/>
+   </g>
+  
+<!--   Дым -->
+  <path class="VulkanFire" d="M6869 7286c0,-59 -35,-131 -29,-180 9,-70 60,-114 60,-200 0,-30 -31,-116 -31,-145"/>
+<!-- Вулкан   -->
+  <polyline class="VulkanDown" points="5700,8603 6869,7438 7572,8138 "/>
+  <polyline class="VulkanDown" points="7104,8603 7904,7807 8704,8603 "/>  
+  <polygon  class="VulkanUp" points="7904,7807 7680,8030 7775,8018 7812,8064 7948,8014 8427,8327 "/>
+  <polygon class="VulkanUp" points="6869,7438 6435,7871 6782,7713 6966,7816 7047,7716 7235,7803 "/>
+
+  
+  <path class="lineTrip" d="M10422 19640c-180,-61 -360,-122 -711,-44 -351,78 -874,294 -1396,294 -522,0 -1044,-216 -1414,-586 -369,-369 -585,-891 -585,-1414 0,-522 216,-1044 585,-1414 370,-369 892,-585 1414,-585 522,0 1045,216 1545,238 500,21 979,-153 1296,-428 318,-275 474,-653 474,-1030 0,-377 -156,-754 -423,-1021 -267,-267 -644,-423 -1021,-423 -377,0 -755,156 -1021,272 -267,116 -423,191 -675,300 -253,110 -601,254 -949,254 -348,0 -696,-144 -943,-390 -246,-246 -390,-595 -434,-1062 -43,-467 14,-1053 21,-1404 8,-350 -35,-466 -116,-668 -81,-203 -201,-493 -406,-698 -206,-205 -496,-325 -786,-325 -290,0 -580,120 -785,325 -206,205 -326,495 -326,785 0,291 120,581 326,786 205,205 495,325 785,325 290,0 580,-120 786,-325 205,-205 325,-495 549,-687 223,-192 550,-284 762,-369 212,-85 309,-162 361,-293 53,-132 61,-319 -33,-459 -94,-140 -290,-234 -486,-327"/>
+  <path class="lineTrip2" d="M10422 19640c-180,-61 -360,-122 -711,-44 -351,78 -874,294 -1396,294 -522,0 -1044,-216 -1414,-586 -369,-369 -585,-891 -585,-1414 0,-522 216,-1044 585,-1414 370,-369 892,-585 1414,-585 522,0 1045,216 1545,238 500,21 979,-153 1296,-428 318,-275 474,-653 474,-1030 0,-377 -156,-754 -423,-1021 -267,-267 -644,-423 -1021,-423 -377,0 -755,156 -1021,272 -267,116 -423,191 -675,300 -253,110 -601,254 -949,254 -348,0 -696,-144 -943,-390 -246,-246 -390,-595 -434,-1062 -43,-467 14,-1053 21,-1404 8,-350 -35,-466 -116,-668 -81,-203 -201,-493 -406,-698 -206,-205 -496,-325 -786,-325 -290,0 -580,120 -785,325 -206,205 -326,495 -326,785 0,291 120,581 326,786 205,205 495,325 785,325 290,0 580,-120 786,-325 205,-205 325,-495 549,-687 223,-192 550,-284 762,-369 212,-85 309,-162 361,-293 53,-132 61,-319 -33,-459 -94,-140 -290,-234 -486,-327"/>
+  <polygon class="xxx" points="6705,8790 6847,9196 7245,9030 7286,9128 6882,9296 7026,9709 6926,9743 6784,9337 6387,9502 6347,9405 6749,9237 6606,8824 "/>
+
+  
+  <polyline class="ok" points="6955,1776 7571,2354 8793,1258 "/>
+  
+  
+  
+  
+  
+<!-- Самолет   -->
+  <g id="_678402320A">  
+  <path id="motionPath" class="line6" d="M7495 3528c243,-79 3469,1157 3469,2744 0,4184 -5291,3701 -5162,7124 94,2492 4821,2278 5611,5333"/>
+  </g>
+  <g id="car" transform="translate(-7495, -3528)">
+   <path class="fly" d="M7495 3528c1,105 -89,163 -282,164 -195,325 -384,621 -502,562l226 -580 -699 -71c-72,125 -138,209 -190,189l95 -231c-27,-1 -40,-14 -42,-33 2,-20 15,-32 42,-33l-95 -231c52,-20 118,63 190,188l699 -71 -226 -580c118,-59 307,238 502,562 193,2 283,59 282,165z"/>
+  </g>
+  <animateMotion 
+           xlink:href="#car"
+           dur="3s"
+           begin="8s"
+           fill="freeze"
+		   rotate="auto"
+            repeatCount="indefinite"
+             >
+    <mpath xlink:href="#motionPath" />
+  </animateMotion>
+
+  
+ </g>
+</svg>

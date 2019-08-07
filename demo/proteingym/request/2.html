@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>Protein \ Фитнес клуб</title>
+  <script src="https://use.typekit.net/ruc7ten.js"></script>
+  <script type="text/javascript">
+    try {
+      Typekit.load({
+        async: true
+      });
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="css/styles.min.css">
+  <script src="js/app.js"></script>
+</head>
+
+<body ng-controller="MainController">
+
+    <div class="authenticate"><a href="request/connect.html">Вступить</a></div>
+
+  <div ng-init="showConnect = false" ng-class="{'show-connect': showConnect}" class="wrap landing">
+    <div class="aside">
+      <div class="aside-fixed">
+        <div class="logo"></div>
+        <div class="divider">Открые<span class="defis">––</span>11 \ 2018</div>
+
+  <div id="fixedDiv" class="fixed fixed-top">
+          <a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-black request">Menu</a>
+          <a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-white request">Menu</a>
+  </div>
+
+        <div ng-class="{'show-connect': showConnect}" class="rad-humans">
+          <div slide-in="{start: '#ben', end: '#info'}" class="rad-human ben"></div>
+          <!-- <div slide-in="{start: '#marc', end: '#ryan_veronica'}" class="rad-human marc"></div>
+          <div slide-in="{start: '#ryan_veronica', end: '#helena'}" class="rad-human wide ryan_veronica"></div>
+          <div slide-in="{start: '#helena', end: '#dan'}" class="rad-human helena"></div>
+          <div slide-in="{start: '#dan', end: '#enrique'}" class="rad-human dan"></div>
+          <div slide-in="{start: '#enrique', end: '#geoff'}" class="rad-human enrique"></div>
+          <div slide-in="{start: '#geoff', end: '#mikael_steph'}" class="rad-human geoff"></div>
+          <div slide-in="{start: '#mikael_steph', end: '#airbnb'}" class="rad-human mikael_steph"></div>
+          <div slide-in="{start: '#airbnb', end: '#talent'}" class="rad-human airbnb"></div>
+          <div slide-in="{start: '#talent', end: '#dann'}" class="rad-human talent"></div>
+          <div slide-in="{start: '#dann', end: '#info'}" class="rad-human dann"></div> -->
+        </div>
+      </div>
+      <div ng-class="{'show-connect': showConnect}" slide-in="{start: '#intro_end', end: '#info'}" class="aside-bg"></div>
+      <div ng-class="{'show-connect': showConnect}" class="connect-form">
+        <p> <strong>Lorem ipsum dolor sit amet, consectetur adipiscing:<br /></strong><span>Lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, consectetur adipiscing.</span></p><a href="https://montues.com/auth/facebook" class="btn btn-lg btn-black connect">Как проехать</a>
+        <a
+          href="https://montues.com/auth/twitter" class="btn btn-lg btn-black connect">33 - 02 - 33</a><a ng-click="showConnect = !showConnect" class="btn btn-lg btn-lightgray close">&times;</a>
+      </div>
+    </div>
+    <div ng-class="{'show-connect': showConnect}" class="main connect">
+      <h2 class="push-bottom"><span>Lorem ipsum<br /></span><span>Lorem ipsum/<br /></span><span>consectetur adipiscing<br /></span><span class="black">Request your invite</span></h2>
+    </div>
+    <div ng-class="{'show-connect': showConnect}" class="main">
+      <div parallax-it="2" class="landing-bg"></div>
+      <h2 class="push-big">
+        <span>скоро<br /></span>
+        <span>твоя жопа<br /></span>
+        <span>будет<br /></span>
+        <span>в наших руках<br /></span>
+        <span><br /></span>
+
+        <span class="black">фитнес<br /></span>
+        <span class="black">центр<br /></span>
+        <span class="black">protein<br /></span>
+
+        <span>новые направления<br /></span>
+        <span>не имеющие аналогов<br /></span>
+        <span id="intro_end">на Камчатке<br /></span>
+
+
+      </h2>
+
+      <h2 id="ben" class="push-big">
+        <span>pre sales<br /></span>
+        <span class="black">клубных карт<br /></span>
+        <span>6 месяцев/<span class="black">12800р<br /></span></span>
+        <span>9 месяцев/<span class="black">22800р<br /></span></span>
+        <span>12 месяцев/<span class="black">42800р<br /></span></span>
+      </h2>
+
+
+      <!-- <h2 id="marc" class="push-big"><span class="black">Marc Hemeon/<br /></span><span class="black">Head of design<br /></span><span class="black">@ Brigade/<br /></span><span class="black">Skier</span></h2>
+      <h2 id="ryan_veronica" class="push-big"><span class="black">Ryan Block/<br /></span><span class="black">Co-founder @ Small Wins<br /></span><span class="black">Veronica Belmont/<br /></span><span class="black">Startup Advisor/<br /></span><span class="black">Skiers</span></h2>
+      <h2 id="helena" class="push-big"><span class="black">Helena Price/<br /></span><span class="black">Photographer/<br /></span><span class="black">Skier<br /></span></h2>
+      <h2 id="dan" class="push-big"><span class="black">Dan Mall/<br /></span><span class="black">Creative Director<br /></span><span class="black">@ Superfriendly/<br /></span><span class="black">Snowboarder</span></h2>
+      <h2 id="enrique" class="push-big"><span class="black">Enrique Allen/<br /></span><span class="black">Co-founder<br /></span><span class="black">@ Designer Fund/<br /></span><span class="black">Snowboarder</span></h2>
+      <h2 id="geoff" class="push-big"><span class="black">Geoff Teehan/<br /></span><span class="black">Product Design Director<br /></span><span class="black">@ Facebook/<br /></span><span class="black">Skier</span></h2>
+      <h2 id="mikael_steph" class="push-big"><span class="black">Mikael Cho/<br /></span><span class="black">Steph Liverani/<br /></span><span class="black">Co-founders @ Unsplash/<br /></span><span class="black">Skiers</span></h2>
+      <h2 id="airbnb" class="push-big"><span>Including epic<br /></span><span>teams like:<br /></span><span class="black">Keenan Cummings/Skier<br /></span><span class="black">Nina Vyas/Skier<br /></span><span class="black">Katie Dill/Skier<br /></span><span class="black">@ AirBnB</span></h2>
+      <h2 id="talent" class="push-big"><span>And young<br /></span><span>talent like:<br /></span><span class="black">Alice Lee/Snowboarder<br /></span><span class="black">Jared Erondu/Skier<br /></span><span class="black">Ben Mingo/Skier</span></h2>
+      <h2 id="dann" class="push-big"><span>Brought to you<br /></span><span>by your host:<br /></span><span class="black">Dann Petty<br /></span><span class="black">Snowboarder/<br /></span><span class="black">Freelance designer</span></h2> -->
+      <h2 id="info"><span>Lorem<br /></span><span>Lorem ipsum dolor<br /></span><span class="black">Lorem ipsum<br /></span><span class="black">Lorem ipsum dolor sit amet</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>The Montues was built with teams in mind, although individuals are obviously welcomed. If you are a team of 1, 2, 10, 20, or any size — bring the whole crew! Treat The Montues as your epic team getaway to reset, and get reinpsired.</p>
+      <p>The Montues is by invitation only. However, after you purchase your ticket, you become the curator. Each attendee can invite whomever they want to and as many people as they want until all the spots are gone.</p>
+      <p>For more information follow <a href="https://twitter.com/dannpetty" target="_blank">@dannpetty</a> + <a href="https://twitter.com/Epicurrence" target="_blank">@epicurrence</a> on Twitter. If you have any immediate questions or want to talk about
+        partnerships, please contact <a href="mailto:dann@epicurrence.com">dann@epicurrence.com</a>.</p>
+    </div>
+  </div>
+  <div class="social-items"><a href="https://twitter.com/Epicurrence" target="_blank" class="icon twitter">Twitter</a><a href="https://www.facebook.com/Epicurrence-1590340927865505/" target="_blank" class="icon facebook">Facebook</a></div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var oldScrollY = 0;
+var div = document.getElementById("fixedDiv");
+
+window.onscroll = function() {
+  var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  var dY = scrolled - oldScrollY;
+
+  if ( dY > 0 ){
+    div.className = "fixed fixed-bottom";
+  } else {
+    div.className = "fixed fixed-top";
+  }
+
+  oldScrollY = scrolled;
+}
+</script>

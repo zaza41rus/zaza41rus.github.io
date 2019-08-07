@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>The Montues</title>
+    <script src="https://use.typekit.net/ruc7ten.js"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load({
+                async: true
+            });
+        }
+        catch (e) {}
+    </script>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="js/app.js"></script>
+
+
+
+    <!-- Stylesheets -->
+<!--     <link rel="stylesheet" href="static-assets/lw-jquery-xml-cart/css/allSite.css"> -->
+    <link rel="stylesheet" href="static-assets/packages/bootstrap-3.3.1/css/bootstrap.min.css">
+
+
+</head>
+
+<body ng-controller="MainController">
+    <div class="authenticate"><a href="request/connect.html">Sign in</a> </div>
+    <div ng-init="showConnect = false" ng-class="{'show-connect': showConnect}" class="wrap landing">
+        <div class="aside">
+            <div class="aside-fixed">
+                <div class="logo"></div>
+
+
+
+<!-- morph-button -->
+        <link rel="stylesheet" type="text/css" href="css/morph-button-normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/morph-button-component.css" />
+        <link rel="stylesheet" type="text/css" href="css/morph-button-content.css" />
+        <script src="js/morph-button-modernizr.custom.js"></script>
+
+                <div class="morph-button morph-button-overlay morph-button-fixed">
+                    <button type="button">Магазин</button>
+                    <div class="morph-content">
+                        <div>
+                            <div class="content-style-overlay">
+                                <span class="icon icon-close">Close the overlay</span>
+                                <h2>About Parsley</h2>
+                                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                                <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                                <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko. Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress. Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- morph-button -->
+
+
+        <script src="js/morph-button-classie.js"></script>
+        <script src="js/morph-button-uiMorphingButton_fixed.js"></script>
+        <script>
+            (function() {   
+                var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+                // trick to prevent scrolling when opening/closing button
+                function noScrollFn() {
+                    window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+                }
+
+                function noScroll() {
+                    window.removeEventListener( 'scroll', scrollHandler );
+                    window.addEventListener( 'scroll', noScrollFn );
+                }
+
+                function scrollFn() {
+                    window.addEventListener( 'scroll', scrollHandler );
+                }
+
+                function canScroll() {
+                    window.removeEventListener( 'scroll', noScrollFn );
+                    scrollFn();
+                }
+
+                function scrollHandler() {
+                    if( !didScroll ) {
+                        didScroll = true;
+                        setTimeout( function() { scrollPage(); }, 60 );
+                    }
+                };
+
+                function scrollPage() {
+                    scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+                    didScroll = false;
+                };
+
+                scrollFn();
+                
+                var el = document.querySelector( '.morph-button' );
+                
+                new UIMorphingButton( el, {
+                    closeEl : '.icon-close',
+                    onBeforeOpen : function() {
+                        // don't allow to scroll
+                        noScroll();
+                    },
+                    onAfterOpen : function() {
+                        // can scroll again
+                        canScroll();
+                        // add class "noscroll" to body
+                        classie.addClass( document.body, 'noscroll' );
+                        // add scroll class to main el
+                        classie.addClass( el, 'scroll' );
+                    },
+                    onBeforeClose : function() {
+                        // remove class "noscroll" to body
+                        classie.removeClass( document.body, 'noscroll' );
+                        // remove scroll class from main el
+                        classie.removeClass( el, 'scroll' );
+                        // don't allow to scroll
+                        noScroll();
+                    },
+                    onAfterClose : function() {
+                        // can scroll again
+                        canScroll();
+                    }
+                } );
+            })();
+        </script>
+<!-- morph-button -->
+
+
+
+                    <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
+                        <button type="button">Контакты</button>
+                        <div class="morph-content">
+                            <div>
+                                <div class="content-style-form content-style-form-1">
+                                    <span class="icon icon-close">Close the dialog</span>
+                                    <h2>Login</h2>
+                                    <form>
+                                        <p><a href="#0" class="cd-btn btn btn-lg btn-black connect">8 (900) 444-222-1</a></p>
+                                        <p><a href="#0" class="cd-btn btn btn-lg btn-black connect">oilusa@gmail.com</a></p>
+                                        <p><a href="#0" class="cd-btn btn btn-lg btn-black connect">Карта проезда</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- morph-button -->
+
+        <script>
+            (function() {
+                var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+                // trick to prevent scrolling when opening/closing button
+                function noScrollFn() {
+                    window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+                }
+
+                function noScroll() {
+                    window.removeEventListener( 'scroll', scrollHandler );
+                    window.addEventListener( 'scroll', noScrollFn );
+                }
+
+                function scrollFn() {
+                    window.addEventListener( 'scroll', scrollHandler );
+                }
+
+                function canScroll() {
+                    window.removeEventListener( 'scroll', noScrollFn );
+                    scrollFn();
+                }
+
+                function scrollHandler() {
+                    if( !didScroll ) {
+                        didScroll = true;
+                        setTimeout( function() { scrollPage(); }, 60 );
+                    }
+                };
+
+                function scrollPage() {
+                    scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+                    didScroll = false;
+                };
+
+                scrollFn();
+
+                [].slice.call( document.querySelectorAll( '.morph-button' ) ).forEach( function( bttn ) {
+                    new UIMorphingButton( bttn, {
+                        closeEl : '.icon-close',
+                        onBeforeOpen : function() {
+                            // don't allow to scroll
+                            noScroll();
+                        },
+                        onAfterOpen : function() {
+                            // can scroll again
+                            canScroll();
+                        },
+                        onBeforeClose : function() {
+                            // don't allow to scroll
+                            noScroll();
+                        },
+                        onAfterClose : function() {
+                            // can scroll again
+                            canScroll();
+                        }
+                    } );
+                } );
+
+                // for demo purposes only
+                [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+                    bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
+                } );
+            })();
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="divider">Made <span>–</span> in <span>–</span> USA</div><a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-black request">Магазин / Контакты</a><a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-white request">Магазин / Контакты</a>
+
+
+
+
+
+
+
+
+
+
+
+                <div ng-class="{'show-connect': showConnect}" class="rad-humans">
+                    <div slide-in="{start: '#ben', end: '#marc'}" class="rad-human ben"></div>
+                    <div slide-in="{start: '#marc', end: '#ryan_veronica'}" class="rad-human marc"></div>
+                    <div slide-in="{start: '#ryan_veronica', end: '#helena'}" class="rad-human wide ryan_veronica"></div>
+                    <div slide-in="{start: '#helena', end: '#dan'}" class="rad-human helena"></div>
+                    <!-- <div slide-in="{start: '#dan', end: '#enrique'}" class="rad-human dan"></div>
+                    <div slide-in="{start: '#enrique', end: '#geoff'}" class="rad-human enrique"></div>
+                    <div slide-in="{start: '#geoff', end: '#mikael_steph'}" class="rad-human geoff"></div>
+                    <div slide-in="{start: '#mikael_steph', end: '#airbnb'}" class="rad-human mikael_steph"></div>
+                    <div slide-in="{start: '#airbnb', end: '#talent'}" class="rad-human airbnb"></div>
+                    <div slide-in="{start: '#talent', end: '#dann'}" class="rad-human talent"></div>
+                    <div slide-in="{start: '#dann', end: '#info'}" class="rad-human dann"></div> -->
+                </div>
+            </div>
+            <div ng-class="{'show-connect': showConnect}" slide-in="{start: '#intro_end', end: '#info'}" class="aside-bg"></div>
+
+
+            <div ng-class="{'show-connect': showConnect}" class="connect-form">
+<!--                 <p> 
+                <strong>Вы можете заказать продукт в нашей версии web витрины /<br /></strong>
+                <span>либо скачать актуальный прайс лист и сделать заказ по e-mail / whatsapp</span>
+                </p> -->
+                <a href="#0" class="cd-btn btn btn-lg btn-black connect">On-line витрина</a>
+                <a href="mailto:zaza41rus@gmail.com" class="btn btn-lg btn-black connect">PDF прайс</a> <br>
+
+                <a href="#0" class="cd-btn btn btn-lg btn-black connect">8(900) 444-222-1</a>
+                <a href="#0" class="cd-btn btn btn-lg btn-black connect">zaza@mail/.ru</a>
+                <a href="#0" class="cd-btn btn btn-lg btn-black connect">Карта проезда</a>
+
+                <a ng-click="showConnect = !showConnect" class="btn btn-lg btn-lightgray close">&times;</a> 
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div ng-class="{'show-connect': showConnect}" class="main connect">
+            <h2 class="push-bottom">
+        <span>Выбери способ<br /></span>
+        <span class="black">сотруднечества</span>
+      </h2> </div>
+        <div ng-class="{'show-connect': showConnect}" class="main">
+            <div parallax-it="2" class="landing-bg"></div>
+
+
+
+
+           <div class="sponsors">
+                <h2><span>Официальный<br /></span>
+                    <span>Представитель <br /></span>
+                    <span class="black">на Камчатке<br /><br /><br /><br /><br /></span>
+<!--                     <span>Маслосмазочных материалов <br /></span>
+                    <span>и Фильтров <br /></span>
+                    <span>от USA компаний</span> -->
+                </h2>
+ <!--                <table>
+                    <tr>
+                        <td>
+                            <p>У нас вы сможете приобрести <a href="#" target="_blank">авто смазочные материалы</a>, по оптовым ценам, всемирно известных американских фирм:</p>
+                        </td>
+                        <td class="hide-mobile"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="background-image: url('../assets/cp.svg')" class="sponsor-social"><a href="https://twitter.com/creativedash" target="_blank">ConocoPhillips</a></h4>
+                            <p>Creativeda.sh is a digital studio focused on creating emotional connections between users and products.</p>
+                        </td>
+                        <td>
+                            <h4 style="background-image: url('../assets/kendall.svg')" class="sponsor-social"><a href="https://twitter.com/facebook" target="_blank">Kendall</a></h4>
+                            <p>Giving people the power to share and make the world more open and connected.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="background-image: url('../assets/76.svg')" class="sponsor-social"><a href="https://twitter.com/Uber" target="_blank">76</a></h4>
+                            <p>Evolving the way the world moves by seamlessly connecting riders to drivers through our app.</p>
+                        </td>
+                        <td>
+                            <h4 style="background-image: url('../assets/66.svg')" class="sponsor-social"><a href="https://twitter.com/invisionapp" target="_blank">Phillips 66</a></h4>
+                            <p>A prototyping, collaboration, and workflow platform for designers. <a href="http://t.co/TVIUdSGcTa" target="_blank">Sign up for free</a>. Need help? Hit up <a href="http://twitter.com/invisionsupport" target="_blank">Phillips 66</a>.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="background-image: url('../assets/conoco.svg')" class="sponsor-social"><a href="https://twitter.com/airbnb" target="_blank">Conoco</a></h4>
+                            <p>Airbnb is the world's largest community-driven hospitality company. With unique listings in 190 countries, travelers can belong anywhere.</p>
+                        </td>
+                        <td>
+                            <h4 style="background-image: url('../assets/bardahl.svg')" class="sponsor-social"><a href="https://twitter.com/patagonia" target="_blank">Bardahl</a></h4>
+                            <p>Tweets from the outdoor clothing company Patagonia. Get company news, links to great stories and alerts about new products, sales and special offers.</p>
+                            <ul class="social-team"> </ul>
+                        </td>
+                    </tr>
+
+                </table> -->
+            </div>
+
+
+
+
+
+            <h2 class="push-big">
+
+        <span id="intro_end" class="black">Маслосмазочных материалов  /<br /></span>
+        <span class="black">Фильтров <br /></span>
+        <span >от USA компаний<br /><br /><br /><br /><br /><br /></span>
+      </h2>
+
+
+
+
+            <h2 id="ben" class="push-big">
+ <!--        <span>ConocoPhillips<br /></span>
+        <span>rad humans like:<br /></span> -->
+        <span class="black">Bardahl /<br /></span>
+        <span>Масла / смазки<br /></span>
+        <span>смазки <br /></span>
+        <span>Для любой техники <br /></span>
+        <span class="black">Co-founder, CD<br /></span>
+        <span class="black">@ Rally Interactive/<br /></span>
+        <span class="black">Skier</span>
+      </h2>
+
+
+            <h2 id="marc" class="push-big">
+        <span class="black">Phillips 66 /<br /></span>
+        <span>Масла / смазки<br /></span>
+        <span>смазки <br /></span>
+        <span>Для любой техники <br /></span>
+        <span class="black">Head of design<br /></span>
+        <span class="black">@ Founder Design Inc./<br /></span>
+        <span class="black">Skier</span>
+      </h2>
+
+
+            <h2 id="ryan_veronica" class="push-big">
+        <span class="black">Kendall /<br /></span>
+        <span>Масла / смазки<br /></span>
+        <span>смазки <br /></span>
+        <span>Для любой техники <br /></span>
+        <span class="black">Co-founder @ Small Wins<br /></span>
+        <span class="black">Veronica Belmont/<br /></span>
+        <span class="black">Startup Advisor/<br /></span>
+        <span class="black">Skiers</span>
+      </h2>
+
+
+            <h2 id="helena" class="push-big">
+        <span class="black">Baldwin /<br /></span>
+        <span>Фильтра / фильтрующие оборудование<br /></span>
+        <span>фильтрующие оборудование<br /></span>
+      </h2>
+
+
+
+
+            <h2 id="dan" class="push-big">
+ <!--        <span class="black">Conoco<br /></span>
+        <span class="black">Creative Director<br /></span>
+        <span class="black">@ Superfriendly/<br /></span>
+        <span class="black">Snowboarder</span> -->
+      </h2>
+<!--             <h2 id="enrique" class="push-big">
+        <span class="black">Bardahl<br /></span>
+        <span class="black">Co-founder<br /></span>
+        <span class="black">@ Designer Fund/<br /></span>
+        <span class="black">Snowboarder</span>
+      </h2>
+
+
+
+
+
+            <h2 id="geoff" class="push-big">
+        <span class="black">Geoff Teehan/<br /></span>
+        <span class="black">Product Design Director<br /></span>
+        <span class="black">@ Facebook/<br /></span>
+        <span class="black">Skier</span>
+      </h2>
+
+
+
+
+            <h2 id="mikael_steph" class="push-big">
+        <span class="black">Mikael Cho/<br /></span>
+        <span class="black">Steph Liverani/<br /></span>
+        <span class="black">Co-founders @ Unsplash/<br /></span>
+        <span class="black">Skiers</span>
+      </h2>
+            <h2 id="airbnb" class="push-big">
+        <span>Including epic<br /></span>
+        <span>teams like:<br /></span>
+        <span class="black">Keenan Cummings/Skier<br /></span>
+        <span class="black">Nina Vyas/Skier<br /></span>
+        <span class="black">Katie Dill/Skier<br /></span>
+        <span class="black">@ AirBnB</span>
+      </h2>
+            <h2 id="talent" class="push-big">
+        <span>And young<br /></span>
+        <span>talent like:<br /></span>
+        <span class="black">Alice Lee/Snowboarder<br /></span>
+        <span class="black">Jared Erondu/Skier<br /></span>
+        <span class="black">Ben Mingo/Skier</span>
+      </h2>
+            <h2 id="dann" class="push-big">
+        <span>Brought to you<br /></span>
+        <span>by your host:<br /></span>
+        <span class="black">Dann Petty<br /></span>
+        <span class="black">Snowboarder/<br /></span>
+        <span class="black">Freelance designer</span>
+      </h2> -->
+
+
+
+
+
+
+            <h2 id="info">
+<!--         <span>Epicurrence<br /></span>
+        <span>The Montues is<br /></span>
+        <span class="black">an adventure<br /></span>
+        <span class="black">you don’t want to miss</span> -->
+      </h2>
+<!--             <p>Только у нас, it’s now time for Epicurrence to open the flood gates for more to experience. It’s time for a new take on larger conferences and with Epicurrence, we’re calling it The Montues.</p>
+            <p>Located up the mountain at the Ritz Carlton Resort at Northstar in Lake Tahoe California, Epicurrence The Montues guarantees the most epic environment to come and get re-inspired, hang loose with other creatives, and to shred the hill with two full days of snowboarding/skiing.</p>
+            <p>Here's how it will all go down. We’ll arrive on Sunday evening at the Ritz, hang out, and have a discussion together. Monday and Tuesday morning we’ll regroup for breakfast, have another discussion before hitting the slopes for a full day of snowboarding/skiing (lift tickets provided). We’ll warm up back inside over dinner, and then partake in a couple more discussions at night. Check out will be Wednesday morning by noon. It’s the same spirit of the smaller Epicurrence events at larger scale.</p>
+            <p>The Montues was built with teams in mind, although individuals are obviously welcomed. If you are a team of 1, 2, 10, 20, or any size — bring the whole crew! Treat The Montues as your epic team getaway to reset, and get reinspired.</p>
+            <p>The Montues is by invitation only. However, after you purchase your ticket, you become the curator. Each attendee can invite whomever they want to and as many people as they want until all the spots are gone.</p>
+            <p>For more information follow <a href="https://twitter.com/dannpetty" target="_blank">@dannpetty</a> + <a href="https://twitter.com/Epicurrence" target="_blank">@epicurrence</a> on Twitter. If you have any immediate questions or want to talk about partnerships, please contact <a href="mailto:dann@epicurrence.com">Только у нас,</a>.</p> -->
+            <div class="sponsors">
+                <h2><span>Спонсортво<br /></span>
+<!--           <span>thanks to <br /></span>
+          <span class="black">Epic Partners</span> -->
+        </h2>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Нас выбирают только <a href="mailto:dann@epicurrence.com">лучшие</a>.</p>
+                        </td>
+                        <td class="hide-mobile"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="background-image: url('../assets/whatsapp.svg')" class="sponsor-social"><a href="https://twitter.com/creativedash" target="_blank">8 (900) 444-222-1</a></h4>
+                            <p>Звонки принимаются с 10 до 19 часов по Камчатскому времени.</p>
+                        </td>
+                        <td>
+                            <h4 style="background-image: url('../assets/mailing.svg')" class="sponsor-social"><a href="https://twitter.com/facebook" target="_blank">zaza41rus@gmail.com</a></h4>
+                            <p>Вы можете отправить ваш запрос в любое время.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4 style="background-image: url('../assets/route-1.svg')" class="sponsor-social"><a href="https://twitter.com/Uber" target="_blank">Карта проезда</a></h4>
+                            <p>Нажмите на ссылку и проложите маршрут в Яндекс Навигаторе до нашего офиса / склада.</p>
+                        </td>
+                         <td>
+                            <!-- <h4 style="background-image: url('../assets/66.svg')" class="sponsor-social"><a href="https://twitter.com/invisionapp" target="_blank">Phillips 66</a></h4>
+                            <p>A prototyping, collaboration, and workflow platform for designers. <a href="http://t.co/TVIUdSGcTa" target="_blank">Sign up for free</a>. Need help? Hit up <a href="http://twitter.com/invisionsupport" target="_blank">Phillips 66</a>.</p> -->
+                        </td>
+                    </tr>
+<!--                     <tr>
+                        <td>
+                            <h4 style="background-image: url('../assets/conoco.svg')" class="sponsor-social"><a href="https://twitter.com/airbnb" target="_blank">Conoco</a></h4>
+                            <p>Airbnb is the world's largest community-driven hospitality company. With unique listings in 190 countries, travelers can belong anywhere.</p>
+                        </td>
+                        <td>
+                            <h4 style="background-image: url('../assets/bardahl.svg')" class="sponsor-social"><a href="https://twitter.com/patagonia" target="_blank">Bardahl</a></h4>
+                            <p>Tweets from the outdoor clothing company Patagonia. Get company news, links to great stories and alerts about new products, sales and special offers.</p>
+                            <ul class="social-team"> </ul>
+                        </td>
+                    </tr>  -->
+
+                </table>
+            </div>
+ 
+        </div>
+    </div>
+    <div class="social-items"><a href="https://twitter.com/Epicurrence" target="_blank" class="icon twitter">Twitter</a><a href="https://www.facebook.com/Epicurrence-1590340927865505/" target="_blank" class="icon facebook">Facebook</a></div>
+    <div class="wrap creativedash">
+        <div class="aside"></div>
+        <div class="main">
+            <p>Web & Des <a href="https://my-look.ru">Mikhail</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="cd-panel from-right">
+
+
+<!--         <header class="cd-panel-header">
+            <h1>Title Goes Here</h1>
+            <a href="#0" class="cd-panel-close">Close</a>
+        </header> -->
+
+        <div class="cd-panel-container">
+            <div class="cd-panel-content">
+
+
+
+
+
+
+
+
+
+
+    <main class="cd-main-content">
+        <div class="cd-tab-filter-wrapper">
+            <div class="cd-tab-filter">
+                <ul class="cd-filters">
+                    <li class="placeholder"> 
+                        <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+                    </li> 
+                    <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                    <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
+                    <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
+
+
+
+
+                </ul> <!-- cd-filters -->
+            </div> <!-- cd-tab-filter -->
+        </div> <!-- cd-tab-filter-wrapper -->
+
+        <section class="cd-gallery">
+            <ul>
+ 
+                <li class="mix color-2 check2 radio2 option2"><img src="img/FB_Guardol_ECT_Ti_10w30_Gal_FtS_1060782.png" alt="Image 2">
+
+                    <div>
+                        <p class="tittle">FAMILY,GUARDOL ECT(Ti)</p>
+                        <p class="tittle2">15W40&emsp;|&emsp;1/55</p>
+                        <p class="tittle3">Бочка 208,2 л</p>
+                        <p class="tittle4">20000 Р</p>
+
+
+                    </div>
+                    <a data-productindex="lscf0001" href="#/product/uid-lscf0001/dell-alienware" class="buy">
+                    Подробно
+                    </a>
+                </li>
+                <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+                <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+                <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+                <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+                <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+                <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+                <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+                <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
+
+
+                <li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
+                <li class="mix color-2 check2 radio2 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
+                <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+                <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+                <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+                <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+                <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+                <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+                <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+                <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li> 
+                <li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
+                <li class="mix color-2 check2 radio2 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
+                <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+                <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+                <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+                <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+                <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+                <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+                <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+                <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li> 
+                <li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
+                <li class="mix color-2 check2 radio2 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
+                <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+                <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+                <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+                <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+                <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+                <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+                <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+                <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+                <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
+
+
+                <li class="gap"></li>
+                <li class="gap"></li>
+                <li class="gap"></li>
+            </ul>
+            <div class="cd-fail-message">No results found</div>
+        </section> <!-- cd-gallery -->
+
+ 
+
+  
+
+
+
+    </main> <!-- cd-main-content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div> <!-- cd-panel-content -->
+        </div> <!-- cd-panel-container -->
+      <!-- Show Cart Button -->
+      <span class="oval green shopping-cart-btn-container"></span> 
+      <!-- /Show Cart Button -->
+    </div> <!-- cd-panel -->
+
+
+<!--     <link rel="stylesheet" href="css/reset.css">  --><!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+<!--     <script src="js/modernizr.js"></script>  --><!-- Modernizr -->    
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Modal news-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-sound-dolby"></span></button>
+        <h4 class="modal-title" id="myModalLabel">Следите за нами на facebook</h4>
+      </div>
+      <div class="modal-body">
+                            <div id="modal-FB-VK">
+                                <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ffarmily.ru&amp;width&amp;height=521&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=false&amp;appId=629268383828061" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:453px;" allowTransparency="true"></iframe>
+                            </div>
+                            <div id="modal-FB-VK">
+                                <link href="" rel="stylesheet" type="text/css">
+                                    <div id="mc_embed_signup mailchimp1">
+                                        <form action="//farmily.us8.list-manage.com/subscribe/post?u=54ff78ea102067cf0db380e4c&amp;id=37e38f26e9" method="post" id="mc-embedded-subscribe-form mailchimp2" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                            <div id="mc_embed_signup_scroll mailchimp3">
+                                                                
+                                                <input type="email" value="" name="EMAIL" class="btnsubscribe1 email form-control required mail" id="mce-EMAIL mailchimp4" placeholder="Подписка на e-mail" style="" required>
+                                                                
+                                                    <div style="position: absolute; left: -5000px;">
+                                                        <input type="text" name="b_54ff78ea102067cf0db380e4c_37e38f26e9" tabindex="-1" value="">
+                                                    </div>
+                                                                
+                                                    <div class="clear">
+                                                    <button type="submit" value="" name="subscribe" id="mc-embedded-subscribe mailchimp4" class="btnsubscribe2 btn btn-default mail2 email-subscrime">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+<!-- Modal parent_popup --> 
+<div id="parent_popup">
+    <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <img class="" src="sale/sale.png" width="268" height="185" alt="Бесплатная доставка">
+                        </div>
+                        <div class="modal-body">
+
+                            <p class="">
+                            <span class="sale3">
+                            
+<!--                            * Бесплатная доставка в пределах от п.Нагорный (20км) до П-Камчатский (КП), в удобное водителю время.
+-->
+                            * Доставка временно не осуществляется. Заказы принимаются с возможностью самовывоза. 
+                            </span>
+                            </p>
+
+<!--                
+                            <p class="">
+                            <span class="sale3">
+                            В связи с отсутствием на Камчатке и невозможности контролировать деятельность из-за "бугра"...
+                            ресурс временно не принимает заказы. Доставка не осуществляется.<br>
+                            <br>
+                            Ферма функционирует в штатном режиме.<br>
+                            Заказы принимаются по тел. +7(900)441-41-11 с возможностью самовывоза.<br>
+                            </span>
+                            </p>
+--> 
+                            
+<br>
+                            <p class="">    
+                            <span class="salesize">
+                            Данный ресурс не является публичной офертой.<br>
+                            В силу обстоятельств, нам не всегда удается вовремя корректировать информацию на сайте и в группах.<br>
+                            Поэтому, мы оставляем за собой право изменять условия и прочее в одностороннем порядке.<br>
+                            </span>
+                            </p>
+                        
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal" onclick="document.getElementById('parent_popup').style.display='none';">
+                                <span class="glyphicon glyphicon-ok"></span> Я согласен
+                            </button>
+                        </div>
+                    </div>
+    </div>
+</div>
+
+
+
+<!-- Modal Placeholder -->
+<div id="modalContainer"> 
+  <div class="modal fade" id="commonModal"> 
+  <div class="modal-dialog">
+    <div class="modal-content common-modal-content">
+   </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+  </div>
+</div>
+<!-- Modal Placeholder -->
+<!--  Templates --> 
+<!-- Submit Order form -->
+<script type="text/template" class="submit-order-form-template">
+    <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-sound-dolby"></span></button>
+
+      <h3 class="order-page-header">Оформление заказа</h3>
+    </div>
+    <div class="modal-body order-page-body"> 
+
+      <!-- Submit Order Form -->
+      <form class="form-horizontal bs-3-form" id="submitOrderForm">
+      <div class="bs-callout bs-callout-danger">
+    <strong class="color-red">*</strong> Обязательные поля 
+  </div>
+<div>
+    <!--  Name -->
+      <div class="form-group">
+          <label for="fname" class="col-sm-3 col-md-3 col-lg-3 control-label">
+          <span class="glyphicon glyphicon-user"></span> 
+          </label>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <input type="text" name="fname" value="" id="fname" class="form-control" placeholder="Имя" autofocus="">
+ 
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <input type="text" name="lname" value="" id="lname" class="form-control" placeholder="Фамилия">
+ 
+          </div>
+                  </div>
+    <!--  /Name --> 
+ 
+    <!--  Email -->
+    <div class="form-group">
+            <label for="sof_email" class="col-sm-3 col-md-3 col-lg-3 control-label"><strong class="color-red">*</strong>
+            <span class="glyphicon glyphicon-envelope"></span>
+            </label>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <input type="email" name="sof_email" value="" id="sof_email" class="form-control required" required placeholder="Введите ваш e-mail">
+ 
+                          </div>
+          </div>
+          <!--  /Email -->
+
+    <!--  Phone -->
+    <div class="form-group">
+            <label for="sof_email" class="col-sm-3 col-md-3 col-lg-3 control-label"><strong class="color-red">*</strong>
+            <span class="glyphicon glyphicon-earphone"></span>
+            </label>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <input type="tel" name="sof_ph" value="" id="sof_ph" class="form-control required" required placeholder="Телефон в формате 8(xxx)xxx-xx-xx">
+            </div>
+          </div>
+    <!--  /Phone --> 
+
+          <!--  Address -->
+          <div class="form-group">
+<label for="sof_add" class="col-sm-3 col-md-3 col-lg-3 control-label"><span class="glyphicon glyphicon-tag"></span></label>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <div class="input-group">
+        <span class="input-group-btn">
+        <button class="btn btn-danger" type="button"
+        onClick="window.open('http://www.paywithatweet.com/pay?id=111f9e1b-768f-4072-9a4f-011eb15fac52','windowname')"
+        >Получить скидку</button>
+      </span> 
+      <input type="text" name="sof_add" value="" id="sof_add" class="form-control" placeholder="Введите код">
+              
+
+              
+              
+            </div>
+            </div>
+          </div>
+ 
+          <!--  /Address --> 
+    
+          <!--  Message -->
+          <div class="form-group">
+ <label for="sof_message" class="col-sm-3 col-md-3 col-lg-3 control-label">
+<span class="glyphicon glyphicon-pencil"></span>
+ </label>
+              <div class="col-sm-8 col-md-8 col-lg-8">
+                <textarea name="sof_message" cols="40" rows="10" id="sof_message" class="form-control" placeholder="Детали к заказу или прочая информация"></textarea>
+            </div>
+            </div>
+          <!--  /Message -->
+      </form>
+      <!-- /Submit Order Form -->   
+    
+    </div>
+    <div class="modal-footer"> 
+      <!--  Action Buttons -->
+      <div><a id="backToCartBtn" href="#" class="btn btn-default pull-left"><i class="glyphicon glyphicon-arrow-left"></i> Вернуться</a>
+    
+      <a href="#" id="submitOrderBtn" disabled class="btn btn-primary"><i class="glyphicon glyphicon-send"></i> Отправить заказ</a> 
+      <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button></div>
+      
+      </div>
+     <!--  /Action Buttons --> 
+    </div>
+</script>
+<!-- /Submit Order form -->
+<!-- Shopping Cart. --> 
+<script type="text/template" class="shopping-cart-template">
+    <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-sound-dolby"></span></button>
+      <h3>Ваш заказ</h3>
+    </div>
+    <div class="modal-body"> 
+    <div class="table-responsive">
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th class="right-align">Цена</th>
+            <th class="right-align">Кол-во</th>
+            <th class="right-align">Итого</th>
+            <th><span class="btn btn-link no-cursor"><i class="glyphicon glyphicon-trash"></i></span></th>
+          </tr>
+        </thead>
+        <tbody id="shoppingCartData">
+            <% if( _oData.cartProductsCollection.length > 0 ) {
+            _.each( _oData.cartProductsCollection, function(listItem, nCartRowIndex ) { 
+              var listItemProduct = _oData.allProductsCollection[listItem.index]; %>
+              <tr>
+                <td><%- listItemProduct.name %> <br>
+                <small>
+                <% if(listItem.size && (listItem.size != "NA")) { %>
+                 <strong><span class="glyphicon glyphicon-time"></span> </strong><%- listItem.size %>
+                <% };
+                if(listItem.color && (listItem.color != "NA")) { %>
+                 <strong><span class="glyphicon glyphicon-download-alt"></span> </strong><%- listItem.color %>
+                <% } %>
+                </small>
+                </td>
+                <td class="right-align"><%- listItemProduct.formattedPrice %></td>
+                <td><input data-cartrowindex="<%- nCartRowIndex %>" type="number" step="1" min="1" value="<%- listItem.qty %>" class="cart-product-qty center-align"/></td>
+                <td class="right-align"><%- _oData.fnMisc.formatAmount(listItemProduct.price *  listItem.qty) %></td>
+                <td><button type="button" data-cartrowindex="<%- nCartRowIndex %>" href="#" class="btn btn-link delete-product-from-cart" title="Remove from Cart"><i class="glyphicon glyphicon-trash"></i></button></td>
+              </tr>
+            <% }); } else { %>
+                <td colspan="6"><div class="alert alert-info">Корзина пуста!</div></td>
+            <% } %>
+        </tbody>
+      </table>
+      </div>
+    </div>
+    <div class="modal-footer"> 
+      <div id="shopping_cart_total" class="alert alert-info tar"><strong><%- _oData.cartStats.totalItems %></strong> позиция(и/й) на сумму <%- _oData.cartStats.amountFormatted %>
+      <% if( _oData.configOptions.shippingCharges ) { %>
+      + Shipping: <%- _oData.fnMisc.formatAmount( _oData.configOptions.shippingCharges ) %> = 
+      <strong> <%- _oData.fnMisc.fullFormatAmount( _oData.cartStats.subTotal +  _oData.configOptions.shippingCharges) %> </strong>
+      <% } %>
+      </div>
+      <div class="check"> 
+<!--       <a href="#" class="btn btn-default pull-left" data-dismiss="modal"><i class="glyphicon glyphicon-arrow-left"></i> Продолжить покупки</a> </div> -->
+
+    <a id="checkoutSubmitOrderBtn" <% if( ! _oData.generalVars.enableOrderBtn) { %> disabled <% } %> class="btn btn-primary"  title="Submit order by Email" href="#/shopping-cart/uid-submit-order">Оформить<!-- <i class="glyphicon glyphicon-envelope"></i> --></a>      
+     
+     </div>
+</script>
+<!-- /Shopping Cart. --> 
+<!-- Shopping Cart button. --> 
+<script type="text/template" class="shopping-cart-btn-template">
+<p class="pull-right">
+  <a title="View Cart" class="oval green btn btn-default show-shopping-cart-btn" href="#/shopping-cart/uid-show">
+   <span class="ooo glyphicon glyphicon-shopping-cart"></span> <span class="numb"><strong><%- _oData.cartStats.totalItems %></strong></span></a> 
+</p>
+</script>
+<!-- /Shopping Cart button. --> 
+<!-- Add to cart button. -->
+<script type="text/template" class="add-to-cart-btn-template">
+<% if( ! _oData.nProductInCart ) { %>
+    <a href="#" class="btn btn-danger add-to-cart-btn"><span class="add-to-cart-btn-text">В Корзину</span> <i class="glyphicon glyphicon-shopping-cart"></i></a>
+<% } else { %>
+    <a href="#" class="btn btn-danger add-to-cart-btn"><span class="add-to-cart-btn-text">В корзине</span> <i class="glyphicon glyphicon-shopping-cart"></i>: <%- _oData.nProductInCart %> </a>
+<% }%>
+</script>
+<!-- Sidebar Categories. -->
+<script type="text/template" class="sidebar-catgegories-template">
+<% _.each(_oData.categoriesCollection,function( listItem ){ %>
+  <li class="list-group-item category-list-item-<%- listItem.index %>">
+     <a data-categoryindex="<%- listItem.index %>" href="#/category/uid-<%- listItem.index %>/<%- listItem.slug %>" class="category-link-<%- listItem.index %> category-link btn-block"><%- listItem.name %> <i class="glyphicon glyphicon-arrow-right pull-right"></i></a>
+  </li>
+<% }) %>
+</script>
+<!-- /Add to cart button. -->
+<!-- Products Grid -->
+<script type="text/template" class="products-grid-template">
+<% if( _oData.currentProductCollection.length < 1) { %>
+<div class="alert alert-warning">
+  No Products to Display
+</div>
+<% } else { %>
+<% _.each( _oData.currentProductCollection, function( listItem ){ %>
+    <li data-productindex="<%- listItem.index %>" class="product-item">
+  <div class="thumbnail">
+  <h4 class="product-name"> <%- listItem.name %></h4>
+  <a data-productindex="<%- listItem.index %>" href="#/product/uid-<%- listItem.index %>/<%- listItem.slug %>" class="product-id-<%- listItem.index %> product-link">
+    <div class="thumb-holder"><img src="<%- listItem.thumbPath %>" alt="<%- listItem.name %>"></div>
+    </a>
+    <h4 class="product-price"><%- listItem.formattedPrice %>
+       <% if(listItem.oldPrice){ %>
+      <small class="old-product-price">/ <%- listItem.oldPrice.formatted %></small>
+      <% } %>
+    </h4>
+
+    <a data-productindex="<%- listItem.index %>" href="#/product/uid-<%- listItem.index %>/<%- listItem.slug %>" class="product-id-<%- listItem.index %> product-link btn btn-primary btn-block"><i class="glyphicon glyphicon-info-sign"></i> Дополнительная информация </a>
+  </div>
+</li>
+<% }); }; %>
+</script>
+
+
+<!-- /Products Grid -->
+<!-- Product Details Modal -->
+<script type="text/template" class="products-details-modal-template">
+
+<div class="shad">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-sound-dolby"></span></button>
+<!-- <h4 class="modal-title"><%- _oData.oCurrentProductData.name %></h4> -->
+    <span class="product-attributes">
+    <% var categoryItem = _oData.categoriesCollection[_oData.oCurrentProductData.categoryIndex]; %>
+    <strong><!-- Category:  --></strong><a data-categoryindex="<%- categoryItem.index %>" href="#/category/uid-<%- categoryItem.index %>/<%- categoryItem.slug %>" class="category-link-<%- categoryItem.index %> category-link"><%- categoryItem.name %></a>
+<!--     <strong>Product ID: </strong><%- _oData.oCurrentProductData.id %> |  
+    <strong>Price: </strong><strong class="product-price"><%- _oData.oCurrentProductData.formattedPrice %></strong></span> -->
+  </div>
+
+
+  <div class="modal-body lw-modal-body">
+    <%= _oData.oCurrentProductData.details %>
+
+
+    
+    <span class="product-attributes">
+        <% var categoryItem = _oData.categoriesCollection[_oData.oCurrentProductData.categoryIndex]; %>
+        <strong class="product-price"><%- _oData.oCurrentProductData.formattedPrice %></strong>
+    </span>
+
+  </div>
+
+
+
+  <div class="modal-footer">
+  <div class="form-inline">
+<% var ddSizes = _oData.oCurrentProductData.options.sizes;
+if((ddSizes.length > 0) && (ddSizes[0].name != "NA")) { %>
+<div class="input-group">
+  <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+   <select id="productSizeSelector" class="form-control product-size-selector option-selector">
+
+<% _.each(ddSizes,function(ddSize){ %>
+<option value="<%- ddSize.value %>"><%- ddSize.name %></option>
+<% }) %> 
+</select>
+</div>
+<% }%>
+<% var ddColors = _oData.oCurrentProductData.options.colors;
+if((ddColors.length > 0) && (ddColors[0].name != "NA")) { %>
+<div class="input-group">
+  <span class="input-group-addon"><span class="glyphicon glyphicon-download-alt"></span></span>
+   <select id="productColorSelector" class="form-control product-color-selector option-selector">
+<% _.each(ddColors,function(ddColor){ %>
+<option value="<%- ddColor.value %>"><%- ddColor.name %></option>
+<% }) %> 
+</select>
+</div>
+<% }%>
+<span id="addToCartBtnContainer"></span>
+      <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+  </div>
+  </div>
+
+
+  </div>
+</script>
+<!-- /Product Details Modal -->
+<!-- Placed at the end of the document so the pages load faster --> 
+
+
+
+<!--  javascript    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="static-assets/packages/other-js-libs/jquery-1.11.1.min.js"></script> --> 
+<script type="text/javascript" src="static-assets/lw-jquery-xml-cart/js/all-other-site.js"></script>
+<script type="text/javascript" src="static-assets/packages/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static-assets/packages/other-js-libs/all-other-shop-js-libs.js"></script> 
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.mixitup.min-Filters.js"></script>
+<script src="js/main-Filters.js"></script> <!-- Resource jQuery -->
+<link rel="stylesheet" href="css/style-Filters.css"> <!-- Resource style -->
+
+
+<link rel="stylesheet" href="css/1my1.css">
+</body>

@@ -1,0 +1,148 @@
+.arcticmodal-overlay,
+.arcticmodal-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+}
+
+.arcticmodal-container {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+*:first-child+html .arcticmodal-container {
+    height: 100%
+}
+
+.arcticmodal-container_i {
+    height: 100%;
+    margin: 0 auto;
+}
+
+.arcticmodal-container_i2 {
+    padding: 24px;
+    margin: 0;
+    border: 0;
+    vertical-align: middle;
+}
+
+.arcticmodal-error {
+    padding: 20px;
+    border-radius: 10px;
+    background: #000;
+    color: #fff;
+}
+
+.arcticmodal-loading {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background: #000 url('../img/loading.gif') no-repeat 50% 50%;
+}
+.box-modal {
+    /* position: relative; */
+    /* width: 655px; */
+    /* min-height: 120px; */
+    /* padding: 20px; */
+    /* background: #fff; */
+    /* color: #3c3c3c; */
+    /*
+    box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+*/
+    /* border-radius: 5px; */
+    /* background: url(/images/booking.svg) rgba(45,59,69,0.8) no-repeat center; */
+    /* width: 100%; */
+}
+.light-modal {
+    position: relative;
+    width: 0px;
+    height: 0px;
+    box-shadow: 0 0 0 6px rgba(153, 153, 153, .3);
+    border-radius: 5px;
+    opacity: 0;
+}
+#big-modal {
+ width: 655px;
+}
+#middle-modal {
+    width: 455px;
+}
+#small-modal {
+    width: 95vw;
+    left: 0;
+    position: absolute;
+    top: 0;
+    background: rgba(109,171,222,1);
+    background: rgba(44,62,80,0.85);
+}
+#feedback-modal-box {
+    width: 94vw;
+    height: 100vh;
+    position: fixed;
+    left: 5vw;
+    top: 0;
+    /* background: rgba(146, 127, 79, 0.59); */
+    /* background: rgba(44,62,80,0.85); */
+    background: url(/images/booking.svg) rgba(44,62,80,0.85) no-repeat center;
+}
+#feedback-modal-box #feedback-infolist {
+    list-style: none;
+    display: table;
+    width: 100%;
+    height: 100%;
+	margin:0;
+	padding:0;
+}
+#feedback-modal-box #feedback-infolist li {
+    text-align: center;
+    font-size: 110%;
+    display: table-cell;
+    vertical-align: middle;
+    height: 120px;
+}
+#light-box {
+    border-radius: 5px;
+}
+.modal-close {
+    width: 95vw;
+    height: 100%;
+    position: relative;
+    right: 0;
+    top: 0;
+    font-size: 0px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+    /* background: #4497c6; */
+    cursor: pointer;
+    /* border-radius: 13px; */
+    /* font-family: Verdana; */
+}
+
+.modal-close:hover {
+    /* background: #4aa5d8; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
